@@ -6,6 +6,10 @@
 @import './pages/main.scss';
 @import './pages/catalog.scss';
 @import './pages/cart.scss';
+@import './pages/base.scss';
+@import './pages/delivery.scss';
+@import './pages/article.scss';
+@import './pages/personal-account.scss';
 
 @import './blocks/header.scss';
 @import './blocks/components.scss';
@@ -18,4 +22,5 @@
 @import './blocks/catalog-hero.scss';
 @import './blocks/products-list.scss';
 @import './blocks/contacts-box.scss';
-@import './blocks/mob-bar.scss'
+@import './blocks/mob-bar.scss';
+@import './blocks/datacard.scss';

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <title>TEAPORT - Личный кабинет</title>
+  </head>
+  <body>
+    <main>
+      <div class="personal-account">
+        @@include('./template/header.html')
+        @@include('./template/burger-menu.html')
+        <div class="personal-account-information">
+          <div class="personal-account-information__card">
+            <div class="card__title">текущий заказ №345</div>
+            <div class="card__subtitle">3 товара</div>
+            <div class="card__list">
+                <p>Тата чай / 150 г</p>
+                <p>Женшень улун / 150 г</p>
+                <p>Тата чай / 150 г</p>
+            </div>
+            <div class="card__result">
+              <p class="card__total">итог: <span>6 000 ₽</span></p>
+              <p class="card__total">приют: <span>600 ₽</span></p>
+            </div>
+          </div>
+          <div class="personal-account-information__card">
+            <div class="card__title"></div>
+            <div class="card__subtitle"></div>
+            <div class="card__list"></div>
+            <div class="card__result">
+              <p class="card__total"><span></span></p>
+              <p class="card__total"><span></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('./template/footer.html')
+  </body>
+</html>

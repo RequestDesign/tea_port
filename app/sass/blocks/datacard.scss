@@ -1,0 +1,59 @@
+.datacard {
+  position: relative;
+  width: 36rem;
+  margin-top: 14rem;
+  cursor: pointer;
+  &__image {
+    width: 27.8rem;
+    height: 27.8rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+  }
+  &__date {
+    margin-top: 18.5rem;
+  }
+  &__title {
+    width: 35rem;
+    margin-bottom: 5.6rem;
+  }
+  &__content {
+    min-height: 32.6rem;
+    display: flex;
+    gap: 2.2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 5rem;
+    border: 2px solid #fff;
+    background: linear-gradient(
+      180deg,
+      #fff -15.03%,
+      rgba(255, 255, 255, 0) 111.04%
+    );
+    backdrop-filter: blur(20px);
+  }
+}
+@media (max-width: 48em) {
+  .datacard {
+    width: 100%;
+    margin-top: 16rem;
+    &__image {
+      width: 32rem;
+      height: 32rem;
+    }
+    &__date {
+      margin-top: 20rem;
+    }
+    &__title {
+      margin-bottom: 10rem;
+    }
+    &__content {
+      min-height: 41rem;
+      gap: 3.2rem;
+    }
+  }
+}
