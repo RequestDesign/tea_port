@@ -159,20 +159,20 @@ sup {
 }
 
 /* Embedded content
-   ========================================================================== */
+     ========================================================================== */
 /**
- * Remove the border on images inside links in IE 10.
- */
+   * Remove the border on images inside links in IE 10.
+   */
 img {
   border-style: none;
 }
 
 /* Forms
-   ========================================================================== */
+     ========================================================================== */
 /**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
 button,
 input,
 optgroup,
@@ -188,26 +188,28 @@ textarea {
 }
 
 /**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
 /**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
 /**
- * Correct the inability to style clickable types in iOS and Safari.
- */
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
 button,
 [type=button],
 [type=reset],
@@ -216,8 +218,8 @@ button,
 }
 
 /**
- * Remove the inner border and padding in Firefox.
- */
+   * Remove the inner border and padding in Firefox.
+   */
 button::-moz-focus-inner,
 [type=button]::-moz-focus-inner,
 [type=reset]::-moz-focus-inner,
@@ -227,8 +229,8 @@ button::-moz-focus-inner,
 }
 
 /**
- * Restore the focus styles unset by the previous rule.
- */
+   * Restore the focus styles unset by the previous rule.
+   */
 button:-moz-focusring,
 [type=button]:-moz-focusring,
 [type=reset]:-moz-focusring,
@@ -237,18 +239,18 @@ button:-moz-focusring,
 }
 
 /**
- * Correct the padding in Firefox.
- */
+   * Correct the padding in Firefox.
+   */
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
 
 /**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
 legend {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; /* 1 */
@@ -260,23 +262,23 @@ legend {
 }
 
 /**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
 progress {
   vertical-align: baseline;
 }
 
 /**
- * Remove the default vertical scrollbar in IE 10+.
- */
+   * Remove the default vertical scrollbar in IE 10+.
+   */
 textarea {
   overflow: auto;
 }
 
 /**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
 [type=checkbox],
 [type=radio] {
   -webkit-box-sizing: border-box;
@@ -285,66 +287,66 @@ textarea {
 }
 
 /**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
 [type=number]::-webkit-inner-spin-button,
 [type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
 /**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
 [type=search] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
 
 /**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
 [type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
 /**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
 
 /* Interactive
-   ========================================================================== */
+     ========================================================================== */
 /*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
 details {
   display: block;
 }
 
 /*
- * Add the correct display in all browsers.
- */
+   * Add the correct display in all browsers.
+   */
 summary {
   display: list-item;
 }
 
 /* Misc
-   ========================================================================== */
+     ========================================================================== */
 /**
- * Add the correct display in IE 10+.
- */
+   * Add the correct display in IE 10+.
+   */
 template {
   display: none;
 }
 
 /**
- * Add the correct display in IE 10.
- */
+   * Add the correct display in IE 10.
+   */
 [hidden] {
   display: none;
 }
@@ -369,6 +371,11 @@ html {
 
 body {
   background-color: #ebebeb;
+}
+body.lock {
+  overflow: hidden;
+  -ms-touch-action: none;
+      touch-action: none;
 }
 
 @media (max-width: 48em) {
@@ -1220,6 +1227,602 @@ body {
   }
   .swiper.articles-slider .swiper-slide {
     width: 70rem !important;
+  }
+}
+.personal-account {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  background-image: url(../img/webp/personal-account-bg.webp);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100%;
+  overflow: hidden;
+}
+
+.account-information {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 160rem;
+  margin: 0 auto;
+  padding-top: 7.7rem;
+}
+.account-information__inner {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5.3rem;
+  margin-bottom: 13rem;
+}
+.account-card {
+  position: relative;
+  width: 36.1rem;
+  min-height: 44.4rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5rem;
+  border: 0.2rem solid rgba(255, 255, 255, 0.5);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(2.14%, rgba(255, 255, 255, 0.1)), to(rgba(189, 193, 192, 0.1)));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 2.14%, rgba(189, 193, 192, 0.1) 100%);
+  -webkit-box-shadow: 0 -6rem 15rem 0 #feffcd inset;
+          box-shadow: 0 -6rem 15rem 0 #feffcd inset;
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+}
+.account-card--order {
+  border-radius: 5rem;
+  border: 0.2rem solid rgb(255, 255, 255);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-6.08%, #fff), color-stop(114.08%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(180deg, #fff -6.08%, rgba(255, 255, 255, 0) 114.08%);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.account-card--order .account-card__wrapper {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 2.2rem;
+}
+.account-card--order .account-card__name {
+  width: 30.6rem;
+}
+.account-card--order .account-card__count {
+  font-weight: 400;
+}
+.account-card__wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5.2rem 2.8rem;
+}
+.account-card__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.account-card__name {
+  color: #393531;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.54rem;
+  text-transform: uppercase;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.account-card__count {
+  color: #393531;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.54rem;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.account-card__profile {
+  color: #393531;
+  text-align: center;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.2rem;
+  text-transform: uppercase;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 3.6rem;
+}
+.account-card__symbol {
+  position: absolute;
+  left: 50%;
+  top: -6.6rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.account-card__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.account-card__main {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.account-card__main li {
+  color: #393531;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.8rem;
+  line-height: normal;
+  list-style-type: none;
+}
+.account-card__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.account-card__result span {
+  margin-right: 1.8rem;
+  color: #393531;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.54rem;
+}
+.account-card__result strong {
+  color: #393531;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.54rem;
+}
+.account-card__result strong b {
+  font-weight: 700;
+}
+
+.underline-btn {
+  cursor: pointer;
+  position: relative;
+  color: #393531;
+  text-align: center;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.54rem;
+  text-transform: uppercase;
+}
+.underline-btn::after {
+  content: "";
+  width: 100%;
+  height: 0.1rem;
+  background-color: #393531;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: width 0.2s linear;
+  transition: width 0.2s linear;
+}
+.underline-btn:hover::after {
+  -webkit-transition: width 0.2s linear;
+  transition: width 0.2s linear;
+  width: 0;
+}
+
+.account-detail {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 160rem;
+  margin: 0 auto;
+  padding-bottom: 23rem;
+}
+.account-detail__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.account-detail__change {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4.8rem;
+  max-width: 77.4rem;
+}
+.account-detail__change-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3.6rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.account-detail__change-label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-width: 36rem;
+}
+.account-detail__input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  padding-bottom: 0.8rem;
+  border-bottom: 0.2rem solid #fff;
+}
+.account-detail__input.text {
+  text-align: left;
+}
+.account-detail__input::-webkit-input-placeholder {
+  text-align: left;
+}
+.account-detail__input::-moz-placeholder {
+  text-align: left;
+}
+.account-detail__input:-ms-input-placeholder {
+  text-align: left;
+}
+.account-detail__input::-ms-input-placeholder {
+  text-align: left;
+}
+.account-detail__input::placeholder {
+  text-align: left;
+}
+.account-detail__password {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4.8rem;
+  max-width: 36rem;
+}
+.account-detail__password-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3.6rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.account-detail__password-label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-width: 36rem;
+}
+
+@media (max-width: 48em) {
+  .personal-account {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    background-image: url(../../img/webp/personal-account-bg-mob.webp);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+    overflow: hidden;
+  }
+  .account-information {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 69.8rem;
+    margin: 0 auto;
+    padding-top: 9.6rem;
+  }
+  .account-information__inner {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3.2rem;
+    margin-bottom: 30.4rem;
+  }
+  .account-card {
+    position: relative;
+    width: 100%;
+    min-height: 36.4rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 6rem;
+    border: 0.4rem solid rgba(255, 255, 255, 0.5);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(2.14%, rgba(255, 255, 255, 0.1)), to(rgba(189, 193, 192, 0.1)));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 2.14%, rgba(189, 193, 192, 0.1) 100%);
+    -webkit-box-shadow: 0rem -12rem 30rem 0rem #feffcd inset;
+            box-shadow: 0rem -12rem 30rem 0rem #feffcd inset;
+    -webkit-backdrop-filter: blur(4rem);
+            backdrop-filter: blur(4rem);
+  }
+  .account-card--order {
+    border-radius: 6rem;
+    border: 0.4rem solid rgba(255, 255, 255, 0.5);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(4.62%, #fff), to(rgba(255, 255, 255, 0.06)));
+    background: linear-gradient(180deg, #fff 4.62%, rgba(255, 255, 255, 0.06) 100%);
+    -webkit-backdrop-filter: blur(4rem);
+            backdrop-filter: blur(4rem);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .account-card--order .account-card__wrapper {
+    gap: 3.2rem;
+    height: 100%;
+  }
+  .account-card--order .account-card__name {
+    width: 100%;
+  }
+  .account-card__wrapper {
+    width: 100%;
+    height: 100%;
+    min-height: 36.4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5.6rem;
+  }
+  .account-card__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .account-card__name {
+    font-size: 3rem;
+    letter-spacing: 0.9rem;
+  }
+  .account-card__count {
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 0.9rem;
+    margin-bottom: 0.8rem;
+  }
+  .account-card__profile {
+    font-size: 6rem;
+    letter-spacing: 1.8rem;
+  }
+  .account-card__symbol {
+    position: absolute;
+    left: 50%;
+    top: -8.4rem;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .account-card__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .account-card__main li {
+    font-size: 3rem;
+  }
+  .account-card__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .account-card__result span {
+    margin-right: 3.6rem;
+    font-size: 3rem;
+    letter-spacing: 0.9rem;
+  }
+  .account-card__result strong {
+    font-size: 3rem;
+    letter-spacing: 0.9rem;
+  }
+  .underline-btn {
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 0.9rem;
+  }
+  .underline-btn::after {
+    height: 0.2rem;
+  }
+  .account-detail {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 69.8rem;
+    margin: 0 auto;
+    padding-bottom: 30rem;
+  }
+  .account-detail__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30.4rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .account-detail__change {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 8.4rem;
+    max-width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .account-detail__change-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 5.6rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .account-detail__change-label {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    min-width: 66.7rem;
+  }
+  .account-detail__input {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    padding-bottom: 1.6rem;
+    border-bottom: 0.2rem solid #fff;
+  }
+  .account-detail__password {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 8.4rem;
+    max-width: 100%;
+  }
+  .account-detail__password-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 5.6rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .account-detail__password-label {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    min-width: 66.7rem;
   }
 }
 .order {
@@ -2203,602 +2806,6 @@ body {
   text-transform: uppercase;
 }
 
-.personal-account {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 100%;
-  margin: 0;
-  background-image: url(../img/webp/personal-account-bg.webp);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 100%;
-  overflow: hidden;
-}
-
-.account-information {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 160rem;
-  margin: 0 auto;
-  padding-top: 7.7rem;
-}
-.account-information__inner {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 5.3rem;
-  margin-bottom: 13rem;
-}
-.account-card {
-  position: relative;
-  width: 36.1rem;
-  min-height: 44.4rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 5rem;
-  border: 0.2rem solid rgba(255, 255, 255, 0.5);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(2.14%, rgba(255, 255, 255, 0.1)), to(rgba(189, 193, 192, 0.1)));
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 2.14%, rgba(189, 193, 192, 0.1) 100%);
-  -webkit-box-shadow: 0 -6rem 15rem 0 #feffcd inset;
-          box-shadow: 0 -6rem 15rem 0 #feffcd inset;
-  -webkit-backdrop-filter: blur(2rem);
-          backdrop-filter: blur(2rem);
-}
-.account-card--order {
-  border-radius: 5rem;
-  border: 0.2rem solid rgb(255, 255, 255);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(-6.08%, #fff), color-stop(114.08%, rgba(255, 255, 255, 0)));
-  background: linear-gradient(180deg, #fff -6.08%, rgba(255, 255, 255, 0) 114.08%);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-.account-card--order .account-card__wrapper {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  gap: 2.2rem;
-}
-.account-card--order .account-card__name {
-  width: 30.6rem;
-}
-.account-card--order .account-card__count {
-  font-weight: 400;
-}
-.account-card__wrapper {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 5.2rem 2.8rem;
-}
-.account-card__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-.account-card__name {
-  color: #393531;
-  font-size: 1.8rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.54rem;
-  text-transform: uppercase;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-.account-card__count {
-  color: #393531;
-  font-size: 1.8rem;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  letter-spacing: 0.54rem;
-  text-transform: uppercase;
-  margin-bottom: 0.4rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-.account-card__profile {
-  color: #393531;
-  text-align: center;
-  font-size: 4rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 1.2rem;
-  text-transform: uppercase;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-bottom: 3.6rem;
-}
-.account-card__symbol {
-  position: absolute;
-  left: 50%;
-  top: -6.6rem;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-.account-card__top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-.account-card__main {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-.account-card__main li {
-  color: #393531;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-size: 1.8rem;
-  line-height: normal;
-  list-style-type: none;
-}
-.account-card__bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-.account-card__result span {
-  margin-right: 1.8rem;
-  color: #393531;
-  font-size: 1.8rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.54rem;
-}
-.account-card__result strong {
-  color: #393531;
-  font-size: 1.8rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.54rem;
-}
-.account-card__result strong b {
-  font-weight: 700;
-}
-
-.underline-btn {
-  cursor: pointer;
-  position: relative;
-  color: #393531;
-  text-align: center;
-  font-size: 1.8rem;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  letter-spacing: 0.54rem;
-  text-transform: uppercase;
-}
-.underline-btn::after {
-  content: "";
-  width: 100%;
-  height: 0.1rem;
-  background-color: #393531;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  -webkit-transition: width 0.2s linear;
-  transition: width 0.2s linear;
-}
-.underline-btn:hover::after {
-  -webkit-transition: width 0.2s linear;
-  transition: width 0.2s linear;
-  width: 0;
-}
-
-.account-detail {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 160rem;
-  margin: 0 auto;
-  padding-bottom: 23rem;
-}
-.account-detail__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 5.5rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-.account-detail__change {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 4.8rem;
-  max-width: 77.4rem;
-}
-.account-detail__change-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 3.6rem;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-.account-detail__change-label {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  min-width: 36rem;
-}
-.account-detail__input {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 100%;
-  text-align: left;
-  padding-bottom: 0.8rem;
-  border-bottom: 0.2rem solid #fff;
-}
-.account-detail__input.text {
-  text-align: left;
-}
-.account-detail__input::-webkit-input-placeholder {
-  text-align: left;
-}
-.account-detail__input::-moz-placeholder {
-  text-align: left;
-}
-.account-detail__input:-ms-input-placeholder {
-  text-align: left;
-}
-.account-detail__input::-ms-input-placeholder {
-  text-align: left;
-}
-.account-detail__input::placeholder {
-  text-align: left;
-}
-.account-detail__password {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 4.8rem;
-  max-width: 36rem;
-}
-.account-detail__password-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 3.6rem;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-.account-detail__password-label {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  min-width: 36rem;
-}
-
-@media (max-width: 48em) {
-  .personal-account {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    width: 100%;
-    margin: 0;
-    background-image: url(../../img/webp/personal-account-bg-mob.webp);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 100%;
-    overflow: hidden;
-  }
-  .account-information {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    width: 69.8rem;
-    margin: 0 auto;
-    padding-top: 9.6rem;
-  }
-  .account-information__inner {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 3.2rem;
-    margin-bottom: 30.4rem;
-  }
-  .account-card {
-    position: relative;
-    width: 100%;
-    min-height: 36.4rem;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    border-radius: 6rem;
-    border: 0.4rem solid rgba(255, 255, 255, 0.5);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(2.14%, rgba(255, 255, 255, 0.1)), to(rgba(189, 193, 192, 0.1)));
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 2.14%, rgba(189, 193, 192, 0.1) 100%);
-    -webkit-box-shadow: 0rem -12rem 30rem 0rem #feffcd inset;
-            box-shadow: 0rem -12rem 30rem 0rem #feffcd inset;
-    -webkit-backdrop-filter: blur(4rem);
-            backdrop-filter: blur(4rem);
-  }
-  .account-card--order {
-    border-radius: 6rem;
-    border: 0.4rem solid rgba(255, 255, 255, 0.5);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(4.62%, #fff), to(rgba(255, 255, 255, 0.06)));
-    background: linear-gradient(180deg, #fff 4.62%, rgba(255, 255, 255, 0.06) 100%);
-    -webkit-backdrop-filter: blur(4rem);
-            backdrop-filter: blur(4rem);
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-  .account-card--order .account-card__wrapper {
-    gap: 3.2rem;
-    height: 100%;
-  }
-  .account-card--order .account-card__name {
-    width: 100%;
-  }
-  .account-card__wrapper {
-    width: 100%;
-    height: 100%;
-    min-height: 36.4rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 5.6rem;
-  }
-  .account-card__info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  .account-card__name {
-    font-size: 3rem;
-    letter-spacing: 0.9rem;
-  }
-  .account-card__count {
-    font-size: 3rem;
-    font-weight: 400;
-    letter-spacing: 0.9rem;
-    margin-bottom: 0.8rem;
-  }
-  .account-card__profile {
-    font-size: 6rem;
-    letter-spacing: 1.8rem;
-  }
-  .account-card__symbol {
-    position: absolute;
-    left: 50%;
-    top: -8.4rem;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  .account-card__top {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  .account-card__main li {
-    font-size: 3rem;
-  }
-  .account-card__bottom {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  .account-card__result span {
-    margin-right: 3.6rem;
-    font-size: 3rem;
-    letter-spacing: 0.9rem;
-  }
-  .account-card__result strong {
-    font-size: 3rem;
-    letter-spacing: 0.9rem;
-  }
-  .underline-btn {
-    font-size: 3rem;
-    font-weight: 400;
-    letter-spacing: 0.9rem;
-  }
-  .underline-btn::after {
-    height: 0.2rem;
-  }
-  .account-detail {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    width: 69.8rem;
-    margin: 0 auto;
-    padding-bottom: 30rem;
-  }
-  .account-detail__inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 30.4rem;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  .account-detail__change {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 8.4rem;
-    max-width: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .account-detail__change-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 5.6rem;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .account-detail__change-label {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    min-width: 66.7rem;
-  }
-  .account-detail__input {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    width: 100%;
-    text-align: left;
-    padding-bottom: 1.6rem;
-    border-bottom: 0.2rem solid #fff;
-  }
-  .account-detail__password {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 8.4rem;
-    max-width: 100%;
-  }
-  .account-detail__password-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 5.6rem;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .account-detail__password-label {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    min-width: 66.7rem;
-  }
-}
 .product {
   width: 100%;
   background-image: url(../img/webp/product-bg.webp);
@@ -6624,5 +6631,152 @@ body {
 @media (min-width: 48em) {
   .requires-slide-ceremony__list-item {
     font-size: 1.8rem;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2010;
+  width: 100%;
+  height: 100vh;
+}
+.modal.active {
+  display: block;
+}
+.modal-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+.modal-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+.modal-exit.link {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  gap: 1.4rem;
+}
+.modal-exit.link .link__arrow-icon {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+.modal-content {
+  display: none;
+  visibility: hidden;
+}
+.modal-content.active {
+  display: block;
+  visibility: visible;
+}
+
+.map-modal__content {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 10.5rem 16.1rem;
+}
+.map-modal__form {
+  max-width: 36rem;
+}
+.map-modal__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8rem;
+}
+.map-modal__title {
+  margin-bottom: 6.4rem;
+}
+.map-modal__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 21rem;
+}
+.map-modal__fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.map-modal__fields .order__delivery-form-field.select-item.select-change {
+  border-bottom: 0.1rem solid #393531;
+}
+.map-modal__fields .order__delivery-form-field {
+  border-bottom: 0.1rem solid #393531;
+}
+.map-modal__underline-btn {
+  margin-top: 6.4rem;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.48rem;
+}
+.map-modal__underline-btn::after {
+  bottom: -0.5rem;
+}
+.map-modal__map {
+  width: 82.8rem;
+  height: 82.8rem;
+}
+.map-modal__map .contacts-box__map {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.map-modal__btn.link {
+  gap: 3rem;
+}
+.map-modal__btn.link .link__link-bg svg path {
+  fill: #393531;
+}
+.map-modal__btn.link span {
+  color: #fff;
+}
+.map-modal__btn.link .link__arrow-icon .icon-circle {
+  stroke: #fff;
+}
+.map-modal__btn.link .link__arrow-icon .icon-arrow {
+  fill: #fff;
+}
+
+@media (max-width: 48em) {
+  .modal-content {
+    display: none;
+    visibility: hidden;
+  }
+  .modal-content.active {
+    display: block;
+    visibility: visible;
   }
 }

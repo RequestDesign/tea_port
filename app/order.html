@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./css/style.min.css" />
         <script src="https://unpkg.com/imask"></script>
+        <script
+            src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=cb93da52-9741-4ffe-86ea-93a91ce99a1c"
+            type="text/javascript"
+        ></script>
         <title>TEAPORT - Доставка и оплата</title>
     </head>
     <body>
@@ -23,9 +27,19 @@
                     </ul>
 
                     <a href="#" class="order__bar-menu-button">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="10" cy="10" r="10" transform="matrix(-1 0 0 1 20 0)" fill="#393531"/>
-                            <path d="M11.8938 9.71448L8.62683 6.1181C8.48348 5.96063 8.25123 5.96063 8.10751 6.1181C7.96416 6.27556 7.96416 6.53131 8.10751 6.68877L11.1153 9.9998L8.10788 13.3108C7.96452 13.4683 7.96452 13.724 8.10788 13.8819C8.25123 14.0394 8.48384 14.0394 8.6272 13.8819L11.8942 10.2855C12.0353 10.1297 12.0353 9.86991 11.8938 9.71448Z" fill="white" stroke="white"/>
+                        <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <circle cx="10" cy="10" r="10" transform="matrix(-1 0 0 1 20 0)" fill="#393531" />
+                            <path
+                                d="M11.8938 9.71448L8.62683 6.1181C8.48348 5.96063 8.25123 5.96063 8.10751 6.1181C7.96416 6.27556 7.96416 6.53131 8.10751 6.68877L11.1153 9.9998L8.10788 13.3108C7.96452 13.4683 7.96452 13.724 8.10788 13.8819C8.25123 14.0394 8.48384 14.0394 8.6272 13.8819L11.8942 10.2855C12.0353 10.1297 12.0353 9.86991 11.8938 9.71448Z"
+                                fill="white"
+                                stroke="white"
+                            />
                         </svg>
                     </a>
 
@@ -68,7 +82,6 @@
                                 />
                             </svg>
                         </a>
-
                         <h1 class="order__heading-title title">оформление заказа</h1>
                     </div>
 
@@ -76,7 +89,6 @@
                         <div class="order__content-wrapper">
                             <div class="order__contacts">
                                 <h2 class="order__contacts-title title">контакты</h2>
-
                                 <ul class="order__contacts-fields">
                                     <li class="order__contacts-field">
                                         <label for="name">
@@ -100,7 +112,6 @@
                                     </li>
                                 </ul>
                             </div>
-
                             <div class="order__delivery">
                                 <div class="order__delivery-heading">
                                     <h3 class="order__delivery-title title">доставка</h3>
@@ -110,7 +121,6 @@
                                         <span>Доставить другому человеку</span>
                                     </label>
                                 </div>
-
                                 <div data-tabs data-tabs-index="0" class="order__delivery-tabs _tabs-init">
                                     <ul data-tabs-titles class="order__delivery-placements">
                                         <li data-tabs-title class="order__delivery-placement tab _active">
@@ -142,7 +152,6 @@
                                             <span class="order__delivery-placement-subtitle"> 500 ₽ </span>
                                         </li>
                                     </ul>
-
                                     <div data-tabs-body class="order__delivery-tabs-content select-close">
                                         <div class="order__delivery-tab-body" data-tabs-item="">
                                             <form action="#">
@@ -153,7 +162,6 @@
                                                         <span class="text-strong select-value"
                                                             >выбрать город</span
                                                         >
-
                                                         <div class="order__delivery-form-field-icon">
                                                             <svg
                                                                 width="20"
@@ -170,7 +178,6 @@
                                                                 />
                                                             </svg>
                                                         </div>
-
                                                         <ul class="order__delivery-form-field-popup">
                                                             <li class="text select-target active">любое</li>
                                                             <li class="text select-target">черный</li>
@@ -250,10 +257,10 @@
                                                         </label>
                                                     </li>
                                                 </ul>
-
                                                 <button
-                                                    type="submit"
+                                                    type="button"
                                                     class="order__delivery-form-button link"
+                                                    data-modal="map"
                                                 >
                                                     <span>карта</span>
 
@@ -374,8 +381,9 @@
                                                 </ul>
 
                                                 <button
-                                                    type="submit"
+                                                    type="button"
                                                     class="order__delivery-form-button link"
+                                                    data-modal="map"
                                                 >
                                                     <span>карта</span>
 
@@ -499,8 +507,9 @@
                                                 </ul>
 
                                                 <button
-                                                    type="submit"
+                                                    type="button"
                                                     class="order__delivery-form-button link"
+                                                    data-modal="map"
                                                 >
                                                     <span>карта</span>
 
@@ -621,8 +630,9 @@
                                                 </ul>
 
                                                 <button
-                                                    type="submit"
+                                                    type="button"
                                                     class="order__delivery-form-button link"
+                                                    data-modal="map"
                                                 >
                                                     <span>карта</span>
 
@@ -771,6 +781,6 @@
                 </section>
             </div>
         </main>
-        @@include('./template/footer.html')
+        @@include('./template/modal-map.html') @@include('./template/footer.html')
     </body>
 </html>
