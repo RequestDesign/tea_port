@@ -19,8 +19,6 @@ const tabs = () => {
         const tabsBlockIndex = tabsBlock.dataset.tabsIndex;
         const tabsActiveHashBlock = tabsActiveHash[0] == tabsBlockIndex;
 
-        console.log(tabsBlock);
-
         if (tabsActiveHashBlock) {
             const tabsActiveTitle = tabsBlock.querySelector('[data-tabs-titles]>._active');
             tabsActiveTitle ? tabsActiveTitle.classList.remove('_active') : null;

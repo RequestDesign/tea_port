@@ -1,112 +1,114 @@
 .products-list {
-	display: flex;
-	flex-direction: column;
-	gap: 10rem;
-	padding-top: 24.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    padding-top: 24.4rem;
 
-	&__head {
-		display: flex;
-		gap: 5.5rem;
-		align-items: center;
-		width: -webkit-fit-content;
-		width: -moz-fit-content;
-		width: fit-content;
-		border-radius: 90rem;
-		background: rgba(255, 255, 255, 0.2);
-		padding: 4.4rem 6rem;
-	}
-	&__category {
-		width: 34.1rem - 5.5rem;
-		position: relative;
-		display: flex;
-		height: -webkit-fit-content;
-		height: -moz-fit-content;
-		height: fit-content;
-		flex-direction: column;
-		gap: 1.8rem;
-		align-items: flex-start;
+    &__head {
+        display: flex;
+        gap: 5.5rem;
+        align-items: center;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        border-radius: 90rem;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 4.4rem 6rem;
+    }
+    &__category {
+        width: 34.1rem - 5.5rem;
+        position: relative;
+        display: flex;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        flex-direction: column;
+        gap: 1.8rem;
+        align-items: flex-start;
 
-		.text-strong {
-			cursor: pointer;
-		}
+        .text-strong {
+            cursor: pointer;
+        }
 
-		&:not(:last-child) {
-			padding-right: 5.5rem;
-			border-right: 0.2rem solid #fff;
-		}
+        &:not(:last-child) {
+            padding-right: 5.5rem;
+            border-right: 0.2rem solid #fff;
+        }
 
-		&.active {
-			.products-list__category-icon {
-				transform: rotate(0);
-			}
-			.products-list__popup {
-				opacity: 1;
-				transform: translate(0);
+        &.active {
+            .products-list__category-icon {
+                transform: rotate(0);
+            }
+            .products-list__popup {
+                opacity: 1;
+                transform: translate(0);
 
-				.text {
-					pointer-events: all;
-				}
-			}
-		}
-		&:last-child {
-			.products-list__category-icon {
-				right: 0rem;
-			}
-		}
+                .text {
+                    pointer-events: all;
+                }
+            }
+        }
+        &:last-child {
+            .products-list__category-icon {
+                right: 0rem;
+            }
+        }
 
-		&-icon {
-			position: absolute;
-			right: 5.5rem;
-			top: 1.8rem;
-			transform: rotate(-180deg);
-			transition: transform 0.4s;
-		}
-	}
-	&__popup {
-		position: absolute;
-		top: 130%;
-		left: -5.5rem;
-		padding: 4.4rem 5.6rem;
-		border-radius: 5rem;
-		background: #fff;
-		width: 28.5rem;
-		display: flex;
-		flex-direction: column;
-		gap: 3.2rem;
-		list-style-type: none;
-		align-items: flex-start;
-		transform: translateY(2rem);
-		opacity: 0;
-		transition: transform 0.4s, opacity 0.4s;
-		pointer-events: none;
-		z-index: 5;
+        &-icon {
+            position: absolute;
+            right: 5.5rem;
+            top: 1.8rem;
+            transform: rotate(-180deg);
+            transition: transform 0.4s;
+        }
+    }
+    &__popup {
+        position: absolute;
+        top: 130%;
+        left: -5.5rem;
+        padding: 4.4rem 5.6rem;
+        border-radius: 5rem;
+        background: #fff;
+        width: 28.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+        list-style-type: none;
+        align-items: flex-start;
+        transform: translateY(2rem);
+        opacity: 0;
+        transition:
+            transform 0.4s,
+            opacity 0.4s;
+        pointer-events: none;
+        z-index: 5;
 
-		.text {
-			cursor: pointer;
-			pointer-events: none;
-		}
+        .text {
+            cursor: pointer;
+            pointer-events: none;
+        }
 
-		.text.active {
-			font-weight: 700;
-		}
-	}
-	&__content {
-		height: 171.2rem;
-		width: 160rem;
-		overflow: hidden;
+        .text.active {
+            font-weight: 700;
+        }
+    }
+    &__content {
+        height: 171.2rem;
+        width: 160rem;
+        overflow: hidden;
 
-		.pag {
-			width: -webkit-fit-content;
-			width: -moz-fit-content;
-			width: fit-content;
-			margin: 0 auto;
-			margin-top: 8rem;
-		}
-		.swiper-pagination {
-			position: static;
-			width: -webkit-fit-content;
-			width: -moz-fit-content;
-			width: fit-content;
-		}
-	}
+        .pag {
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
+            width: fit-content;
+            margin: 0 auto;
+            margin-top: 8rem;
+        }
+        .swiper-pagination {
+            position: static;
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
+            width: fit-content;
+        }
+    }
 }

@@ -85,29 +85,52 @@
                         <h1 class="order__heading-title title">оформление заказа</h1>
                     </div>
 
-                    <div class="order__content">
+                    <form data-dev action="#" class="order__content">
                         <div class="order__content-wrapper">
                             <div class="order__contacts">
                                 <h2 class="order__contacts-title title">контакты</h2>
                                 <ul class="order__contacts-fields">
                                     <li class="order__contacts-field">
-                                        <label for="name">
-                                            <input type="text" id="name" placeholder="Ваше имя" />
+                                        <label for="name" class="inp">
+                                            <input
+                                                data-validate
+                                                data-required
+                                                type="text"
+                                                id="name"
+                                                placeholder="Ваше имя"
+                                            />
                                         </label>
                                     </li>
                                     <li class="order__contacts-field">
-                                        <label for="surname">
-                                            <input type="text" id="surname" placeholder="Фамилия" />
+                                        <label for="surname" class="inp">
+                                            <input
+                                                data-validate
+                                                data-required
+                                                type="text"
+                                                id="surname"
+                                                placeholder="Фамилия"
+                                            />
                                         </label>
                                     </li>
                                     <li class="order__contacts-field">
-                                        <label for="phone">
-                                            <input type="tel" id="tel" placeholder="ваш телефон" />
+                                        <label class="inp">
+                                            <input
+                                                data-validate
+                                                data-required
+                                                type="tel"
+                                                data-tel-mask
+                                                placeholder="ваш телефон"
+                                            />
                                         </label>
                                     </li>
                                     <li class="order__contacts-field">
-                                        <label for="email">
-                                            <input type="email" id="email" placeholder="e-mail" />
+                                        <label class="inp">
+                                            <input
+                                                data-validate
+                                                data-required
+                                                type="email"
+                                                placeholder="e-mail"
+                                            />
                                         </label>
                                     </li>
                                 </ul>
@@ -154,7 +177,7 @@
                                     </ul>
                                     <div data-tabs-body class="order__delivery-tabs-content select-close">
                                         <div class="order__delivery-tab-body" data-tabs-item="">
-                                            <form action="#">
+                                            <div action="#">
                                                 <ul class="order__delivery-form-fields">
                                                     <li
                                                         class="order__delivery-form-field select-item select-change"
@@ -296,10 +319,10 @@
                                                         </svg>
                                                     </div>
                                                 </button>
-                                            </form>
+                                            </div>
                                         </div>
                                         <div class="order__delivery-tab-body" data-tabs-item="">
-                                            <form action="#">
+                                            <div>
                                                 <ul class="order__delivery-form-fields">
                                                     <li
                                                         class="order__delivery-form-field select-item select-change"
@@ -419,10 +442,10 @@
                                                         </svg>
                                                     </div>
                                                 </button>
-                                            </form>
+                                            </div>
                                         </div>
                                         <div class="order__delivery-tab-body" data-tabs-item="">
-                                            <form action="#">
+                                            <div>
                                                 <ul class="order__delivery-form-fields">
                                                     <li
                                                         class="order__delivery-form-field select-item select-change"
@@ -545,10 +568,10 @@
                                                         </svg>
                                                     </div>
                                                 </button>
-                                            </form>
+                                            </div>
                                         </div>
                                         <div class="order__delivery-tab-body" data-tabs-item="">
-                                            <form action="#">
+                                            <div>
                                                 <ul class="order__delivery-form-fields">
                                                     <li
                                                         class="order__delivery-form-field select-item select-change"
@@ -668,7 +691,7 @@
                                                         </svg>
                                                     </div>
                                                 </button>
-                                            </form>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -777,10 +800,10 @@
                                 </div>
                             </button>
                         </aside>
-                    </div>
+                    </form>
                 </section>
             </div>
         </main>
-        @@include('./template/modal-map.html') @@include('./template/footer.html')
+        @@include('./template/footer.html') @@include('./template/modals.html')
     </body>
 </html>

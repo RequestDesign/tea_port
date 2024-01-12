@@ -1,19 +1,158 @@
+html.lock {
+    overflow: hidden;
+    touch-action: none;
+}
+
+html.lock {
+    overflow: hidden;
+    touch-action: none;
+}
+
 .rub {
-  font-family: Circe;
-  font-weight: 700;
+    font-family: Circe;
+    font-weight: 700;
+    font-family: Circe;
+    font-weight: 700;
 }
 
 .pb18 {
-  &.section {
-    padding-bottom: 18rem;
-    @media (max-width: 48em) {
-      padding-bottom: 12rem;
+    &.section {
+        padding-bottom: 18rem;
+        @media (max-width: 48em) {
+            padding-bottom: 12rem;
+        }
     }
-  }
+    &.section {
+        padding-bottom: 18rem;
+        @media (max-width: 48em) {
+            padding-bottom: 12rem;
+        }
+    }
+}
+
+.tl {
+    font-size: 4rem;
+    letter-spacing: 1.2rem;
+    text-transform: uppercase;
+    color: #393531;
+    @media (max-width: 48em) {
+        font-size: 5rem;
+    }
+}
+
+.tl {
+    font-size: 4rem;
+    letter-spacing: 1.2rem;
+    text-transform: uppercase;
+    color: #393531;
+    @media (max-width: 48em) {
+        font-size: 5rem;
+    }
 }
 
 .mobile-only {
-  @media (min-width: 48em) {
-    display: none;
-  }
+    @media (min-width: 48em) {
+        display: none;
+    }
+    @media (min-width: 48em) {
+        display: none;
+    }
+}
+
+.inp input {
+    padding-right: 6rem;
+    transition: border-bottom 0.3s ease;
+    @media (min-width: 48em) {
+        padding-right: 4rem;
+    }
+}
+.inp._form-error input {
+    border-bottom: 0.2rem solid #c87575;
+}
+.inp {
+    position: relative;
+    &__show-pass {
+        position: absolute;
+        top: 1rem;
+        right: 0;
+        display: inline-flex;
+        cursor: pointer;
+        ._show & {
+            top: 0.6rem;
+        }
+        &::after {
+            content: '';
+            width: 3rem;
+            height: 1rem;
+            background-image: url('../img/icon/show-pass.svg');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            ._show & {
+                height: 1.5rem;
+                background-image: url('../img/icon/hide-pass.svg');
+                @media (max-width: 48em) {
+                    height: 2.5rem;
+                }
+            }
+            @media (max-width: 48em) {
+                width: 4rem;
+                height: 2rem;
+            }
+        }
+    }
+    input {
+        .modal & {
+            padding-bottom: 0.7rem;
+            &:not(&._form-error) {
+                border-bottom: 0.2rem solid #393531;
+            }
+            @media (max-width: 48em) {
+                padding-bottom: 1.4rem;
+            }
+        }
+    }
+}
+
+.input-row {
+    position: relative;
+    &._error {
+        .input-row__hint {
+            display: block;
+        }
+    }
+
+    // .input-row__group
+
+    &__group {
+        display: flex;
+        justify-content: center;
+        column-gap: 4.3rem;
+    }
+
+    // .input-row__input
+
+    &__input {
+        flex: 0 0 5.8rem;
+        @media (max-width: 48em) {
+            flex: 0 0 7.8rem;
+        }
+    }
+
+    // .input-row__field
+
+    &__field {
+        padding-bottom: 0.7rem;
+        display: block;
+        width: 100%;
+        border-bottom: 0.2rem solid #393531;
+        text-align: center;
+        @media (max-width: 48em) {
+            padding-bottom: 1.4rem;
+        }
+    }
+}
+
+.select-target {
+    cursor: pointer;
 }
