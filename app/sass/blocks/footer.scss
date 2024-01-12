@@ -1,81 +1,84 @@
 .footer {
-	padding-top: 12rem;
-	padding-bottom: 14rem;
+    padding-top: 12rem;
+    padding-bottom: 14rem;
 
-	&__box {
-		display: flex;
-		flex-direction: column;
-		width: 64.1rem;
-		text-align: center;
-		margin: 0 auto;
-		align-items: center;
-	}
+    &__box {
+        display: flex;
+        flex-direction: column;
+        width: 64.1rem;
+        text-align: center;
+        margin: 0 auto;
+        align-items: center;
+    }
 
-	&__title {
-		display: flex;
-		flex-direction: column;
-		margin-top: 7.9rem;
-		margin-bottom: 5.7rem;
-		position: relative;
+    &__title {
+        display: flex;
+        flex-direction: column;
+        margin-top: 7.9rem;
+        margin-bottom: 5.7rem;
+        position: relative;
 
-		.text {
-			z-index: 2;
-		}
+        .text {
+            z-index: 2;
+        }
 
-		.text-strong {
-			z-index: 2;
-		}
+        .text-strong {
+            z-index: 2;
+        }
 
-		.title {
-			margin-top: 2.2rem;
-			z-index: 2;
-		}
+        .title {
+            margin-top: 2.2rem;
+            z-index: 2;
+        }
 
-		.logo {
-			top: auto;
-			bottom: 0rem;
-			right: -3.5rem;
-		}
-	}
+        .logo {
+            top: auto;
+            bottom: 0rem;
+            right: -3.5rem;
+        }
+    }
 
-	&__body {
-		display: flex;
-		flex-direction: column;
-		margin-bottom: 5.1rem;
+    &__body {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5.1rem;
 
-		.text-price {
-			margin-top: 1.9rem;
-		}
-	}
+        .text-price {
+            margin-top: 1.9rem;
+        }
+    }
 
-	@media (max-width: 48em) {
-		padding-top: 0;
-		padding-bottom: 30rem;
+    @media (max-width: 48em) {
+        padding-top: 0;
+        padding-bottom: 25rem;
+        .mob-p & {
+            padding-top: 15rem;
+        }
 
-		.logo {
-			width: 9.4rem*2;
-			height: 16.9rem*2;
-			bottom: 6rem;
-			right: -8.5rem;
-		}
+        .logo {
+            width: 9.4rem * 2;
+            height: 16.9rem * 2;
+            bottom: 6rem;
+            right: -8.5rem;
+        }
 
-		.footer {
-			&__title {
-				margin-top: 20rem;
-				margin-bottom: 4.8rem;
+        .footer {
+            &__title {
+                margin-top: 20rem;
+                margin-bottom: 4.8rem;
 
-				.title {
-					margin-top: 4.4rem;
-				}
-			}
+                .title {
+                    margin-top: 4.4rem;
+                }
+            }
 
-			&__body {
-				margin-bottom: 7rem;
+            &__body {
+                margin-bottom: 7rem;
 
-				.text-price {
-					margin-top: 2.8rem
-				}
-			}
-		}
-	}
+                .text-price {
+                    margin-top: 2.8rem;
+                }
+            }
+        }
+    }
 }

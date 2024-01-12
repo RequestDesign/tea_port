@@ -429,7 +429,6 @@ body::after {
             }
             &__inner {
                 max-width: 64rem;
-                gap: 10rem;
                 flex-direction: column;
             }
         }
@@ -437,6 +436,8 @@ body::after {
             &__container {
                 box-sizing: border-box;
                 padding: 0 4.4rem;
+                padding-bottom: 10rem;
+                background-color: #ffffff;
             }
             &__map {
                 box-sizing: border-box;
