@@ -25,6 +25,7 @@ body::after {
     bottom: 0;
     right: 0;
     padding: 3rem 1rem;
+    display: flex;
     visibility: hidden;
     pointer-events: none;
     transition: visibility 0.8s ease;
@@ -37,6 +38,16 @@ body::after {
             visibility: visible;
             transform: scale(1);
         }
+        &.map-modal {
+            opacity: 1;
+        }
+    }
+    &.map-modal {
+        padding: 0;
+        opacity: 0;
+        transition:
+            visibility 0.5s ease,
+            opacity 0.5s ease;
     }
 
     // .modal__wrapper
@@ -65,6 +76,11 @@ body::after {
         .lock & {
             visibility: visible;
         }
+        .map-modal & {
+            border-radius: 0;
+            transform: scale(1);
+            background-color: #ffffff;
+        }
         @media (min-width: 48em) {
             max-width: 56rem;
             .restore-pass-modal &,
@@ -83,6 +99,11 @@ body::after {
             }
             .pass-code-modal_has-text & {
                 padding-bottom: 11rem;
+            }
+            .map-modal & {
+                width: 100%;
+                height: 100%;
+                max-width: none;
             }
         }
     }
@@ -109,6 +130,12 @@ body::after {
     &__inner {
         display: flex;
         flex-direction: column;
+        .map-modal & {
+            margin: 0 auto;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 155.4rem;
+        }
     }
 
     // .modal__head
@@ -281,5 +308,211 @@ body::after {
     // .modal-form__btn
 
     &__btn {
+    }
+}
+
+// --------------------------------------------------------------------------
+
+.map-modal {
+    .ymaps-2-1-79-events-pane {
+        border-radius: 50%;
+    }
+    &__exit {
+        flex-direction: row-reverse;
+        span {
+            margin-left: 2rem;
+            margin-right: 0;
+            margin-top: 0.2rem;
+        }
+        &.link {
+            .link__link-bg svg path {
+                fill: #fff;
+            }
+            span {
+                color: #393531;
+            }
+            .link__arrow-icon {
+                transform: rotate(180deg) translateX(-0.5rem);
+            }
+            .icon-circle {
+                stroke: #393531;
+            }
+            .icon-arrow {
+                fill: #393531;
+            }
+        }
+    }
+    &__content {
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        padding: 10.5rem 16.1rem;
+    }
+    &__form {
+        max-width: 36rem;
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 8rem;
+    }
+    &__title {
+        margin-bottom: 6.4rem;
+    }
+    &__wrapper {
+        display: flex;
+        gap: 21rem;
+    }
+    &__fields {
+        display: flex;
+        flex-direction: column;
+        .order__delivery-form-field-popup {
+            box-shadow: 1.4rem 2rem 16rem 0 rgba(51, 52, 54, 0.18);
+        }
+        .order__delivery-form-field.select-item.select-change {
+            border-bottom: 0.1rem solid #393531;
+        }
+        .order__delivery-form-field {
+            border-bottom: 0.1rem solid #393531;
+        }
+    }
+    &__underline-btn {
+        margin-top: 6.4rem;
+
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.48rem;
+        &::after {
+            bottom: -0.5rem;
+        }
+    }
+    &__map {
+        width: 82.8rem;
+        height: 82.8rem;
+
+        .contacts-box__map {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+    &__btn.link {
+        gap: 3rem;
+        .link__link-bg svg path {
+            fill: #393531;
+        }
+        span {
+            color: #fff;
+        }
+        .link__arrow-icon {
+            .icon-circle {
+                stroke: #fff;
+            }
+            .icon-arrow {
+                fill: #fff;
+            }
+        }
+    }
+}
+
+@media (max-width: 48em) {
+    .map-modal.modal.modal_show {
+        overflow: auto;
+        .modal {
+            &__content {
+                width: 100%;
+                max-width: 100%;
+                height: 100%;
+                padding: 16.8rem 0 0;
+            }
+            &__inner {
+                max-width: 64rem;
+                flex-direction: column;
+            }
+        }
+        .map-modal {
+            &__container {
+                box-sizing: border-box;
+                padding: 0 4.4rem;
+                padding-bottom: 10rem;
+                background-color: #ffffff;
+            }
+            &__map {
+                box-sizing: border-box;
+                width: 100%;
+                max-width: 64rem;
+                max-height: 61.5rem;
+
+                .contacts-box__map {
+                    border-radius: 0;
+                }
+            }
+            &__title {
+                font-size: 5.8rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 1.8rem;
+                text-transform: uppercase;
+
+                margin-bottom: 9.6rem;
+            }
+            &__form {
+                width: 100%;
+                max-width: 100%;
+
+                ~ .underline-btn.map-modal__underline-btn {
+                    margin-top: 10rem;
+                    text-decoration: underline;
+                    font-size: 3rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 120%; /* 20.611px */
+                    letter-spacing: 1rem;
+                    text-align: left;
+                    &::after {
+                        display: none;
+                    }
+                }
+
+                .order__delivery-form-field-popup {
+                    max-height: 34rem;
+                }
+            }
+            &__btn {
+                width: 42.4rem;
+                height: 12.6rem;
+            }
+            &__fields {
+                gap: 4rem;
+                margin-bottom: 9.6rem;
+                li {
+                    margin-bottom: 0;
+                }
+            }
+            &__exit {
+                span {
+                    margin: 0;
+                    margin-left: 2rem;
+                }
+                &.link.modal-exit {
+                    width: 100%;
+                    height: auto;
+                }
+                .link__link-bg {
+                    display: none;
+                }
+                .link__arrow-icon {
+                    width: 7.8rem;
+                    height: 5.5rem;
+                    margin: 0;
+                }
+                .link__arrow-icon .icon-circle {
+                    display: none;
+                }
+            }
+        }
     }
 }

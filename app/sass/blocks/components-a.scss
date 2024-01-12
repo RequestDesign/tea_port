@@ -3,12 +3,25 @@ html.lock {
     touch-action: none;
 }
 
+html.lock {
+    overflow: hidden;
+    touch-action: none;
+}
+
 .rub {
+    font-family: Circe;
+    font-weight: 700;
     font-family: Circe;
     font-weight: 700;
 }
 
 .pb18 {
+    &.section {
+        padding-bottom: 18rem;
+        @media (max-width: 48em) {
+            padding-bottom: 12rem;
+        }
+    }
     &.section {
         padding-bottom: 18rem;
         @media (max-width: 48em) {
@@ -27,7 +40,20 @@ html.lock {
     }
 }
 
+.tl {
+    font-size: 4rem;
+    letter-spacing: 1.2rem;
+    text-transform: uppercase;
+    color: #393531;
+    @media (max-width: 48em) {
+        font-size: 5rem;
+    }
+}
+
 .mobile-only {
+    @media (min-width: 48em) {
+        display: none;
+    }
     @media (min-width: 48em) {
         display: none;
     }
@@ -125,4 +151,8 @@ html.lock {
             padding-bottom: 1.4rem;
         }
     }
+}
+
+.select-target {
+    cursor: pointer;
 }
