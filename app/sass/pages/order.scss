@@ -1,12 +1,13 @@
 .order {
     background-image: url('../img/order/background.svg');
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center bottom;
     background-size: 100%;
-    overflow: hidden;
+
 
     @include small-tablet {
         background-image: url('../img/order/background-mobile.svg');
+        overflow: hidden;
     }
 
     .section {
@@ -582,6 +583,13 @@
                         -webkit-transform 0.4s;
                     pointer-events: none;
 
+                    -ms-overflow-style: none;  /* IE and Edge */
+                    scrollbar-width: none;  /* Firefox */
+
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+
                     li {
                         &.active {
                             font-weight: 700;
@@ -681,13 +689,17 @@
         position: fixed;
         bottom: 0;
         width: 100%;
-        z-index: 10;
+        z-index: 15;
         background: url('../img/order/bar.svg') no-repeat center;
         padding-bottom: 2.2rem;
         background-size: contain;
         height: 21.4rem;
         display: flex;
         flex-direction: column;
+
+        &.--catalog {
+
+        }
 
         &-list {
             display: flex;
@@ -741,9 +753,8 @@
             top: 2rem;
 
             svg {
-                max-width: 4rem;
-                width: 100%;
-                height: 4rem;
+                width: auto;
+                height: auto;
             }
         }
 

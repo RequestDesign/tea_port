@@ -416,14 +416,27 @@ const countrySlider = new Swiper('.country-slider', {
 });
 
 const catalogSlider = new Swiper('.products-list-swiper', {
-  slidesPerView: 4,
-  slidesPerGroup: 4,
-  grid: {
-    rows: 3,
-    fill: 'row',
+  grabCursor: true,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: rem(2),
+      grid: {
+        rows: 6,
+        fill: 'row',
+      },
+    },
+    768: {
+      slidesPerView: 4,
+      slidesPerGroup: 4,
+      spaceBetween: rem(4.8),
+      grid: {
+        rows: 3,
+        fill: 'row',
+      },
+    }
   },
-  spaceBetween: 30,
-
   scrollbar: {
     el: '.pag__scrollbar',
   },
@@ -531,3 +544,40 @@ const articlesSlider = new Swiper('.articles-slider', {
     },
   },
 });
+
+const orderCatalogButton = document.querySelector('.--catalog .order__bar-menu-button');
+const closeMenuButton = document.querySelector('.products-list__filter-controls-close');
+const clearFiltersButton = document.querySelector('.products-list__filter-controls-button');
+
+if (orderCatalogButton) {
+  orderCatalogButton.addEventListener('click', () => {
+    const menu = document.querySelector('.products-list__head');
+    document.documentElement.classList.add('lock');
+
+    menu.classList.add('--active');
+  });
+
+  closeMenuButton.addEventListener('click', () => {
+    const menu = document.querySelector('.products-list__head');
+    document.documentElement.classList.remove('lock');
+
+    menu.classList.remove('--active');
+  });
+
+  clearFiltersButton.addEventListener('click', () => {
+    const categories = document.querySelectorAll('.products-list__category');
+
+    categories.forEach((category) => {
+      const texts = category.querySelectorAll('.text');
+
+      texts.forEach((text) => text.classList.remove('active'));
+
+      const text = category.querySelector('.products-list__popup-wrapper .text');
+      const textContent = text.textContent;
+      const selectValue = category.querySelector('.select-value');
+      selectValue.textContent = textContent;
+
+      text.classList.add('active');
+    })
+  })
+}

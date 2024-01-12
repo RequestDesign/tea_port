@@ -13,6 +13,12 @@
 	}
 	
 	.seo {
-		padding-bottom: 30rem;
+		padding-bottom: 7rem;
+	}
+
+	.catalog-hero__wrapper {
+		@include small-tablet{
+			padding-bottom: 23rem;
+		}
 	}
 }

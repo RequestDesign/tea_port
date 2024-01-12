@@ -11,9 +11,9 @@ html {
 
 body {
     background-color: #ebebeb;
-    &.lock {
+
+    &.locked {
         overflow: hidden;
-        touch-action: none;
     }
 }
 
