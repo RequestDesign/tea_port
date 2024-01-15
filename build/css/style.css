@@ -3295,7 +3295,7 @@ body.locked {
 @media (max-width: 48em) {
   .section {
     width: 70rem;
-    padding-bottom: 30.4rem;
+    padding-bottom: 25rem;
   }
   .section--hero {
     width: 100%;
@@ -3624,6 +3624,12 @@ body.locked {
 .circe {
   font-family: Circe;
   text-transform: lowercase;
+}
+
+@media (max-width: 48em) {
+  section.product-carousel {
+    padding-bottom: 54rem;
+  }
 }
 
 html.lock {
@@ -5044,7 +5050,6 @@ html.lock {
   }
   .hor-slider.country {
     position: relative;
-    padding-bottom: 27.03rem;
   }
   .hor-slider.country .pag {
     position: absolute;
@@ -5085,7 +5090,6 @@ html.lock {
   }
   .hor-slider.popular {
     position: relative;
-    padding-bottom: 23.7rem;
     gap: 7.6rem;
   }
   .hor-slider.popular .pag {
@@ -5176,7 +5180,6 @@ html.lock {
   .hor-slider.our {
     position: relative;
     gap: 6.4rem;
-    padding-bottom: 24rem;
   }
   .hor-slider.our .pag {
     position: absolute;
@@ -5205,7 +5208,6 @@ html.lock {
   .hor-slider.mood {
     position: relative;
     gap: 8rem;
-    padding-bottom: 24rem;
   }
   .hor-slider.mood .pag {
     position: absolute;

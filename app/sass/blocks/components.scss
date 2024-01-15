@@ -270,7 +270,7 @@
 
     @media (max-width: 48em) {
         width: 70rem;
-        padding-bottom: 15.2rem * 2;
+        padding-bottom: 25rem;
 
         &--hero {
             width: 100%;
@@ -582,4 +582,10 @@
 .circe {
     font-family: Circe;
     text-transform: lowercase;
+}
+
+section.product-carousel {
+    @media (max-width: 48em) {
+        padding-bottom: 54rem;
+    }
 }
