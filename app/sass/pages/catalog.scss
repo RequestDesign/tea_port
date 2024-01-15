@@ -1,24 +1,26 @@
 .catalog {
-	margin: 0;
-	width: 100%;
-	background-image: url('../img/webp/catalog-bg.webp');
-	background-repeat: no-repeat;
-	background-position: center top;
-	background-size: 100%;
-	overflow: hidden;
+    margin: 0;
+    width: 100%;
+    background-image: url('../img/webp/catalog-bg.webp');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+    overflow: hidden;
 
-	@media (max-width: 48em) {
-		background-image: url('../img/webp/catalog-bg-mob.webp');
-		background-size: 100% 342.8rem * 2;
-	}
-	
-	.seo {
-		padding-bottom: 7rem;
-	}
+    @media (max-width: 48em) {
+        margin-bottom: 18rem;
+        background-image: url('../img/webp/catalog-bg-mob.webp');
+        background-size: 100% 100%;
+        background-position: center bottom;
+    }
 
-	.catalog-hero__wrapper {
-		@include small-tablet{
-			padding-bottom: 23rem;
-		}
-	}
+    .seo {
+        padding-bottom: 7rem;
+    }
+
+    .catalog-hero__wrapper {
+        @include small-tablet {
+            padding-bottom: 23rem;
+        }
+    }
 }

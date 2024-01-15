@@ -114,7 +114,7 @@
 
     <div class="section burger-menu__nav select">
         <div class="burger-menu__nav-item-wrapper">
-            <a href="/" class="burger-menu__nav-link select-item active">
+            <a href="#" class="burger-menu__nav-link select-item active">
                 <strong class="text-strong">каталог</strong>
                 <span class="burger-menu__status-icon">
                     <svg
@@ -263,7 +263,7 @@
             </span>
         </a>
 
-        <a href="/" class="burger-menu__nav-link select-item">
+        <a href="#" class="burger-menu__nav-link select-item">
             <strong class="text-strong">контакты</strong>
             <span class="burger-menu__status-icon">
                 <svg
@@ -283,7 +283,7 @@
             </span>
         </a>
 
-        <a href="/" class="burger-menu__nav-link select-item">
+        <a href="#" class="burger-menu__nav-link select-item">
             <strong class="text-strong">личный кабинет</strong>
             <span class="burger-menu__status-icon">
                 <svg
@@ -303,7 +303,7 @@
             </span>
         </a>
 
-        <a href="/" class="burger-menu__nav-link select-item">
+        <a href="#" class="burger-menu__nav-link select-item">
             <strong class="text-strong">корзина</strong>
             <span class="burger-menu__status-icon">
                 <svg
@@ -359,35 +359,71 @@
 </div>
 
 
-                <section class="order__bar-menu">
-                    <ul class="order__bar-menu-list">
-                        <li class="order__bar-menu-item">
-                            <p class="order__bar-menu-item-title">цена: <span> 900 ₽</span></p>
-                        </li>
-                        <li class="order__bar-menu-item">
-                            <p class="order__bar-menu-item-title">товаров: <span> 2</span></p>
-                        </li>
-                    </ul>
+                <div class="mob-bar">
+                    <div class="mob-bar__box">
+                        <div class="mob-bar__bg">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="393"
+                                height="123"
+                                viewBox="0 0 393 123"
+                                fill="none"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M229.348 16.5926L227.044 14.2057C209.684 -3.78399 180.741 -3.38497 163.883 15.0765L162.8 16.2624C155.283 24.495 144.649 29.1852 133.5 29.1852L110 29.1852L86.875 29.1852H20C8.95432 29.1852 4.82823e-07 38.1395 0 49.1852L8.9414e-06 95.0002V123H393V104V95.0002V49.1852C393 38.1395 384.046 29.1852 373 29.1852H305.5L282 29.1852L259 29.1852C247.817 29.1852 237.114 24.6399 229.348 16.5926Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </div>
 
-                    <a href="#" class="order__bar-menu-button">
-                        <svg
-                            width="20"
-                            height="20"
-                            viewBox="0 0 20 20"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <circle cx="10" cy="10" r="10" transform="matrix(-1 0 0 1 20 0)" fill="#393531" />
-                            <path
-                                d="M11.8938 9.71448L8.62683 6.1181C8.48348 5.96063 8.25123 5.96063 8.10751 6.1181C7.96416 6.27556 7.96416 6.53131 8.10751 6.68877L11.1153 9.9998L8.10788 13.3108C7.96452 13.4683 7.96452 13.724 8.10788 13.8819C8.25123 14.0394 8.48384 14.0394 8.6272 13.8819L11.8942 10.2855C12.0353 10.1297 12.0353 9.86991 11.8938 9.71448Z"
-                                fill="white"
-                                stroke="white"
-                            />
-                        </svg>
-                    </a>
+                        <a href="" class="mob-bar__link">
+                            <span class="mob-bar__link-icon">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="78"
+                                    height="79"
+                                    viewBox="0 0 78 79"
+                                    fill="none"
+                                >
+                                    <circle
+                                        cx="39"
+                                        cy="39.5"
+                                        r="38"
+                                        fill="#9DB1B8"
+                                        stroke="white"
+                                        stroke-width="2"
+                                    />
+                                    <circle
+                                        cx="10"
+                                        cy="10"
+                                        r="10"
+                                        transform="matrix(-1 0 0 1 49 30)"
+                                        fill="#393531"
+                                    />
+                                    <path
+                                        d="M40.8938 39.7145L37.6268 36.1181C37.4835 35.9606 37.2512 35.9606 37.1075 36.1181C36.9642 36.2756 36.9642 36.5313 37.1075 36.6888L40.1153 39.9998L37.1079 43.3108C36.9645 43.4683 36.9645 43.724 37.1079 43.8819C37.2512 44.0394 37.4838 44.0394 37.6272 43.8819L40.8942 40.2855C41.0353 40.1297 41.0353 39.8699 40.8938 39.7145Z"
+                                        fill="white"
+                                        stroke="white"
+                                    />
+                                </svg>
+                            </span>
+                        </a>
 
-                    <button class="order__bar-menu-link">Оформить заказ</button>
-                </section>
+                        <div class="mob-bar__price">
+                            <span class="text">цена:</span>
+                            <strong class="text-strong">900 <span class="rub">₽</span></strong>
+                        </div>
+
+                        <div class="mob-bar__count">
+                            <span class="text">товаров:</span>
+                            <strong class="text-strong">2</strong>
+                        </div>
+
+                        <a href="#" class="mob-bar__message text-strong"> Оформить заказ </a>
+                    </div>
+                </div>
 
                 <section class="section">
                     <div class="order__heading">
@@ -503,7 +539,9 @@
                                                 Москва и МО
                                             </strong>
 
-                                            <span class="order__delivery-placement-subtitle"> 500 ₽ </span>
+                                            <span class="order__delivery-placement-subtitle circe">
+                                                500 ₽
+                                            </span>
                                         </li>
                                         <li data-tabs-title class="order__delivery-placement tab">
                                             <strong class="order__delivery-placement-title">
@@ -515,7 +553,9 @@
                                                 самовывоз
                                             </strong>
 
-                                            <span class="order__delivery-placement-subtitle"> 500 ₽ </span>
+                                            <span class="order__delivery-placement-subtitle circe">
+                                                500 ₽
+                                            </span>
                                         </li>
                                     </ul>
                                     <div data-tabs-body class="order__delivery-tabs-content select-close">
@@ -1098,11 +1138,11 @@
                             <ul class="order__checkout-list">
                                 <li class="order__checkout-item">
                                     <span class="order__checkout-item-title"> 3 товара </span>
-                                    <strong class="order__checkout-item-price"> 600 ₽ </strong>
+                                    <strong class="order__checkout-item-price circe"> 600 ₽ </strong>
                                 </li>
                                 <li class="order__checkout-item">
                                     <span class="order__checkout-item-title"> приют </span>
-                                    <strong class="order__checkout-item-price"> 100 ₽ </strong>
+                                    <strong class="order__checkout-item-price circe"> 100 ₽ </strong>
                                 </li>
                                 <li class="order__checkout-item">
                                     <span class="order__checkout-item-title"> доставка </span>
@@ -1112,7 +1152,7 @@
 
                             <div class="order__checkout-total">
                                 <span class="order__checkout-item-title">Итог: </span>
-                                <strong class="order__checkout-total-price"> 700₽ </strong>
+                                <strong class="order__checkout-total-price circe"> 700₽ </strong>
                             </div>
 
                             <button class="order__checkout-button link">
@@ -1160,17 +1200,17 @@
         </a>
 
         <div class="footer__body">
-            <a href="tel:89459999999" class="text-strong"> 8 945 999 99 99 </a>
+            <a href="tel:89459999999" class="text-strong circe"> 8 945 999 99 99 </a>
             <a href="mailto:teaport@mail.ru" class="text"> teaport@mail.ru </a>
             <a href="" class="text-price"> Покровка 21 </a>
         </div>
         <div class="footer__body">
-            <a href="tel:89459999999" class="text-strong"> 8 945 999 99 99 </a>
+            <a href="tel:89459999999" class="text-strong circe"> 8 945 999 99 99 </a>
             <a href="mailto:teaport@mail.ru" class="text"> teaport@mail.ru </a>
-            <a href="" class="text-price"> Покровка 21 </a>
+            <a href="" class="text-price"> Покровка <span class="circe">21</span> </a>
         </div>
 
-        <a class="link" href="/">
+        <a class="link" href="#">
             <span>Связаться</span>
             <div class="link__arrow-icon">
                 <svg viewBox="0 0 72 54" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1198,6 +1238,73 @@
         </a>
     </div>
 </footer>
+<div style="height: 0; width: 0; position: absolute; left: -110vw; top: -110vh">
+    <svg
+        width="360"
+        height="440"
+        viewBox="0 0 360 440"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+    >
+        <clipPath id="cl-h" clipPathUnits="objectBoundingBox">
+            <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0.5,0 C0.226,0,0,0.182,0,0.406 V0.604 C0,0.741,0.085,0.863,0.214,0.936 C0.225,0.924,0.242,0.916,0.261,0.916 C0.293,0.916,0.319,0.938,0.319,0.964 C0.319,0.97,0.318,0.976,0.316,0.981 C0.34,0.989,0.366,0.995,0.392,1 C0.398,0.956,0.444,0.921,0.5,0.921 C0.556,0.921,0.602,0.956,0.608,1 C0.634,0.995,0.66,0.989,0.684,0.981 C0.682,0.976,0.681,0.97,0.681,0.964 C0.681,0.938,0.707,0.916,0.739,0.916 C0.758,0.916,0.775,0.924,0.786,0.936 C0.915,0.863,1,0.741,1,0.604 V0.406 C1,0.182,0.774,0,0.5,0"
+            />
+        </clipPath>
+    </svg>
+    <svg
+        width="146"
+        height="304"
+        viewBox="0 0 146 304"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+    >
+        <clipPath id="cl-mb-v" clipPathUnits="objectBoundingBox">
+            <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0.5,0 C0.224,0,0,0.152,0,0.34 V0.673 C0,0.756,0.044,0.832,0.117,0.891 C0.131,0.879,0.153,0.871,0.177,0.871 C0.219,0.871,0.252,0.894,0.252,0.922 C0.252,0.936,0.244,0.949,0.23,0.959 C0.271,0.977,0.316,0.991,0.364,1 C0.364,0.999,0.364,0.997,0.364,0.996 C0.364,0.943,0.427,0.901,0.505,0.901 C0.583,0.901,0.646,0.943,0.646,0.996 C0.646,0.997,0.646,0.997,0.646,0.998 C0.69,0.989,0.732,0.976,0.771,0.959 C0.756,0.949,0.748,0.936,0.748,0.922 C0.748,0.894,0.781,0.871,0.823,0.871 C0.847,0.871,0.869,0.879,0.883,0.891 C0.956,0.832,1,0.756,1,0.673 V0.34 C1,0.152,0.776,0,0.5,0"
+            />
+        </clipPath>
+    </svg>
+
+    <svg
+        width="360"
+        height="441"
+        viewBox="0 0 360 441"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+    >
+        <clipPath id="cl" clipPathUnits="objectBoundingBox">
+            <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0.5,0 C0.226,0,0,0.182,0,0.405 V0.603 C0,0.798,0.172,0.962,0.398,1 C0.403,0.958,0.447,0.925,0.5,0.925 C0.553,0.925,0.597,0.958,0.602,1 C0.828,0.962,1,0.798,1,0.603 V0.405 C1,0.182,0.774,0,0.5,0"
+            />
+        </clipPath>
+    </svg>
+    <svg
+        width="272"
+        height="170"
+        viewBox="0 0 272 170"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+    >
+        <clipPath id="cl-mb" clipPathUnits="objectBoundingBox">
+            <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M1,0.669 C0.946,0.656,0.904,0.583,0.904,0.494 C0.904,0.407,0.944,0.334,0.997,0.32 C0.995,0.31,0.992,0.301,0.99,0.291 C0.98,0.3,0.969,0.306,0.957,0.306 C0.924,0.306,0.897,0.262,0.897,0.209 C0.897,0.179,0.905,0.152,0.918,0.134 C0.862,0.051,0.787,0,0.705,0 H0.314 C0.14,0,0,0.224,0,0.5 C0,0.776,0.14,1,0.314,1 H0.705 C0.789,1,0.866,0.946,0.923,0.859 C0.907,0.842,0.897,0.813,0.897,0.779 C0.897,0.726,0.924,0.682,0.957,0.682 C0.97,0.682,0.982,0.689,0.992,0.7 C0.995,0.69,0.998,0.679,1,0.669"
+            />
+        </clipPath>
+    </svg>
+</div>
 
 <script type="module" src="./js/da.js"></script>
 <script type="module" src="./js/modals.js"></script>

@@ -4,7 +4,6 @@
     background-position: center bottom;
     background-size: 100%;
 
-
     @include small-tablet {
         background-image: url('../img/order/background-mobile.svg');
         overflow: hidden;
@@ -583,8 +582,8 @@
                         -webkit-transform 0.4s;
                     pointer-events: none;
 
-                    -ms-overflow-style: none;  /* IE and Edge */
-                    scrollbar-width: none;  /* Firefox */
+                    -ms-overflow-style: none; /* IE and Edge */
+                    scrollbar-width: none; /* Firefox */
 
                     &::-webkit-scrollbar {
                         display: none;
@@ -625,6 +624,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            list-style: none;
 
             @include small-tablet {
                 flex-direction: column;
@@ -698,7 +698,6 @@
         flex-direction: column;
 
         &.--catalog {
-
         }
 
         &-list {

@@ -1,14 +1,13 @@
 .main {
-	margin: 0;
-	width: 100%;
-	background-image: url('../img/webp/main-bg.webp');
-	background-repeat: no-repeat;
-	background-position: center top;
-	background-size: 100%;
-	overflow: hidden;
+    margin: 0;
+    width: 100%;
+    background-image: url('../img/webp/main-bg.webp');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% 100%;
+    overflow: hidden;
 
-	@media (max-width: 48em) {
-		background-image: url('../img/webp/main-bg-mob.webp');
-		background-size: 100% 538.2rem*2;
-	}
+    @media (max-width: 48em) {
+        background-image: url('../img/webp/main-bg-mob.webp');
+    }
 }

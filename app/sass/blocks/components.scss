@@ -177,7 +177,6 @@
 .text-date {
     color: #393531;
     text-align: center;
-    font-family: Inria Sans;
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
@@ -572,4 +571,15 @@
 
 .articles-carousel {
     padding-bottom: 9rem;
+}
+
+.section.seo-catalog {
+    @media (max-width: 48em) {
+        padding-bottom: 18rem;
+    }
+}
+
+.circe {
+    font-family: Circe;
+    text-transform: lowercase;
 }

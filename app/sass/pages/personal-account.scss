@@ -1,481 +1,480 @@
 .personal-account {
-	box-sizing: border-box;
-	width: 100%;
-	margin: 0;
-	background-image: url(../img/webp/personal-account-bg.webp);
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    background-image: url(../img/webp/personal-account-bg.webp);
 
-	background-repeat: no-repeat;
-	background-position: center top;
-	background-size: 100%;
-	overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% 100%;
+    overflow: hidden;
 }
 .account-information {
-	box-sizing: border-box;
-	width: 160rem;
-	margin: 0 auto;
-	padding-top: 7.7rem;
-	// .account-information__inner
-	&__inner {
-		box-sizing: border-box;
-		display: flex;
-		gap: 5.3rem;
-		margin-bottom: 13rem;
-	}
-	// .account-information__card
-	&__card {
-	}
+    box-sizing: border-box;
+    width: 160rem;
+    margin: 0 auto;
+    padding-top: 7.7rem;
+    // .account-information__inner
+    &__inner {
+        box-sizing: border-box;
+        display: flex;
+        gap: 5.3rem;
+        margin-bottom: 13rem;
+    }
+    // .account-information__card
+    &__card {
+    }
 }
 .account-card {
-	position: relative;
-	width: 36.1rem;
-	min-height: 44.4rem;
-	box-sizing: border-box;
+    position: relative;
+    width: 36.1rem;
+    min-height: 44.4rem;
+    box-sizing: border-box;
 
-	border-radius: 5rem;
-	border: 0.2rem solid rgba(255, 255, 255, 0.5);
-	background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 2.14%, rgba(189, 193, 192, 0.1) 100%);
-	box-shadow: 0 -6rem 15rem 0 #feffcd inset;
-	backdrop-filter: blur(2rem);
+    border-radius: 5rem;
+    border: 0.2rem solid rgba(255, 255, 255, 0.5);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 2.14%, rgba(189, 193, 192, 0.1) 100%);
+    box-shadow: 0 -6rem 15rem 0 #feffcd inset;
+    backdrop-filter: blur(2rem);
 
-	&--order {
-		border-radius: 5rem;
-		border: 0.2rem solid rgba(255, 255, 255, 1);
-		background: linear-gradient(180deg, #fff -6.08%, rgba(255, 255, 255, 0) 114.08%);
-		backdrop-filter: blur(20px);
-		box-shadow: none;
+    &--order {
+        border-radius: 5rem;
+        border: 0.2rem solid rgba(255, 255, 255, 1);
+        background: linear-gradient(180deg, #fff -6.08%, rgba(255, 255, 255, 0) 114.08%);
+        backdrop-filter: blur(20px);
+        box-shadow: none;
 
-		.account-card__wrapper {
-			align-items: flex-start;
-			justify-content: flex-start;
-			gap: 2.2rem;
-		}
+        .account-card__wrapper {
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 2.2rem;
+        }
 
-		.account-card__name {
-			width: 30.6rem;
-		}
+        .account-card__name {
+            width: 30.6rem;
+        }
 
-		.account-card__count {
-			font-weight: 400;
-		}
-	}
-	// .account-card__wrapper
-	&__wrapper {
-		box-sizing: border-box;
-		width: 100%;
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+        .account-card__count {
+            font-weight: 400;
+        }
+    }
+    // .account-card__wrapper
+    &__wrapper {
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-		padding: 5.2rem 2.8rem;
-	}
-	// .account-card__info
-	&__info {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-		box-sizing: border-box;
-	}
-	// .account-card__name
-	&__name {
-		color: #393531;
-		font-size: 1.8rem;
-		font-style: normal;
-		font-weight: 700;
-		line-height: normal;
-		letter-spacing: 0.54rem;
-		text-transform: uppercase;
-		box-sizing: border-box;
-	}
-	// .account-card__count
-	&__count {
-		color: #393531;
-		font-size: 1.8rem;
-		font-style: normal;
-		font-weight: 300;
-		line-height: normal;
-		letter-spacing: 0.54rem;
-		text-transform: uppercase;
-		margin-bottom: 0.4rem;
-		box-sizing: border-box;
-	}
-	// .account-card__profile
-	&__profile {
-		color: #393531;
-		text-align: center;
-		font-size: 4rem;
-		font-style: normal;
-		font-weight: 400;
-		line-height: normal;
-		letter-spacing: 1.2rem;
-		text-transform: uppercase;
-		box-sizing: border-box;
+        padding: 5.2rem 2.8rem;
+    }
+    // .account-card__info
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    // .account-card__name
+    &__name {
+        color: #393531;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.54rem;
+        text-transform: uppercase;
+        box-sizing: border-box;
+    }
+    // .account-card__count
+    &__count {
+        color: #393531;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: 0.54rem;
+        text-transform: uppercase;
+        margin-bottom: 0.4rem;
+        box-sizing: border-box;
+    }
+    // .account-card__profile
+    &__profile {
+        color: #393531;
+        text-align: center;
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.2rem;
+        text-transform: uppercase;
+        box-sizing: border-box;
 
-		margin-bottom: 3.6rem;
-	}
-	// .account-card__symbol
-	&__symbol {
-		position: absolute;
-		left: 50%;
-		top: -6.6rem;
-		transform: translateX(-50%);
-		box-sizing: border-box;
-	}
-	// .account-card__top
-	&__top {
-		display: flex;
-		flex-direction: column;
-		box-sizing: border-box;
-	}
-	// .account-card__main
-	&__main {
-		box-sizing: border-box;
-		li {
-			color: #393531;
-			box-sizing: border-box;
-			font-size: 1.8rem;
-			line-height: normal;
-			list-style-type: none;
-		}
-	}
-	// .account-card__bottom
-	&__bottom {
-		display: flex;
-		flex-direction: column;
-		box-sizing: border-box;
-	}
-	// .account-card__result
-	&__result {
-		span {
-			margin-right: 1.8rem;
-			color: #393531;
-			font-size: 1.8rem;
-			font-style: normal;
-			font-weight: 400;
-			line-height: normal;
-			letter-spacing: 0.54rem;
-		}
-		strong {
-			color: #393531;
-			font-size: 1.8rem;
-			font-style: normal;
-			font-weight: 700;
-			line-height: normal;
-			letter-spacing: 0.54rem;
-			b {
-				font-weight: 700;
-			}
-		}
-	}
+        margin-bottom: 3.6rem;
+    }
+    // .account-card__symbol
+    &__symbol {
+        position: absolute;
+        left: 50%;
+        top: -6.6rem;
+        transform: translateX(-50%);
+        box-sizing: border-box;
+    }
+    // .account-card__top
+    &__top {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    // .account-card__main
+    &__main {
+        box-sizing: border-box;
+        li {
+            color: #393531;
+            box-sizing: border-box;
+            font-size: 1.8rem;
+            line-height: normal;
+            list-style-type: none;
+        }
+    }
+    // .account-card__bottom
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    // .account-card__result
+    &__result {
+        span {
+            margin-right: 1.8rem;
+            color: #393531;
+            font-size: 1.8rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.54rem;
+        }
+        strong {
+            color: #393531;
+            font-size: 1.8rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.54rem;
+            b {
+                font-weight: 700;
+            }
+        }
+    }
 }
 .underline-btn {
-	cursor: pointer;
-	position: relative;
+    cursor: pointer;
+    position: relative;
 
-	color: #393531;
-	text-align: center;
-	font-size: 1.8rem;
-	font-style: normal;
-	font-weight: 300;
-	line-height: normal;
-	letter-spacing: 0.54rem;
-	text-transform: uppercase;
+    color: #393531;
+    text-align: center;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.54rem;
+    text-transform: uppercase;
 
-	&::after {
-		content: '';
-		width: 100%;
-		height: 0.1rem;
-		background-color: #393531;
-		position: absolute;
-		bottom: 0;
-		left: 50%;
-		transform: translateX(-50%);
-		transition: width 0.2s linear;
-	}
+    &::after {
+        content: '';
+        width: 100%;
+        height: 0.1rem;
+        background-color: #393531;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: width 0.2s linear;
+    }
 
-	&:hover {
-		&::after {
-			transition: width 0.2s linear;
-			width: 0;
-		}
-	}
+    &:hover {
+        &::after {
+            transition: width 0.2s linear;
+            width: 0;
+        }
+    }
 }
 .account-detail {
-	box-sizing: border-box;
-	width: 160rem;
-	margin: 0 auto;
-	padding-bottom: 23rem;
-	// .account-detail__inner
-	&__inner {
-		display: flex;
-		gap: 5.5rem;
-		box-sizing: border-box;
-	}
-	// .account-detail__change
-	&__change {
-		box-sizing: border-box;
-		display: flex;
-		flex-direction: column;
-		gap: 4.8rem;
-		max-width: 77.4rem;
-	}
-	// .account-detail__change-content
-	&__change-content {
-		display: flex;
-		align-items: center;
-		gap: 3.6rem;
-		flex-wrap: wrap;
-	}
-	// .account-detail__change-label
-	&__change-label {
-		box-sizing: border-box;
-		min-width: 36rem;
-	}
-	// .account-detail__input
-	&__input {
-		box-sizing: border-box;
-		width: 100%;
-		text-align: left;
-		padding-bottom: 0.8rem;
-		border-bottom: 0.2rem solid #fff;
+    box-sizing: border-box;
+    width: 160rem;
+    margin: 0 auto;
+    padding-bottom: 23rem;
+    // .account-detail__inner
+    &__inner {
+        display: flex;
+        gap: 5.5rem;
+        box-sizing: border-box;
+    }
+    // .account-detail__change
+    &__change {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 4.8rem;
+        max-width: 77.4rem;
+    }
+    // .account-detail__change-content
+    &__change-content {
+        display: flex;
+        align-items: center;
+        gap: 3.6rem;
+        flex-wrap: wrap;
+    }
+    // .account-detail__change-label
+    &__change-label {
+        box-sizing: border-box;
+        min-width: 36rem;
+    }
+    // .account-detail__input
+    &__input {
+        box-sizing: border-box;
+        width: 100%;
+        text-align: left;
+        padding-bottom: 0.8rem;
+        border-bottom: 0.2rem solid #fff;
 
-		&.text {
-			text-align: left;
-		}
-		&::placeholder {
-			text-align: left;
-		}
-	}
-	// .account-detail__password
-	&__password {
-		box-sizing: border-box;
-		display: flex;
-		flex-direction: column;
-		gap: 4.8rem;
-		max-width: 36rem;
-	}
-	// .account-detail__password-content
-	&__password-content {
-		display: flex;
-		align-items: center;
-		gap: 3.6rem;
-		flex-wrap: wrap;
-	}
-	// .account-detail__password-label
-	&__password-label {
-		box-sizing: border-box;
-		min-width: 36rem;
-	}
+        &.text {
+            text-align: left;
+        }
+        &::placeholder {
+            text-align: left;
+        }
+    }
+    // .account-detail__password
+    &__password {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 4.8rem;
+        max-width: 36rem;
+    }
+    // .account-detail__password-content
+    &__password-content {
+        display: flex;
+        align-items: center;
+        gap: 3.6rem;
+        flex-wrap: wrap;
+    }
+    // .account-detail__password-label
+    &__password-label {
+        box-sizing: border-box;
+        min-width: 36rem;
+    }
 }
 
 @media (max-width: 48em) {
-	.personal-account {
-		box-sizing: border-box;
-		width: 100%;
-		margin: 0;
-		background-image: url(../../img/webp/personal-account-bg-mob.webp);
+    .personal-account {
+        margin: 0;
+        margin-bottom: 18rem;
+        box-sizing: border-box;
+        width: 100%;
+        background-image: url(../../img/webp/personal-account-bg-mob.webp);
 
-		background-repeat: no-repeat;
-		background-position: center top;
-		background-size: 100%;
-		overflow: hidden;
-	}
-	.account-information {
-		box-sizing: border-box;
-		width: 69.8rem;
-		margin: 0 auto;
-		padding-top: 9.6rem;
-		// .account-information__inner
-		&__inner {
-			box-sizing: border-box;
-			display: flex;
-			flex-direction: column;
-			gap: 3.2rem;
-			margin-bottom: 30.4rem;
-		}
-		// .account-information__card
-		&__card {
-		}
-	}
-	.account-card {
-		position: relative;
-		width: 100%;
-		min-height: 36.4rem;
-		box-sizing: border-box;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    .account-information {
+        box-sizing: border-box;
+        width: 69.8rem;
+        margin: 0 auto;
+        padding-top: 9.6rem;
+        // .account-information__inner
+        &__inner {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            gap: 3.2rem;
+            margin-bottom: 30.4rem;
+        }
+        // .account-information__card
+        &__card {
+        }
+    }
+    .account-card {
+        position: relative;
+        width: 100%;
+        min-height: 36.4rem;
+        box-sizing: border-box;
 
-		border-radius: 6rem;
-		border: 0.4rem solid rgba(255, 255, 255, 0.5);
-		background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 2.14%, rgba(189, 193, 192, 0.1) 100%);
-		box-shadow: 0rem -12rem 30rem 0rem #feffcd inset;
-		backdrop-filter: blur(4rem);
+        border-radius: 6rem;
+        border: 0.4rem solid rgba(255, 255, 255, 0.5);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 2.14%, rgba(189, 193, 192, 0.1) 100%);
+        box-shadow: 0rem -12rem 30rem 0rem #feffcd inset;
+        backdrop-filter: blur(4rem);
 
-		&--order {
-			border-radius: 6rem;
-			border: 0.4rem solid rgba(255, 255, 255, 0.5);
-			background: linear-gradient(180deg, #fff 4.62%, rgba(255, 255, 255, 0.06) 100%);
-			backdrop-filter: blur(4rem);
-			box-shadow: none;
+        &--order {
+            border-radius: 6rem;
+            border: 0.4rem solid rgba(255, 255, 255, 0.5);
+            background: linear-gradient(180deg, #fff 4.62%, rgba(255, 255, 255, 0.06) 100%);
+            backdrop-filter: blur(4rem);
+            box-shadow: none;
 
-			.account-card__wrapper {
-				gap: 3.2rem;
-				height: 100%;
-			}
+            .account-card__wrapper {
+                gap: 3.2rem;
+                height: 100%;
+            }
 
-			.account-card__name {
-				width: 100%;
-			}
-		}
-		// .account-card__wrapper
-		&__wrapper {
-			width: 100%;
-			height: 100%;
-			min-height: 36.4rem;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
+            .account-card__name {
+                width: 100%;
+            }
+        }
+        // .account-card__wrapper
+        &__wrapper {
+            width: 100%;
+            height: 100%;
+            min-height: 36.4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
-			padding: 5.6rem;
-		}
-		// .account-card__info
-		&__info {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			text-align: center;
-			box-sizing: border-box;
-		}
-		// .account-card__name
-		&__name {
-			font-size: 3rem;
-			letter-spacing: 0.9rem;
-		}
-		// .account-card__count
-		&__count {
-			font-size: 3rem;
-			font-weight: 400;
-			letter-spacing: 0.9rem;
-			margin-bottom: 0.8rem;
-		}
-		// .account-card__profile
-		&__profile {
-			font-size: 6rem;
-			letter-spacing: 1.8rem;
-		}
-		// .account-card__symbol
-		&__symbol {
-			position: absolute;
-			left: 50%;
-			top: -8.4rem;
-			transform: translateX(-50%);
-			box-sizing: border-box;
-		}
-		// .account-card__top
-		&__top {
-			display: flex;
-			width: 100%;
-			flex-direction: column;
-			box-sizing: border-box;
-		}
-		// .account-card__main
-		&__main {
-			li {
-				font-size: 3rem;
-			}
-		}
-		// .account-card__bottom
-		&__bottom {
-			display: flex;
-			flex-direction: column;
-			box-sizing: border-box;
-		}
-		// .account-card__result
-		&__result {
-			span {
-				margin-right: 3.6rem;
-				font-size: 3rem;
-				letter-spacing: 0.9rem;
-			}
-			strong {
-				font-size: 3rem;
-				letter-spacing: 0.9rem;
-			}
-		}
-	}
-	.underline-btn {
-		font-size: 3rem;
-		font-weight: 400;
-		letter-spacing: 0.9rem;
+            padding: 5.6rem;
+        }
+        // .account-card__info
+        &__info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        // .account-card__name
+        &__name {
+            font-size: 3rem;
+            letter-spacing: 0.9rem;
+        }
+        // .account-card__count
+        &__count {
+            font-size: 3rem;
+            font-weight: 400;
+            letter-spacing: 0.9rem;
+            margin-bottom: 0.8rem;
+        }
+        // .account-card__profile
+        &__profile {
+            font-size: 6rem;
+            letter-spacing: 1.8rem;
+        }
+        // .account-card__symbol
+        &__symbol {
+            position: absolute;
+            left: 50%;
+            top: -8.4rem;
+            transform: translateX(-50%);
+            box-sizing: border-box;
+        }
+        // .account-card__top
+        &__top {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+        // .account-card__main
+        &__main {
+            li {
+                font-size: 3rem;
+            }
+        }
+        // .account-card__bottom
+        &__bottom {
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+        // .account-card__result
+        &__result {
+            span {
+                margin-right: 3.6rem;
+                font-size: 3rem;
+                letter-spacing: 0.9rem;
+            }
+            strong {
+                font-size: 3rem;
+                letter-spacing: 0.9rem;
+            }
+        }
+    }
+    .underline-btn {
+        font-size: 3rem;
+        font-weight: 400;
+        letter-spacing: 0.9rem;
 
-		&::after {
-			height: 0.2rem;
-		}
-	}
-	.account-detail {
-		box-sizing: border-box;
-		width: 69.8rem;
-		margin: 0 auto;
-		padding-bottom: 30rem;
-		// .account-detail__inner
-		&__inner {
-			display: flex;
-			flex-direction: column;
-			gap: 30.4rem;
-			box-sizing: border-box;
-		}
-		// .account-detail__change
-		&__change {
-			box-sizing: border-box;
-			display: flex;
-			flex-direction: column;
-			gap: 8.4rem;
-			max-width: 100%;
-			align-items: center;
-		}
-		// .account-detail__change-content
-		&__change-content {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			gap: 5.6rem;
-			flex-wrap: wrap;
-		}
-		// .account-detail__change-label
-		&__change-label {
-			box-sizing: border-box;
-			min-width: 66.7rem;
-		}
-		// .account-detail__input
-		&__input {
-			box-sizing: border-box;
-			width: 100%;
-			text-align: left;
-			padding-bottom: 1.6rem;
-			border-bottom: 0.2rem solid #fff;
-		}
-		// .account-detail__password
-		&__password {
-			box-sizing: border-box;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			gap: 8.4rem;
-			max-width: 100%;
-		}
-		// .account-detail__password-content
-		&__password-content {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			gap: 5.6rem;
-			flex-wrap: wrap;
-		}
-		// .account-detail__password-label
-		&__password-label {
-			box-sizing: border-box;
-			min-width: 66.7rem;
-		}
-	}
+        &::after {
+            height: 0.2rem;
+        }
+    }
+    .account-detail {
+        box-sizing: border-box;
+        width: 69.8rem;
+        margin: 0 auto;
+        padding-bottom: 30rem;
+        // .account-detail__inner
+        &__inner {
+            display: flex;
+            flex-direction: column;
+            gap: 30.4rem;
+            box-sizing: border-box;
+        }
+        // .account-detail__change
+        &__change {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            gap: 8.4rem;
+            max-width: 100%;
+            align-items: center;
+        }
+        // .account-detail__change-content
+        &__change-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5.6rem;
+            flex-wrap: wrap;
+        }
+        // .account-detail__change-label
+        &__change-label {
+            box-sizing: border-box;
+            min-width: 66.7rem;
+        }
+        // .account-detail__input
+        &__input {
+            box-sizing: border-box;
+            width: 100%;
+            text-align: left;
+            padding-bottom: 1.6rem;
+            border-bottom: 0.2rem solid #fff;
+        }
+        // .account-detail__password
+        &__password {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8.4rem;
+            max-width: 100%;
+        }
+        // .account-detail__password-content
+        &__password-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5.6rem;
+            flex-wrap: wrap;
+        }
+        // .account-detail__password-label
+        &__password-label {
+            box-sizing: border-box;
+            min-width: 66.7rem;
+        }
+    }
 }

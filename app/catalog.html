@@ -12,11 +12,13 @@
         <main>
             <div class="catalog">
                 @@include('./template/header.html') @@include('./template/burger-menu.html')
-
-                <section class="order__bar-menu --catalog">
+                <!--
+                <div class="order__bar-menu --catalog">
                     <ul class="order__bar-menu-list">
                         <li class="order__bar-menu-item">
-                            <p class="order__bar-menu-item-title">цена: <span> 900 ₽</span></p>
+                            <p class="order__bar-menu-item-title">
+                                цена: <span> 900 <span class="rub">₽</span></span>
+                            </p>
                         </li>
                         <li class="order__bar-menu-item">
                             <p class="order__bar-menu-item-title">товаров: <span> 2</span></p>
@@ -53,7 +55,7 @@
                             />
                         </svg>
                     </button>
-                </section>
+                </div> -->
 
                 <section class="section catalog-hero__wrapper">
                     <div class="catalog-hero">
@@ -242,17 +244,13 @@
                         </div>
 
                         <div class="products-list__content">
-                            <ul class="products-list__items">
-                                <li class="products-list__item">
+                            <div class="products-list__items">
+                                <div class="products-list__item cl-p cl-p_mb">
                                     <a href="#" class="hor-slider__content">
                                         <div class="hor-slider__item">
                                             <div
                                                 class="hor-slider__item-content hor-slider__item-content--white"
                                             >
-                                                <div class="hor-slider__item-next-icon">
-                                                    <img src="./img/icon/next-icon.svg" alt="" />
-                                                </div>
-
                                                 <div class="hor-slider__item-img">
                                                     <img src="./img/webp/popular-card-img-1.webp" alt="" />
                                                 </div>
@@ -262,42 +260,42 @@
                                                     <span class="text-slim"> Индийский Для бодрости </span>
                                                     <div class="hor-slider__item-price">
                                                         <span class="text-slim">150 г/</span>
-                                                        <strong class="text-strong">600 ₽</strong>
+                                                        <strong class="text-strong circe"
+                                                            >600 <span class="rub">₽</span></strong
+                                                        >
                                                     </div>
                                                 </div>
-
-                                                <div class="hor-slider__item-cart-controlls">
-                                                    <button
-                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
-                                                    >
-                                                        <span>-</span>
-                                                    </button>
-                                                    <div class="hor-slider__item-cart-icon">
-                                                        <img src="./img/icon/cart-icon.svg" alt="" />
-                                                        <div class="hor-slider__item-cart-value">
-                                                            <span>11</span>
-                                                        </div>
+                                            </div>
+                                            <div class="hor-slider__item-cart-controlls">
+                                                <button
+                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
+                                                >
+                                                    <span>-</span>
+                                                </button>
+                                                <div class="hor-slider__item-cart-icon">
+                                                    <img src="./img/icon/cart-icon.svg" alt="" />
+                                                    <div class="hor-slider__item-cart-value">
+                                                        <span>11</span>
                                                     </div>
-                                                    <button
-                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
-                                                    >
-                                                        <span>+</span>
-                                                    </button>
                                                 </div>
+                                                <button
+                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
+                                                >
+                                                    <span>+</span>
+                                                </button>
+                                            </div>
+                                            <div class="hor-slider__item-next-icon">
+                                                <img src="./img/icon/next-icon.svg" alt="" />
                                             </div>
                                         </div>
                                     </a>
-                                </li>
-                                <li class="products-list__item">
+                                </div>
+                                <div class="products-list__item cl-p cl-p_mb">
                                     <a href="#" class="hor-slider__content">
                                         <div class="hor-slider__item">
                                             <div
                                                 class="hor-slider__item-content hor-slider__item-content--white"
                                             >
-                                                <div class="hor-slider__item-next-icon">
-                                                    <img src="./img/icon/next-icon.svg" alt="" />
-                                                </div>
-
                                                 <div class="hor-slider__item-img">
                                                     <img src="./img/webp/popular-card-img-1.webp" alt="" />
                                                 </div>
@@ -307,42 +305,42 @@
                                                     <span class="text-slim"> Индийский Для бодрости </span>
                                                     <div class="hor-slider__item-price">
                                                         <span class="text-slim">150 г/</span>
-                                                        <strong class="text-strong">600 ₽</strong>
+                                                        <strong class="text-strong circe"
+                                                            >600 <span class="rub">₽</span></strong
+                                                        >
                                                     </div>
                                                 </div>
-
-                                                <div class="hor-slider__item-cart-controlls">
-                                                    <button
-                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
-                                                    >
-                                                        <span>-</span>
-                                                    </button>
-                                                    <div class="hor-slider__item-cart-icon">
-                                                        <img src="./img/icon/cart-icon.svg" alt="" />
-                                                        <div class="hor-slider__item-cart-value">
-                                                            <span>11</span>
-                                                        </div>
+                                            </div>
+                                            <div class="hor-slider__item-cart-controlls">
+                                                <button
+                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
+                                                >
+                                                    <span>-</span>
+                                                </button>
+                                                <div class="hor-slider__item-cart-icon">
+                                                    <img src="./img/icon/cart-icon.svg" alt="" />
+                                                    <div class="hor-slider__item-cart-value">
+                                                        <span>11</span>
                                                     </div>
-                                                    <button
-                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
-                                                    >
-                                                        <span>+</span>
-                                                    </button>
                                                 </div>
+                                                <button
+                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
+                                                >
+                                                    <span>+</span>
+                                                </button>
+                                            </div>
+                                            <div class="hor-slider__item-next-icon">
+                                                <img src="./img/icon/next-icon.svg" alt="" />
                                             </div>
                                         </div>
                                     </a>
-                                </li>
-                                <li class="products-list__item">
+                                </div>
+                                <div class="products-list__item cl-p cl-p_mb">
                                     <a href="#" class="hor-slider__content">
                                         <div class="hor-slider__item">
                                             <div
                                                 class="hor-slider__item-content hor-slider__item-content--white"
                                             >
-                                                <div class="hor-slider__item-next-icon">
-                                                    <img src="./img/icon/next-icon.svg" alt="" />
-                                                </div>
-
                                                 <div class="hor-slider__item-img">
                                                     <img src="./img/webp/popular-card-img-1.webp" alt="" />
                                                 </div>
@@ -352,42 +350,42 @@
                                                     <span class="text-slim"> Индийский Для бодрости </span>
                                                     <div class="hor-slider__item-price">
                                                         <span class="text-slim">150 г/</span>
-                                                        <strong class="text-strong">600 ₽</strong>
+                                                        <strong class="text-strong circe"
+                                                            >600 <span class="rub">₽</span></strong
+                                                        >
                                                     </div>
                                                 </div>
-
-                                                <div class="hor-slider__item-cart-controlls">
-                                                    <button
-                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
-                                                    >
-                                                        <span>-</span>
-                                                    </button>
-                                                    <div class="hor-slider__item-cart-icon">
-                                                        <img src="./img/icon/cart-icon.svg" alt="" />
-                                                        <div class="hor-slider__item-cart-value">
-                                                            <span>11</span>
-                                                        </div>
+                                            </div>
+                                            <div class="hor-slider__item-cart-controlls">
+                                                <button
+                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
+                                                >
+                                                    <span>-</span>
+                                                </button>
+                                                <div class="hor-slider__item-cart-icon">
+                                                    <img src="./img/icon/cart-icon.svg" alt="" />
+                                                    <div class="hor-slider__item-cart-value">
+                                                        <span>11</span>
                                                     </div>
-                                                    <button
-                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
-                                                    >
-                                                        <span>+</span>
-                                                    </button>
                                                 </div>
+                                                <button
+                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
+                                                >
+                                                    <span>+</span>
+                                                </button>
+                                            </div>
+                                            <div class="hor-slider__item-next-icon">
+                                                <img src="./img/icon/next-icon.svg" alt="" />
                                             </div>
                                         </div>
                                     </a>
-                                </li>
-                                <li class="products-list__item">
+                                </div>
+                                <div class="products-list__item cl-p cl-p_mb">
                                     <a href="#" class="hor-slider__content">
                                         <div class="hor-slider__item">
                                             <div
                                                 class="hor-slider__item-content hor-slider__item-content--white"
                                             >
-                                                <div class="hor-slider__item-next-icon">
-                                                    <img src="./img/icon/next-icon.svg" alt="" />
-                                                </div>
-
                                                 <div class="hor-slider__item-img">
                                                     <img src="./img/webp/popular-card-img-1.webp" alt="" />
                                                 </div>
@@ -397,42 +395,42 @@
                                                     <span class="text-slim"> Индийский Для бодрости </span>
                                                     <div class="hor-slider__item-price">
                                                         <span class="text-slim">150 г/</span>
-                                                        <strong class="text-strong">600 ₽</strong>
+                                                        <strong class="text-strong circe"
+                                                            >600 <span class="rub">₽</span></strong
+                                                        >
                                                     </div>
                                                 </div>
-
-                                                <div class="hor-slider__item-cart-controlls">
-                                                    <button
-                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
-                                                    >
-                                                        <span>-</span>
-                                                    </button>
-                                                    <div class="hor-slider__item-cart-icon">
-                                                        <img src="./img/icon/cart-icon.svg" alt="" />
-                                                        <div class="hor-slider__item-cart-value">
-                                                            <span>11</span>
-                                                        </div>
+                                            </div>
+                                            <div class="hor-slider__item-cart-controlls">
+                                                <button
+                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
+                                                >
+                                                    <span>-</span>
+                                                </button>
+                                                <div class="hor-slider__item-cart-icon">
+                                                    <img src="./img/icon/cart-icon.svg" alt="" />
+                                                    <div class="hor-slider__item-cart-value">
+                                                        <span>11</span>
                                                     </div>
-                                                    <button
-                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
-                                                    >
-                                                        <span>+</span>
-                                                    </button>
                                                 </div>
+                                                <button
+                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
+                                                >
+                                                    <span>+</span>
+                                                </button>
+                                            </div>
+                                            <div class="hor-slider__item-next-icon">
+                                                <img src="./img/icon/next-icon.svg" alt="" />
                                             </div>
                                         </div>
                                     </a>
-                                </li>
-                                <li class="products-list__item">
+                                </div>
+                                <div class="products-list__item cl-p cl-p_mb">
                                     <a href="#" class="hor-slider__content">
                                         <div class="hor-slider__item">
                                             <div
                                                 class="hor-slider__item-content hor-slider__item-content--white"
                                             >
-                                                <div class="hor-slider__item-next-icon">
-                                                    <img src="./img/icon/next-icon.svg" alt="" />
-                                                </div>
-
                                                 <div class="hor-slider__item-img">
                                                     <img src="./img/webp/popular-card-img-1.webp" alt="" />
                                                 </div>
@@ -442,42 +440,42 @@
                                                     <span class="text-slim"> Индийский Для бодрости </span>
                                                     <div class="hor-slider__item-price">
                                                         <span class="text-slim">150 г/</span>
-                                                        <strong class="text-strong">600 ₽</strong>
+                                                        <strong class="text-strong circe"
+                                                            >600 <span class="rub">₽</span></strong
+                                                        >
                                                     </div>
                                                 </div>
-
-                                                <div class="hor-slider__item-cart-controlls">
-                                                    <button
-                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
-                                                    >
-                                                        <span>-</span>
-                                                    </button>
-                                                    <div class="hor-slider__item-cart-icon">
-                                                        <img src="./img/icon/cart-icon.svg" alt="" />
-                                                        <div class="hor-slider__item-cart-value">
-                                                            <span>11</span>
-                                                        </div>
+                                            </div>
+                                            <div class="hor-slider__item-cart-controlls">
+                                                <button
+                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
+                                                >
+                                                    <span>-</span>
+                                                </button>
+                                                <div class="hor-slider__item-cart-icon">
+                                                    <img src="./img/icon/cart-icon.svg" alt="" />
+                                                    <div class="hor-slider__item-cart-value">
+                                                        <span>11</span>
                                                     </div>
-                                                    <button
-                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
-                                                    >
-                                                        <span>+</span>
-                                                    </button>
                                                 </div>
+                                                <button
+                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
+                                                >
+                                                    <span>+</span>
+                                                </button>
+                                            </div>
+                                            <div class="hor-slider__item-next-icon">
+                                                <img src="./img/icon/next-icon.svg" alt="" />
                                             </div>
                                         </div>
                                     </a>
-                                </li>
-                                <li class="products-list__item">
+                                </div>
+                                <div class="products-list__item cl-p cl-p_mb">
                                     <a href="#" class="hor-slider__content">
                                         <div class="hor-slider__item">
                                             <div
                                                 class="hor-slider__item-content hor-slider__item-content--white"
                                             >
-                                                <div class="hor-slider__item-next-icon">
-                                                    <img src="./img/icon/next-icon.svg" alt="" />
-                                                </div>
-
                                                 <div class="hor-slider__item-img">
                                                     <img src="./img/webp/popular-card-img-1.webp" alt="" />
                                                 </div>
@@ -487,42 +485,42 @@
                                                     <span class="text-slim"> Индийский Для бодрости </span>
                                                     <div class="hor-slider__item-price">
                                                         <span class="text-slim">150 г/</span>
-                                                        <strong class="text-strong">600 ₽</strong>
+                                                        <strong class="text-strong circe"
+                                                            >600 <span class="rub">₽</span></strong
+                                                        >
                                                     </div>
                                                 </div>
-
-                                                <div class="hor-slider__item-cart-controlls">
-                                                    <button
-                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
-                                                    >
-                                                        <span>-</span>
-                                                    </button>
-                                                    <div class="hor-slider__item-cart-icon">
-                                                        <img src="./img/icon/cart-icon.svg" alt="" />
-                                                        <div class="hor-slider__item-cart-value">
-                                                            <span>11</span>
-                                                        </div>
+                                            </div>
+                                            <div class="hor-slider__item-cart-controlls">
+                                                <button
+                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
+                                                >
+                                                    <span>-</span>
+                                                </button>
+                                                <div class="hor-slider__item-cart-icon">
+                                                    <img src="./img/icon/cart-icon.svg" alt="" />
+                                                    <div class="hor-slider__item-cart-value">
+                                                        <span>11</span>
                                                     </div>
-                                                    <button
-                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
-                                                    >
-                                                        <span>+</span>
-                                                    </button>
                                                 </div>
+                                                <button
+                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
+                                                >
+                                                    <span>+</span>
+                                                </button>
+                                            </div>
+                                            <div class="hor-slider__item-next-icon">
+                                                <img src="./img/icon/next-icon.svg" alt="" />
                                             </div>
                                         </div>
                                     </a>
-                                </li>
-                                <li class="products-list__item">
+                                </div>
+                                <div class="products-list__item cl-p cl-p_mb">
                                     <a href="#" class="hor-slider__content">
                                         <div class="hor-slider__item">
                                             <div
                                                 class="hor-slider__item-content hor-slider__item-content--white"
                                             >
-                                                <div class="hor-slider__item-next-icon">
-                                                    <img src="./img/icon/next-icon.svg" alt="" />
-                                                </div>
-
                                                 <div class="hor-slider__item-img">
                                                     <img src="./img/webp/popular-card-img-1.webp" alt="" />
                                                 </div>
@@ -532,42 +530,42 @@
                                                     <span class="text-slim"> Индийский Для бодрости </span>
                                                     <div class="hor-slider__item-price">
                                                         <span class="text-slim">150 г/</span>
-                                                        <strong class="text-strong">600 ₽</strong>
+                                                        <strong class="text-strong circe"
+                                                            >600 <span class="rub">₽</span></strong
+                                                        >
                                                     </div>
                                                 </div>
-
-                                                <div class="hor-slider__item-cart-controlls">
-                                                    <button
-                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
-                                                    >
-                                                        <span>-</span>
-                                                    </button>
-                                                    <div class="hor-slider__item-cart-icon">
-                                                        <img src="./img/icon/cart-icon.svg" alt="" />
-                                                        <div class="hor-slider__item-cart-value">
-                                                            <span>11</span>
-                                                        </div>
+                                            </div>
+                                            <div class="hor-slider__item-cart-controlls">
+                                                <button
+                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
+                                                >
+                                                    <span>-</span>
+                                                </button>
+                                                <div class="hor-slider__item-cart-icon">
+                                                    <img src="./img/icon/cart-icon.svg" alt="" />
+                                                    <div class="hor-slider__item-cart-value">
+                                                        <span>11</span>
                                                     </div>
-                                                    <button
-                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
-                                                    >
-                                                        <span>+</span>
-                                                    </button>
                                                 </div>
+                                                <button
+                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
+                                                >
+                                                    <span>+</span>
+                                                </button>
+                                            </div>
+                                            <div class="hor-slider__item-next-icon">
+                                                <img src="./img/icon/next-icon.svg" alt="" />
                                             </div>
                                         </div>
                                     </a>
-                                </li>
-                                <li class="products-list__item">
+                                </div>
+                                <div class="products-list__item cl-p cl-p_mb">
                                     <a href="#" class="hor-slider__content">
                                         <div class="hor-slider__item">
                                             <div
                                                 class="hor-slider__item-content hor-slider__item-content--white"
                                             >
-                                                <div class="hor-slider__item-next-icon">
-                                                    <img src="./img/icon/next-icon.svg" alt="" />
-                                                </div>
-
                                                 <div class="hor-slider__item-img">
                                                     <img src="./img/webp/popular-card-img-1.webp" alt="" />
                                                 </div>
@@ -577,42 +575,42 @@
                                                     <span class="text-slim"> Индийский Для бодрости </span>
                                                     <div class="hor-slider__item-price">
                                                         <span class="text-slim">150 г/</span>
-                                                        <strong class="text-strong">600 ₽</strong>
+                                                        <strong class="text-strong circe"
+                                                            >600 <span class="rub">₽</span></strong
+                                                        >
                                                     </div>
                                                 </div>
-
-                                                <div class="hor-slider__item-cart-controlls">
-                                                    <button
-                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
-                                                    >
-                                                        <span>-</span>
-                                                    </button>
-                                                    <div class="hor-slider__item-cart-icon">
-                                                        <img src="./img/icon/cart-icon.svg" alt="" />
-                                                        <div class="hor-slider__item-cart-value">
-                                                            <span>11</span>
-                                                        </div>
+                                            </div>
+                                            <div class="hor-slider__item-cart-controlls">
+                                                <button
+                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
+                                                >
+                                                    <span>-</span>
+                                                </button>
+                                                <div class="hor-slider__item-cart-icon">
+                                                    <img src="./img/icon/cart-icon.svg" alt="" />
+                                                    <div class="hor-slider__item-cart-value">
+                                                        <span>11</span>
                                                     </div>
-                                                    <button
-                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
-                                                    >
-                                                        <span>+</span>
-                                                    </button>
                                                 </div>
+                                                <button
+                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
+                                                >
+                                                    <span>+</span>
+                                                </button>
+                                            </div>
+                                            <div class="hor-slider__item-next-icon">
+                                                <img src="./img/icon/next-icon.svg" alt="" />
                                             </div>
                                         </div>
                                     </a>
-                                </li>
-                                <li class="products-list__item">
+                                </div>
+                                <div class="products-list__item cl-p cl-p_mb">
                                     <a href="#" class="hor-slider__content">
                                         <div class="hor-slider__item">
                                             <div
                                                 class="hor-slider__item-content hor-slider__item-content--white"
                                             >
-                                                <div class="hor-slider__item-next-icon">
-                                                    <img src="./img/icon/next-icon.svg" alt="" />
-                                                </div>
-
                                                 <div class="hor-slider__item-img">
                                                     <img src="./img/webp/popular-card-img-1.webp" alt="" />
                                                 </div>
@@ -622,42 +620,42 @@
                                                     <span class="text-slim"> Индийский Для бодрости </span>
                                                     <div class="hor-slider__item-price">
                                                         <span class="text-slim">150 г/</span>
-                                                        <strong class="text-strong">600 ₽</strong>
+                                                        <strong class="text-strong circe"
+                                                            >600 <span class="rub">₽</span></strong
+                                                        >
                                                     </div>
                                                 </div>
-
-                                                <div class="hor-slider__item-cart-controlls">
-                                                    <button
-                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
-                                                    >
-                                                        <span>-</span>
-                                                    </button>
-                                                    <div class="hor-slider__item-cart-icon">
-                                                        <img src="./img/icon/cart-icon.svg" alt="" />
-                                                        <div class="hor-slider__item-cart-value">
-                                                            <span>11</span>
-                                                        </div>
+                                            </div>
+                                            <div class="hor-slider__item-cart-controlls">
+                                                <button
+                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
+                                                >
+                                                    <span>-</span>
+                                                </button>
+                                                <div class="hor-slider__item-cart-icon">
+                                                    <img src="./img/icon/cart-icon.svg" alt="" />
+                                                    <div class="hor-slider__item-cart-value">
+                                                        <span>11</span>
                                                     </div>
-                                                    <button
-                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
-                                                    >
-                                                        <span>+</span>
-                                                    </button>
                                                 </div>
+                                                <button
+                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
+                                                >
+                                                    <span>+</span>
+                                                </button>
+                                            </div>
+                                            <div class="hor-slider__item-next-icon">
+                                                <img src="./img/icon/next-icon.svg" alt="" />
                                             </div>
                                         </div>
                                     </a>
-                                </li>
-                                <li class="products-list__item">
+                                </div>
+                                <div class="products-list__item cl-p cl-p_mb">
                                     <a href="#" class="hor-slider__content">
                                         <div class="hor-slider__item">
                                             <div
                                                 class="hor-slider__item-content hor-slider__item-content--white"
                                             >
-                                                <div class="hor-slider__item-next-icon">
-                                                    <img src="./img/icon/next-icon.svg" alt="" />
-                                                </div>
-
                                                 <div class="hor-slider__item-img">
                                                     <img src="./img/webp/popular-card-img-1.webp" alt="" />
                                                 </div>
@@ -667,42 +665,42 @@
                                                     <span class="text-slim"> Индийский Для бодрости </span>
                                                     <div class="hor-slider__item-price">
                                                         <span class="text-slim">150 г/</span>
-                                                        <strong class="text-strong">600 ₽</strong>
+                                                        <strong class="text-strong circe"
+                                                            >600 <span class="rub">₽</span></strong
+                                                        >
                                                     </div>
                                                 </div>
-
-                                                <div class="hor-slider__item-cart-controlls">
-                                                    <button
-                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
-                                                    >
-                                                        <span>-</span>
-                                                    </button>
-                                                    <div class="hor-slider__item-cart-icon">
-                                                        <img src="./img/icon/cart-icon.svg" alt="" />
-                                                        <div class="hor-slider__item-cart-value">
-                                                            <span>11</span>
-                                                        </div>
+                                            </div>
+                                            <div class="hor-slider__item-cart-controlls">
+                                                <button
+                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
+                                                >
+                                                    <span>-</span>
+                                                </button>
+                                                <div class="hor-slider__item-cart-icon">
+                                                    <img src="./img/icon/cart-icon.svg" alt="" />
+                                                    <div class="hor-slider__item-cart-value">
+                                                        <span>11</span>
                                                     </div>
-                                                    <button
-                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
-                                                    >
-                                                        <span>+</span>
-                                                    </button>
                                                 </div>
+                                                <button
+                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
+                                                >
+                                                    <span>+</span>
+                                                </button>
+                                            </div>
+                                            <div class="hor-slider__item-next-icon">
+                                                <img src="./img/icon/next-icon.svg" alt="" />
                                             </div>
                                         </div>
                                     </a>
-                                </li>
-                                <li class="products-list__item">
+                                </div>
+                                <div class="products-list__item cl-p cl-p_mb">
                                     <a href="#" class="hor-slider__content">
                                         <div class="hor-slider__item">
                                             <div
                                                 class="hor-slider__item-content hor-slider__item-content--white"
                                             >
-                                                <div class="hor-slider__item-next-icon">
-                                                    <img src="./img/icon/next-icon.svg" alt="" />
-                                                </div>
-
                                                 <div class="hor-slider__item-img">
                                                     <img src="./img/webp/popular-card-img-1.webp" alt="" />
                                                 </div>
@@ -712,42 +710,42 @@
                                                     <span class="text-slim"> Индийский Для бодрости </span>
                                                     <div class="hor-slider__item-price">
                                                         <span class="text-slim">150 г/</span>
-                                                        <strong class="text-strong">600 ₽</strong>
+                                                        <strong class="text-strong circe"
+                                                            >600 <span class="rub">₽</span></strong
+                                                        >
                                                     </div>
                                                 </div>
-
-                                                <div class="hor-slider__item-cart-controlls">
-                                                    <button
-                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
-                                                    >
-                                                        <span>-</span>
-                                                    </button>
-                                                    <div class="hor-slider__item-cart-icon">
-                                                        <img src="./img/icon/cart-icon.svg" alt="" />
-                                                        <div class="hor-slider__item-cart-value">
-                                                            <span>11</span>
-                                                        </div>
+                                            </div>
+                                            <div class="hor-slider__item-cart-controlls">
+                                                <button
+                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
+                                                >
+                                                    <span>-</span>
+                                                </button>
+                                                <div class="hor-slider__item-cart-icon">
+                                                    <img src="./img/icon/cart-icon.svg" alt="" />
+                                                    <div class="hor-slider__item-cart-value">
+                                                        <span>11</span>
                                                     </div>
-                                                    <button
-                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
-                                                    >
-                                                        <span>+</span>
-                                                    </button>
                                                 </div>
+                                                <button
+                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
+                                                >
+                                                    <span>+</span>
+                                                </button>
+                                            </div>
+                                            <div class="hor-slider__item-next-icon">
+                                                <img src="./img/icon/next-icon.svg" alt="" />
                                             </div>
                                         </div>
                                     </a>
-                                </li>
-                                <li class="products-list__item">
+                                </div>
+                                <div class="products-list__item cl-p cl-p_mb">
                                     <a href="#" class="hor-slider__content">
                                         <div class="hor-slider__item">
                                             <div
                                                 class="hor-slider__item-content hor-slider__item-content--white"
                                             >
-                                                <div class="hor-slider__item-next-icon">
-                                                    <img src="./img/icon/next-icon.svg" alt="" />
-                                                </div>
-
                                                 <div class="hor-slider__item-img">
                                                     <img src="./img/webp/popular-card-img-1.webp" alt="" />
                                                 </div>
@@ -757,35 +755,39 @@
                                                     <span class="text-slim"> Индийский Для бодрости </span>
                                                     <div class="hor-slider__item-price">
                                                         <span class="text-slim">150 г/</span>
-                                                        <strong class="text-strong">600 ₽</strong>
+                                                        <strong class="text-strong circe"
+                                                            >600 <span class="rub">₽</span></strong
+                                                        >
                                                     </div>
                                                 </div>
-
-                                                <div class="hor-slider__item-cart-controlls">
-                                                    <button
-                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
-                                                    >
-                                                        <span>-</span>
-                                                    </button>
-                                                    <div class="hor-slider__item-cart-icon">
-                                                        <img src="./img/icon/cart-icon.svg" alt="" />
-                                                        <div class="hor-slider__item-cart-value">
-                                                            <span>11</span>
-                                                        </div>
+                                            </div>
+                                            <div class="hor-slider__item-cart-controlls">
+                                                <button
+                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
+                                                >
+                                                    <span>-</span>
+                                                </button>
+                                                <div class="hor-slider__item-cart-icon">
+                                                    <img src="./img/icon/cart-icon.svg" alt="" />
+                                                    <div class="hor-slider__item-cart-value">
+                                                        <span>11</span>
                                                     </div>
-                                                    <button
-                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
-                                                    >
-                                                        <span>+</span>
-                                                    </button>
                                                 </div>
+                                                <button
+                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
+                                                >
+                                                    <span>+</span>
+                                                </button>
+                                            </div>
+                                            <div class="hor-slider__item-next-icon">
+                                                <img src="./img/icon/next-icon.svg" alt="" />
                                             </div>
                                         </div>
                                     </a>
-                                </li>
-                            </ul>
+                                </div>
+                            </div>
 
-                            <div class="products-list__pagination">
+                            <div class="products-list__pagination circe">
                                 <ul class="products-list__pagination-items">
                                     <li class="products-list__pagination-item --active">
                                         <a href="#"> 1 </a>
@@ -808,7 +810,7 @@
                     </div>
                 </section>
 
-                <section class="section">
+                <section class="section seo-catalog">
                     <div class="seo">
                         <div class="seo__box">
                             <div class="seo__left-side">
@@ -818,7 +820,7 @@
                                 <strong class="text-strong">станьте волотнером</strong>
                                 <span class="text">свяжитесь с нами</span>
 
-                                <a href="/" class="link">
+                                <a href="#" class="link">
                                     <span>Подробнее</span>
                                     <div class="link__arrow-icon">
                                         <svg
@@ -885,6 +887,78 @@
                         </div>
                     </div>
                 </section>
+
+                <div class="mob-bar --catalog">
+                    <div class="mob-bar__box">
+                        <div class="mob-bar__bg">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="393"
+                                height="123"
+                                viewBox="0 0 393 123"
+                                fill="none"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M229.348 16.5926L227.044 14.2057C209.684 -3.78399 180.741 -3.38497 163.883 15.0765L162.8 16.2624C155.283 24.495 144.649 29.1852 133.5 29.1852L110 29.1852L86.875 29.1852H20C8.95432 29.1852 4.82823e-07 38.1395 0 49.1852L8.9414e-06 95.0002V123H393V104V95.0002V49.1852C393 38.1395 384.046 29.1852 373 29.1852H305.5L282 29.1852L259 29.1852C247.817 29.1852 237.114 24.6399 229.348 16.5926Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </div>
+
+                        <a href="" class="mob-bar__link">
+                            <span class="mob-bar__link-icon">
+                                <svg
+                                    width="78"
+                                    height="79"
+                                    viewBox="0 0 78 79"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <circle
+                                        cx="38.9998"
+                                        cy="39.5"
+                                        r="38"
+                                        fill="#9DB1B8"
+                                        stroke="white"
+                                        stroke-width="2"
+                                    />
+                                    <path
+                                        d="M52.0406 57.0993H26.9089C24.1745 57.0993 21.9507 55.2244 21.9507 52.9188C21.9507 52.8971 21.9514 52.876 21.9528 52.8543L23.3812 30.4877C23.4041 28.199 25.6186 26.3428 28.3395 26.3428H50.6101C53.331 26.3428 55.5447 28.199 55.569 30.4877L56.9974 52.8543C56.9989 52.876 56.9996 52.8971 56.9996 52.9188C56.9989 55.2244 54.7744 57.0993 52.0406 57.0993ZM24.8118 52.9472C24.8289 53.9091 25.7638 54.687 26.9089 54.687H52.0406C53.1865 54.687 54.1192 53.9091 54.1385 52.9472L52.7101 30.5878C52.7087 30.5661 52.708 30.545 52.708 30.5233C52.708 29.5487 51.7674 28.7551 50.6101 28.7551H28.3395C27.1836 28.7551 26.2423 29.5481 26.2423 30.5233C26.2423 30.545 26.2416 30.5661 26.2401 30.5878L24.8118 52.9472Z"
+                                        fill="white"
+                                    />
+                                    <path
+                                        d="M45.8264 28.4895C45.0368 28.4895 44.3959 27.8486 44.3959 27.059V19.2461C44.3959 18.2605 43.4575 17.7605 42.1457 17.7605H37.0408C36.5208 17.7605 35.0974 17.8671 35.0974 19.2461V27.059C35.0974 27.8486 34.4565 28.4895 33.6669 28.4895C32.8772 28.4895 32.2363 27.8486 32.2363 27.059V19.2461C32.2363 16.6869 34.0517 14.8994 37.0415 14.8994H42.1457C45.0411 14.8994 47.257 16.6461 47.257 19.2461V27.059C47.257 27.8486 46.6161 28.4895 45.8264 28.4895Z"
+                                        fill="white"
+                                    />
+                                    <circle
+                                        cx="10"
+                                        cy="10"
+                                        r="10"
+                                        transform="matrix(-1 0 0 1 50 48)"
+                                        fill="#393531"
+                                    />
+                                    <path
+                                        d="M41.8938 57.7145L38.6268 54.1181C38.4835 53.9606 38.2512 53.9606 38.1075 54.1181C37.9642 54.2756 37.9642 54.5313 38.1075 54.6888L41.1153 57.9998L38.1079 61.3108C37.9645 61.4683 37.9645 61.724 38.1079 61.8819C38.2512 62.0394 38.4838 62.0394 38.6272 61.8819L41.8942 58.2855C42.0353 58.1297 42.0353 57.8699 41.8938 57.7145Z"
+                                        fill="white"
+                                        stroke="white"
+                                    />
+                                </svg>
+                            </span>
+                        </a>
+
+                        <div class="mob-bar__price">
+                            <span class="text">цена:</span>
+                            <strong class="text-strong">900 <span class="rub">₽</span></strong>
+                        </div>
+
+                        <div class="mob-bar__count">
+                            <span class="text">товаров:</span>
+                            <strong class="text-strong">2</strong>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
         @@include('./template/footer.html')

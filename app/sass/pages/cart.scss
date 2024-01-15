@@ -149,6 +149,9 @@
             margin-top: auto;
             display: flex;
             gap: 0.8rem;
+            span.text {
+                text-transform: lowercase;
+            }
         }
 
         &-img {
@@ -175,9 +178,21 @@
         top: 50%;
         transform: translateY(-50%);
         transition: transform 0.2s ease;
+        svg:last-child {
+            display: none;
+        }
 
         &:active {
             transform: scale(0.9) translateY(-50%);
+        }
+
+        @media (max-width: 48em) {
+            svg {
+                display: none;
+                &:last-child {
+                    display: block;
+                }
+            }
         }
     }
 
@@ -302,8 +317,8 @@
             left: 50%;
             transform: translate(-50%, -50%);
             & > svg {
-                width: 4rem;
-                height: 4rem;
+                width: 5rem;
+                height: 5rem;
             }
         }
         &__summary {

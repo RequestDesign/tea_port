@@ -3,7 +3,7 @@
     @media (max-width: 48em) {
         display: flex;
     }
-    background: linear-gradient(0deg, rgba(37, 42, 43, 0.63) 0%, rgba(28, 32, 32, 0) 96.72%);
+    background: linear-gradient(0deg, rgba(37, 42, 43, 0.5) 0%, rgba(28, 32, 32, 0) 96.72%);
     position: fixed;
     bottom: 0;
     left: 0;
@@ -11,6 +11,23 @@
     height: 50.6rem;
     z-index: 200;
     pointer-events: none;
+
+    &.--catalog {
+        .mob-bar__box {
+            height: 22.6rem;
+        }
+        .mob-bar__count,
+        .mob-bar__price {
+            top: 9rem;
+        }
+        .mob-bar__bg {
+            bottom: -1rem;
+            height: 24.6rem;
+            &::after {
+                content: none;
+            }
+        }
+    }
 
     &__box {
         margin-top: auto;
@@ -78,6 +95,10 @@
         align-items: flex-start;
         z-index: 10;
         gap: 1px;
+        .text-strong {
+            font-family: Circe;
+            font-weight: 700;
+        }
     }
 
     &__count {
@@ -89,6 +110,10 @@
         z-index: 10;
         align-items: flex-end;
         gap: 1px;
+        .text-strong {
+            font-family: Circe;
+            font-weight: 700;
+        }
     }
 
     &__message {

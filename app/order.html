@@ -16,35 +16,71 @@
             <div class="order">
                 @@include('./template/header.html') @@include('./template/burger-menu.html')
 
-                <section class="order__bar-menu">
-                    <ul class="order__bar-menu-list">
-                        <li class="order__bar-menu-item">
-                            <p class="order__bar-menu-item-title">цена: <span> 900 ₽</span></p>
-                        </li>
-                        <li class="order__bar-menu-item">
-                            <p class="order__bar-menu-item-title">товаров: <span> 2</span></p>
-                        </li>
-                    </ul>
+                <div class="mob-bar">
+                    <div class="mob-bar__box">
+                        <div class="mob-bar__bg">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="393"
+                                height="123"
+                                viewBox="0 0 393 123"
+                                fill="none"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M229.348 16.5926L227.044 14.2057C209.684 -3.78399 180.741 -3.38497 163.883 15.0765L162.8 16.2624C155.283 24.495 144.649 29.1852 133.5 29.1852L110 29.1852L86.875 29.1852H20C8.95432 29.1852 4.82823e-07 38.1395 0 49.1852L8.9414e-06 95.0002V123H393V104V95.0002V49.1852C393 38.1395 384.046 29.1852 373 29.1852H305.5L282 29.1852L259 29.1852C247.817 29.1852 237.114 24.6399 229.348 16.5926Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </div>
 
-                    <a href="#" class="order__bar-menu-button">
-                        <svg
-                            width="20"
-                            height="20"
-                            viewBox="0 0 20 20"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <circle cx="10" cy="10" r="10" transform="matrix(-1 0 0 1 20 0)" fill="#393531" />
-                            <path
-                                d="M11.8938 9.71448L8.62683 6.1181C8.48348 5.96063 8.25123 5.96063 8.10751 6.1181C7.96416 6.27556 7.96416 6.53131 8.10751 6.68877L11.1153 9.9998L8.10788 13.3108C7.96452 13.4683 7.96452 13.724 8.10788 13.8819C8.25123 14.0394 8.48384 14.0394 8.6272 13.8819L11.8942 10.2855C12.0353 10.1297 12.0353 9.86991 11.8938 9.71448Z"
-                                fill="white"
-                                stroke="white"
-                            />
-                        </svg>
-                    </a>
+                        <a href="" class="mob-bar__link">
+                            <span class="mob-bar__link-icon">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="78"
+                                    height="79"
+                                    viewBox="0 0 78 79"
+                                    fill="none"
+                                >
+                                    <circle
+                                        cx="39"
+                                        cy="39.5"
+                                        r="38"
+                                        fill="#9DB1B8"
+                                        stroke="white"
+                                        stroke-width="2"
+                                    />
+                                    <circle
+                                        cx="10"
+                                        cy="10"
+                                        r="10"
+                                        transform="matrix(-1 0 0 1 49 30)"
+                                        fill="#393531"
+                                    />
+                                    <path
+                                        d="M40.8938 39.7145L37.6268 36.1181C37.4835 35.9606 37.2512 35.9606 37.1075 36.1181C36.9642 36.2756 36.9642 36.5313 37.1075 36.6888L40.1153 39.9998L37.1079 43.3108C36.9645 43.4683 36.9645 43.724 37.1079 43.8819C37.2512 44.0394 37.4838 44.0394 37.6272 43.8819L40.8942 40.2855C41.0353 40.1297 41.0353 39.8699 40.8938 39.7145Z"
+                                        fill="white"
+                                        stroke="white"
+                                    />
+                                </svg>
+                            </span>
+                        </a>
 
-                    <button class="order__bar-menu-link">Оформить заказ</button>
-                </section>
+                        <div class="mob-bar__price">
+                            <span class="text">цена:</span>
+                            <strong class="text-strong">900 <span class="rub">₽</span></strong>
+                        </div>
+
+                        <div class="mob-bar__count">
+                            <span class="text">товаров:</span>
+                            <strong class="text-strong">2</strong>
+                        </div>
+
+                        <a href="#" class="mob-bar__message text-strong"> Оформить заказ </a>
+                    </div>
+                </div>
 
                 <section class="section">
                     <div class="order__heading">
@@ -160,7 +196,9 @@
                                                 Москва и МО
                                             </strong>
 
-                                            <span class="order__delivery-placement-subtitle"> 500 ₽ </span>
+                                            <span class="order__delivery-placement-subtitle circe">
+                                                500 ₽
+                                            </span>
                                         </li>
                                         <li data-tabs-title class="order__delivery-placement tab">
                                             <strong class="order__delivery-placement-title">
@@ -172,7 +210,9 @@
                                                 самовывоз
                                             </strong>
 
-                                            <span class="order__delivery-placement-subtitle"> 500 ₽ </span>
+                                            <span class="order__delivery-placement-subtitle circe">
+                                                500 ₽
+                                            </span>
                                         </li>
                                     </ul>
                                     <div data-tabs-body class="order__delivery-tabs-content select-close">
@@ -755,11 +795,11 @@
                             <ul class="order__checkout-list">
                                 <li class="order__checkout-item">
                                     <span class="order__checkout-item-title"> 3 товара </span>
-                                    <strong class="order__checkout-item-price"> 600 ₽ </strong>
+                                    <strong class="order__checkout-item-price circe"> 600 ₽ </strong>
                                 </li>
                                 <li class="order__checkout-item">
                                     <span class="order__checkout-item-title"> приют </span>
-                                    <strong class="order__checkout-item-price"> 100 ₽ </strong>
+                                    <strong class="order__checkout-item-price circe"> 100 ₽ </strong>
                                 </li>
                                 <li class="order__checkout-item">
                                     <span class="order__checkout-item-title"> доставка </span>
@@ -769,7 +809,7 @@
 
                             <div class="order__checkout-total">
                                 <span class="order__checkout-item-title">Итог: </span>
-                                <strong class="order__checkout-total-price"> 700₽ </strong>
+                                <strong class="order__checkout-total-price circe"> 700₽ </strong>
                             </div>
 
                             <button class="order__checkout-button link">
