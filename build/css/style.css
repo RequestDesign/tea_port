@@ -1869,7 +1869,7 @@ body.lock {
 .order {
   background-image: url("../img/order/background.svg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center bottom;
   background-size: 100%;
   overflow: hidden;
 }
