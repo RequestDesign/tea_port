@@ -549,5 +549,18 @@ if (orderCatalogButton) {
 }
 
 document.addEventListener('click', function (e) {
-    if (e.target.closest('.hor-slider__item-cart-controlls')) e.preventDefault();
+    const target = e.target;
+    if (target.closest('.hor-slider__item-cart-controlls')) e.preventDefault();
+    if (target.closest('[data-pass-btn]')) {
+        const inp = target.closest('.inp') ? target.closest('.inp').querySelector('input') : null;
+        if (inp) {
+            if (!inp.parentElement.classList.contains('_show')) {
+                inp.parentElement.classList.toggle('_show');
+                inp.type = 'text';
+            } else {
+                inp.parentElement.classList.remove('_show');
+                inp.type = 'password';
+            }
+        }
+    }
 });
