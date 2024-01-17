@@ -6,6 +6,11 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    .modal & {
+        @media (min-width: 48em) {
+            width: 26rem;
+        }
+    }
 
     &__bg-mob {
         display: none;
@@ -33,6 +38,10 @@
         text-align: center;
         letter-spacing: 0.44rem;
         z-index: 1;
+        .modal & {
+            margin-right: auto;
+            margin-left: auto;
+        }
     }
 
     &__arrow-icon {
@@ -584,8 +593,23 @@
     text-transform: lowercase;
 }
 
+.bold {
+    font-weight: 700;
+}
+
 section.product-carousel {
     @media (max-width: 48em) {
         padding-bottom: 54rem;
     }
+}
+
+section.cart__box {
+    @media (max-width: 48em) {
+        padding-bottom: 35rem;
+    }
+}
+
+textarea {
+    resize: none;
+    line-height: 1;
 }

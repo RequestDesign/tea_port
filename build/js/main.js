@@ -149,12 +149,11 @@ const initSliders = () => {
 
     if (document.querySelector('.mood-slider')) {
         const moodSlider = new Swiper('.mood-slider', {
-            speed: 800,
-            autoplay: {
-                delay: 4500,
-                disableOnInteraction: true
-            },
-            observer: true,
+            // autoplay: {
+            //     delay: 4500,
+            //     disableOnInteraction: false
+            // },
+            loop: true,
             updateOnWindowResize: true,
 
             pagination: {
@@ -174,15 +173,18 @@ const initSliders = () => {
                 769: {
                     slidesPerGroup: 4,
                     slidesPerView: 4,
-                    spaceBetween: rem(5.4),
+                    spaceBetween: `3%`,
+                    followFinger: false,
+                    speed: 0,
                     scrollbar: {
                         enabled: true
                     }
                 },
                 320: {
+                    speed: 800,
                     slidesPerGroup: 1,
                     slidesPerView: 1.6,
-                    spaceBetween: rem(1.8),
+                    spaceBetween: `7%`,
                     scrollbar: {
                         enabled: false
                     }
@@ -207,13 +209,12 @@ const initSliders = () => {
 
     if (document.querySelector('.our-slider')) {
         const ourSlider = new Swiper('.our-slider', {
-            speed: 800,
-            autoplay: {
-                delay: 4500,
-                disableOnInteraction: true
-            },
+            // autoplay: {
+            //     delay: 4500,
+            //     disableOnInteraction: true
+            // },
             direction: 'horizontal',
-            observer: true,
+            loop: true,
             updateOnWindowResize: true,
 
             pagination: {
@@ -231,17 +232,20 @@ const initSliders = () => {
 
             breakpoints: {
                 769: {
+                    speed: 0,
+                    followFinger: false,
                     slidesPerGroup: 4,
                     slidesPerView: 4,
-                    spaceBetween: rem(5.4),
+                    spaceBetween: `3%`,
                     scrollbar: {
                         enabled: true
                     }
                 },
                 320: {
+                    speed: 800,
                     slidesPerGroup: 1,
                     slidesPerView: 1.6,
-                    spaceBetween: rem(1.8),
+                    spaceBetween: `7%`,
                     scrollbar: {
                         enabled: false
                     }
@@ -266,11 +270,12 @@ const initSliders = () => {
 
     if (document.querySelector('.popular-slider')) {
         const popularSlider = new Swiper('.popular-slider', {
-            speed: 800,
-            autoplay: {
-                delay: 4500,
-                disableOnInteraction: true
-            },
+            // autoplay: {
+            //     delay: 4500,
+            //     disableOnInteraction: true
+            // },
+            loop: true,
+            updateOnWindowResize: true,
 
             pagination: {
                 el: '.popular .swiper-pagination',
@@ -287,17 +292,20 @@ const initSliders = () => {
 
             breakpoints: {
                 769: {
+                    speed: 0,
+                    followFinger: false,
                     slidesPerGroup: 4,
                     slidesPerView: 4,
-                    spaceBetween: rem(5.4),
+                    spaceBetween: `3%`,
                     scrollbar: {
                         enabled: true
                     }
                 },
                 320: {
+                    speed: 800,
                     slidesPerGroup: 1,
                     slidesPerView: 1.6,
-                    spaceBetween: rem(1.8),
+                    spaceBetween: '7%',
                     scrollbar: {
                         enabled: false
                     }
@@ -322,13 +330,13 @@ const initSliders = () => {
 
     if (document.querySelector('.country-slider')) {
         const countrySlider = new Swiper('.country-slider', {
-            speed: 800,
-            autoplay: {
-                delay: 4500,
-                disableOnInteraction: true
-            },
+            // autoplay: {
+            //     delay: 4500,
+            //     disableOnInteraction: true
+            // },
             direction: 'horizontal',
             observer: true,
+            loop: true,
             updateOnWindowResize: true,
 
             pagination: {
@@ -346,17 +354,20 @@ const initSliders = () => {
 
             breakpoints: {
                 769: {
+                    speed: 0,
+                    followFinger: false,
                     slidesPerGroup: 4,
                     slidesPerView: 4,
-                    spaceBetween: rem(5.4),
+                    spaceBetween: `3%`,
                     scrollbar: {
                         enabled: true
                     }
                 },
                 320: {
+                    speed: 800,
                     slidesPerGroup: 1,
                     slidesPerView: 1.6,
-                    spaceBetween: rem(1.9),
+                    spaceBetween: `7%`,
                     scrollbar: {
                         enabled: false
                     }
@@ -414,10 +425,10 @@ const initSliders = () => {
                 }
             },
             speed: 800,
-            autoplay: {
-                delay: 4500,
-                disableOnInteraction: true
-            },
+            // autoplay: {
+            //     delay: 4500,
+            //     disableOnInteraction: true
+            // },
             direction: 'horizontal',
             observer: true,
             updateOnWindowResize: true,
@@ -475,7 +486,7 @@ const initSliders = () => {
                 769: {
                     slidesPerGroup: 4,
                     slidesPerView: 4,
-                    spaceBetween: rem(5.4),
+                    spaceBetween: `3%`,
                     scrollbar: {
                         enabled: true
                     },
@@ -486,7 +497,7 @@ const initSliders = () => {
                 320: {
                     slidesPerGroup: 1,
                     slidesPerView: 1.72,
-                    spaceBetween: rem(1.8),
+                    spaceBetween: `7%`,
                     scrollbar: {
                         enabled: false
                     }
@@ -562,5 +573,13 @@ document.addEventListener('click', function (e) {
                 inp.type = 'password';
             }
         }
+    }
+    if (target.closest('.filters-btn')) {
+        document.documentElement.classList.add('_show-filters');
+        document.documentElement.classList.add('lock');
+    }
+    if (target.closest('.products-list__filter-controls-close')) {
+        document.documentElement.classList.remove('_show-filters');
+        document.documentElement.classList.remove('lock');
     }
 });

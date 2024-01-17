@@ -53,6 +53,9 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        .text-slim {
+            letter-spacing: normal;
+        }
     }
     &__head-link {
         position: absolute;

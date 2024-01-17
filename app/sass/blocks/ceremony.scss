@@ -1,406 +1,414 @@
 .ceremony {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-
-  // .ceremony__subtitle
-
-  &__subtitle {
-  }
-
-  // .ceremony__slider
-
-  &__slider {
-    &.swiper {
-      margin-left: 0;
-      margin-right: 0;
-      width: 100%;
-    }
-    @media (max-width: 48em) {
-      margin-bottom: 6rem;
-    }
-  }
-
-  // .ceremony__wrapper
-
-  &__wrapper {
-  }
-
-  // .ceremony__slide
-
-  &__slide {
-  }
-
-  // .ceremony__symbols
-
-  &__symbols {
-    display: none;
-    @media (min-width: 48em) {
-      position: absolute;
-      top: 0;
-      right: 9.2rem;
-      display: flex;
-      column-gap: 0.5rem;
-      span:last-child {
-        transform: translateY(10rem);
-      }
-      .text-chns {
-        writing-mode: vertical-rl;
-      }
-    }
-  }
-
-  // .ceremony__pag
-
-  &__pag {
-    .swiper-pagination {
-      position: static;
-      transform: none;
-      &._vertical {
-        top: -1rem;
-        width: auto;
-      }
-      @media (min-width: 48em) {
-        flex-direction: column;
-      }
-    }
-  }
-
-  // .ceremony__group
-
-  &__group {
+    position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    @media (min-width: 48em) {
-      position: absolute;
-      top: 24rem;
-      left: 0;
-      display: inline-block;
-      width: auto;
-      .pag__scrollbar-wrapper {
+    text-align: center;
+
+    // .ceremony__subtitle
+
+    &__subtitle {
+    }
+
+    // .ceremony__slider
+
+    &__slider {
+        &.swiper {
+            margin-left: 0;
+            margin-right: 0;
+            width: 100%;
+        }
+        @media (max-width: 48em) {
+            margin-bottom: 6rem;
+        }
+    }
+
+    // .ceremony__wrapper
+
+    &__wrapper {
+    }
+
+    // .ceremony__slide
+
+    &__slide {
+        &_v {
+            .slide-ceremony__images {
+                @media (min-width: 48em) {
+                    bottom: 2.2rem;
+                }
+            }
+        }
+    }
+
+    // .ceremony__symbols
+
+    &__symbols {
         display: none;
-      }
+        @media (min-width: 48em) {
+            position: absolute;
+            top: 0;
+            right: 9.2rem;
+            display: flex;
+            column-gap: 0.5rem;
+            span:last-child {
+                transform: translateY(10rem);
+            }
+            .text-chns {
+                writing-mode: vertical-rl;
+            }
+        }
     }
-  }
 
-  // .ceremony__link
+    // .ceremony__pag
 
-  &__link {
-    @media (min-width: 48em) {
-      display: none;
+    &__pag {
+        .swiper-pagination {
+            position: static;
+            transform: none;
+            &._vertical {
+                top: -1rem;
+                width: auto;
+            }
+            @media (min-width: 48em) {
+                flex-direction: column;
+            }
+        }
     }
-  }
+
+    // .ceremony__group
+
+    &__group {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        @media (min-width: 48em) {
+            position: absolute;
+            top: 24rem;
+            left: 0;
+            display: inline-block;
+            width: auto;
+            .pag__scrollbar-wrapper {
+                display: none;
+            }
+        }
+    }
+
+    // .ceremony__link
+
+    &__link {
+        @media (min-width: 48em) {
+            display: none;
+        }
+    }
 }
 
 // --------------------------------------------------------------------------
 
 .slide-ceremony {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  // .slide-ceremony__head
-
-  &__head {
-    margin-bottom: 11.4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    @media (max-width: 48em) {
-      margin-bottom: 5rem;
-    }
-  }
-
-  // .slide-ceremony__subtitle
-
-  &__subtitle {
-    margin-bottom: 2.2rem;
-    @media (max-width: 48em) {
-      margin-bottom: 4rem;
-    }
-  }
-
-  // .slide-ceremony__title
-
-  &__title {
-    @media (max-width: 48em) {
-      font-size: 5rem;
-    }
-  }
-
-  // .slide-ceremony__body
-
-  &__body {
     position: relative;
     display: flex;
     flex-direction: column;
-    @media (min-width: 48em) {
-      padding-bottom: 34rem;
-      padding-left: 10rem;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  }
-
-  // .slide-ceremony__steps
-
-  &__steps {
-    position: relative;
-    z-index: 2;
-  }
-
-  // .slide-ceremony__images
-
-  &__images {
-    margin-bottom: 8rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
-    row-gap: 2rem;
-    user-select: none;
-    @media (min-width: 48em) {
-      position: absolute;
-      bottom: 0;
-      right: 5rem;
-      margin-bottom: 0;
-      width: 100%;
-      height: 100%;
-      column-gap: 4rem;
-      row-gap: normal;
-    }
-  }
-
-  // .slide-ceremony__img-wrap
-
-  &__img-wrap {
-    display: flex;
     align-items: center;
-    &:not(&_a) {
-      .slide-ceremony__img-txt {
-        flex-direction: column;
-      }
-    }
-    @media (max-width: 48em) {
-      row-gap: 2rem;
-      .slide-ceremony__img-txt {
-        flex-direction: column;
-      }
-    }
 
-    // .slide-ceremony__img-wrap_a
+    // .slide-ceremony__head
 
-    &_a {
-      grid-row: 2/3;
-      column-gap: 3.1rem;
-      transform: translateX(12rem);
-      .slide-ceremony__image {
-        width: 24.8rem;
-      }
-      @media (max-width: 48em) {
-        grid-row: 1/2;
-        grid-column: 1/2;
+    &__head {
+        margin-bottom: 11.4rem;
+        display: flex;
         flex-direction: column;
-        transform: none;
-        .slide-ceremony__image {
-          width: 19rem;
+        align-items: center;
+        text-align: center;
+        @media (max-width: 48em) {
+            margin-bottom: 5rem;
         }
-      }
     }
 
-    // .slide-ceremony__img-wrap_b
+    // .slide-ceremony__subtitle
 
-    &_b {
-      grid-column: 2/4;
-      grid-row: 2/3;
-      .slide-ceremony__image {
-        width: 88.3rem;
-      }
-      @media (max-width: 48em) {
-        grid-row: 2/3;
-        grid-column: 1/4;
-        .slide-ceremony__image {
-          width: 100%;
+    &__subtitle {
+        margin-bottom: 2.2rem;
+        @media (max-width: 48em) {
+            margin-bottom: 4rem;
         }
-      }
     }
 
-    // .slide-ceremony__img-wrap_c
+    // .slide-ceremony__title
 
-    &_c {
-      grid-row: 1/2;
-      grid-column: 2/3;
-      flex-direction: column;
-      .slide-ceremony__image {
-        width: 14rem;
-      }
-      @media (min-width: 48em) {
-        grid-column: 2/3;
-        grid-row: 1/2;
+    &__title {
+        @media (max-width: 48em) {
+            font-size: 5rem;
+        }
+    }
+
+    // .slide-ceremony__body
+
+    &__body {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 48em) {
+            padding-bottom: 34rem;
+            padding-left: 10rem;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    // .slide-ceremony__steps
+
+    &__steps {
+        position: relative;
+        z-index: 2;
+    }
+
+    // .slide-ceremony__images
+
+    &__images {
+        margin-bottom: 8rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
         row-gap: 2rem;
-        justify-self: end;
-        align-self: end;
-        .slide-ceremony__image {
-          width: 27.4rem;
-          height: 16.2rem;
+        user-select: none;
+        @media (min-width: 48em) {
+            position: absolute;
+            bottom: 0;
+            right: 5rem;
+            margin-bottom: 0;
+            width: 100%;
+            height: 100%;
+            column-gap: 4rem;
+            row-gap: normal;
         }
-      }
     }
 
-    // .slide-ceremony__img-wrap_d
+    // .slide-ceremony__img-wrap
 
-    &_d {
-      grid-row: 1/2;
-      grid-column: 3/4;
-      flex-direction: column;
-      .slide-ceremony__image {
-        width: 21rem;
-      }
-      @media (min-width: 48em) {
-        grid-column: 3/4;
-        grid-row: 1/2;
-        justify-self: start;
-        align-self: end;
-        row-gap: 2rem;
-        .slide-ceremony__image {
-          width: 17.6rem;
+    &__img-wrap {
+        display: flex;
+        align-items: center;
+        &:not(&_a) {
+            .slide-ceremony__img-txt {
+                flex-direction: column;
+            }
         }
-      }
+        @media (max-width: 48em) {
+            row-gap: 2rem;
+            .slide-ceremony__img-txt {
+                flex-direction: column;
+            }
+        }
+
+        // .slide-ceremony__img-wrap_a
+
+        &_a {
+            grid-row: 2/3;
+            column-gap: 3.1rem;
+            transform: translateX(12rem);
+            .slide-ceremony__image {
+                width: 24.8rem;
+            }
+            @media (max-width: 48em) {
+                grid-row: 1/2;
+                grid-column: 1/2;
+                flex-direction: column;
+                transform: none;
+                .slide-ceremony__image {
+                    width: 19rem;
+                }
+            }
+        }
+
+        // .slide-ceremony__img-wrap_b
+
+        &_b {
+            grid-column: 2/4;
+            grid-row: 2/3;
+            .slide-ceremony__image {
+                width: 88.3rem;
+            }
+            @media (max-width: 48em) {
+                grid-row: 2/3;
+                grid-column: 1/4;
+                .slide-ceremony__image {
+                    width: 100%;
+                }
+            }
+        }
+
+        // .slide-ceremony__img-wrap_c
+
+        &_c {
+            grid-row: 1/2;
+            grid-column: 2/3;
+            flex-direction: column;
+            .slide-ceremony__image {
+                width: 14rem;
+            }
+            @media (min-width: 48em) {
+                grid-column: 2/3;
+                grid-row: 1/2;
+                row-gap: 2rem;
+                justify-self: end;
+                align-self: end;
+                .slide-ceremony__image {
+                    width: 27.4rem;
+                    height: 16.2rem;
+                }
+            }
+        }
+
+        // .slide-ceremony__img-wrap_d
+
+        &_d {
+            grid-row: 1/2;
+            grid-column: 3/4;
+            flex-direction: column;
+            .slide-ceremony__image {
+                width: 21rem;
+            }
+            @media (min-width: 48em) {
+                grid-column: 3/4;
+                grid-row: 1/2;
+                justify-self: start;
+                align-self: end;
+                row-gap: 2rem;
+                .slide-ceremony__image {
+                    width: 17.6rem;
+                }
+            }
+        }
     }
-  }
 
-  // .slide-ceremony__image
+    // .slide-ceremony__image
 
-  &__image {
-    object-fit: contain;
-    &._vertical {
-      width: 18.3rem;
-      height: 24.8rem;
+    &__image {
+        object-fit: contain;
+        &._vertical {
+            width: 18.3rem;
+            height: 24.8rem;
+        }
     }
-  }
 
-  // .slide-ceremony__img-txt
+    // .slide-ceremony__img-txt
 
-  &__img-txt {
-    display: flex;
-  }
-
-  // .slide-ceremony__requires
-
-  &__requires {
-    position: relative;
-    z-index: 2;
-  }
-
-  // .slide-ceremony__symbols
-
-  &__symbols {
-    margin-bottom: 16rem;
-    display: flex;
-    justify-content: center;
-    column-gap: 1rem;
-    .text-chns {
-      writing-mode: vertical-rl;
-      &:last-child {
-        transform: translateY(10rem);
-      }
+    &__img-txt {
+        display: flex;
     }
-    @media (min-width: 48em) {
-      display: none;
+
+    // .slide-ceremony__requires
+
+    &__requires {
+        position: relative;
+        z-index: 2;
     }
-  }
+
+    // .slide-ceremony__symbols
+
+    &__symbols {
+        margin-bottom: 16rem;
+        display: flex;
+        justify-content: center;
+        column-gap: 1rem;
+        .text-chns {
+            writing-mode: vertical-rl;
+            &:last-child {
+                transform: translateY(10rem);
+            }
+        }
+        @media (min-width: 48em) {
+            display: none;
+        }
+    }
 }
 
 // --------------------------------------------------------------------------
 
 .steps-slide-ceremony {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  order: 1;
-  @media (min-width: 48em) {
-    flex: 0 0 61.5rem;
-    order: unset;
-  }
-
-  // .steps-slide-ceremony__steps-subtitle
-
-  &__steps-subtitle {
-    margin-bottom: 1.8rem;
-    @media (max-width: 48em) {
-      margin-bottom: 3.6rem;
-    }
-  }
-
-  // .steps-slide-ceremony__list
-
-  &__list {
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
-    list-style: none;
-    @media (max-width: 48em) {
-      row-gap: 2rem;
-    }
-  }
-
-  // .steps-slide-ceremony__list-item
-
-  &__list-item {
-    list-style: none;
-    text-align: left;
+    align-items: flex-start;
+    order: 1;
     @media (min-width: 48em) {
-      font-size: 1.6rem;
+        flex: 0 0 61.5rem;
+        order: unset;
     }
-  }
+
+    // .steps-slide-ceremony__steps-subtitle
+
+    &__steps-subtitle {
+        margin-bottom: 1.8rem;
+        @media (max-width: 48em) {
+            margin-bottom: 3.6rem;
+        }
+    }
+
+    // .steps-slide-ceremony__list
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        list-style: none;
+        height: 22.8rem;
+        @media (max-width: 48em) {
+            row-gap: 2rem;
+        }
+    }
+
+    // .steps-slide-ceremony__list-item
+
+    &__list-item {
+        list-style: none;
+        text-align: left;
+        @media (min-width: 48em) {
+            font-size: 1.6rem;
+        }
+    }
 }
 
 // --------------------------------------------------------------------------
 
 .requires-slide-ceremony {
-  margin-bottom: 10rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  order: -1;
-  text-align: center;
-  @media (min-width: 48em) {
-    margin-bottom: 0;
-    padding-top: 10.5rem;
-    flex: 0 0 32.5rem;
-    order: unset;
-  }
-
-  // .requires-slide-ceremony__subtitle
-
-  &__subtitle {
-    margin-bottom: 4.4rem;
-    @media (max-width: 48em) {
-      margin-bottom: 3.6rem;
-    }
-  }
-
-  // .requires-slide-ceremony__list
-
-  &__list {
+    margin-bottom: 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    order: -1;
     text-align: center;
-    list-style: none;
-  }
-
-  // .requires-slide-ceremony__list-item
-
-  &__list-item {
-    list-style: none;
     @media (min-width: 48em) {
-      font-size: 1.8rem;
+        margin-bottom: 0;
+        padding-top: 10.5rem;
+        flex: 0 0 32.5rem;
+        order: unset;
     }
-  }
+
+    // .requires-slide-ceremony__subtitle
+
+    &__subtitle {
+        margin-bottom: 4.4rem;
+        @media (max-width: 48em) {
+            margin-bottom: 3.6rem;
+        }
+    }
+
+    // .requires-slide-ceremony__list
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        list-style: none;
+    }
+
+    // .requires-slide-ceremony__list-item
+
+    &__list-item {
+        list-style: none;
+        @media (min-width: 48em) {
+            font-size: 1.8rem;
+        }
+    }
 }
