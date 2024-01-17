@@ -1,15 +1,10 @@
 .base {
-    margin: 0;
-    width: 100%;
-    background-image: url('../img/webp/base-bg.webp');
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: 100% 100%;
-    overflow: hidden;
+    &.wrapper__content::before {
+        background-image: url('../img/webp/base-bg.webp');
+    }
 
     &-information {
         text-align: center;
-        padding-bottom: 43rem;
         &__symbols {
             display: flex;
             flex-direction: column;
@@ -32,7 +27,11 @@
 }
 @media (max-width: 48em) {
     .base {
-        background-image: url('../img/webp/base-bg-mob.webp');
+        &.wrapper__content {
+            &::before {
+                background-image: url('../img/webp/base-bg-mob.webp');
+            }
+        }
 
         &-information {
             margin-top: 4.2rem;

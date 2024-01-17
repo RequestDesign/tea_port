@@ -14,8 +14,9 @@
         <title>TEAPORT - Страница товара</title>
     </head>
     <body style="opacity: 0">
-        <div class="product">
-            <header class="header">
+        <div class="wrapper">
+            <div class="wrapper__content product">
+                <header class="header">
     <div class="header__links-bar">
         <button class="header__burger-btn">
             <img src="./img/icon/burger-icon.svg" alt="" />
@@ -359,1077 +360,1130 @@
     </div>
 </div>
 
-            <main>
-                <section class="section pb18">
-                    <div class="hero-product">
-                        <div class="hero-product__info info-hero-product">
-                            <div class="info-hero-product__title-wrap">
-                                <span class="info-hero-product__subtitle">
-                                    <strong class="info-hero-product__text-strong text-strong">
-                                        Красный чай
-                                    </strong>
-                                    <span class="info-hero-product__text text">Из индии</span>
-                                </span>
-                                <span class="info-hero-product__title title">Тата чай</span>
+                <main>
+                    <section class="section pb18">
+                        <div class="hero-product">
+                            <div class="hero-product__info info-hero-product">
+                                <div class="info-hero-product__title-wrap">
+                                    <span class="info-hero-product__subtitle">
+                                        <strong class="info-hero-product__text-strong text-strong">
+                                            Красный чай
+                                        </strong>
+                                        <span class="info-hero-product__text text">Из индии</span>
+                                    </span>
+                                    <span class="info-hero-product__title title">Тата чай</span>
+                                </div>
+                                <div class="info-hero-product__info">
+                                    <strong class="info-hero-product__text-strong text-strong circe"
+                                        >150 г</strong
+                                    >
+                                    <span class="info-hero-product__text text">для снятия усталости</span>
+                                    <span class="info-hero-product__price text-price"
+                                        >600 <span class="rub">₽</span></span
+                                    >
+                                </div>
+                                <a href="#!" class="info-hero-product__link link">
+                                    <span>Подробнее</span>
+                                    <div class="link__arrow-icon">
+                                        <svg
+                                            viewBox="0 0 72 54"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                class="icon-circle"
+                                                d="M71 24.4286C71 38.9999 60.8833 53 46.7143 53C32.2741 53 19 41.2819 19 27C19 12.5979 29.8252 1 44.1429 1C58.6824 1 71 10.2335 71 24.4286Z"
+                                                stroke="#393531"
+                                                stroke-width="2"
+                                            ></path>
+                                            <path
+                                                class="icon-arrow"
+                                                d="M55.7071 26.7071C56.0976 26.3166 56.0976 25.6834 55.7071 25.2929L49.3431 18.9289C48.9526 18.5384 48.3195 18.5384 47.9289 18.9289C47.5384 19.3195 47.5384 19.9526 47.9289 20.3432L53.5858 26L47.9289 31.6569C47.5384 32.0474 47.5384 32.6805 47.9289 33.0711C48.3195 33.4616 48.9526 33.4616 49.3431 33.0711L55.7071 26.7071ZM-8.74228e-08 27L55 27L55 25L8.74228e-08 25L-8.74228e-08 27Z"
+                                                fill="#393531"
+                                            ></path>
+                                        </svg>
+                                    </div>
+                                    <div class="link__link-bg">
+                                        <svg
+                                            viewBox="0 0 241 72"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M128.5 4.99992L182 4.99992L188.663 4.99992C192.869 4.99992 197.055 5.56408 201.11 6.67731L220.482 11.995C234.616 15.875 242.99 30.4143 239.252 44.5871C236.157 56.3227 225.543 64.4999 213.406 64.4999L200 64.4999L145.5 64.4999L88.5 71.4999L34.5381 71.4999C32.1858 71.4999 29.84 71.2539 27.539 70.7658L23.7153 69.9547C9.07632 66.8494 -0.885607 53.2321 0.587233 38.3401C1.74692 26.6145 9.80339 16.7176 21.0499 13.2031L51.5133 3.68332C61.4042 0.592438 71.814 -0.485748 82.1284 0.512405L128.5 4.99992Z"
+                                                fill="white"
+                                            ></path>
+                                        </svg>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="info-hero-product__info">
-                                <strong class="info-hero-product__text-strong text-strong circe"
-                                    >150 г</strong
+                            <div class="hero-product__carousel carousel-hero-product">
+                                <div class="carousel-hero-product__slider swiper">
+                                    <div class="carousel-hero-product__wrapper swiper-wrapper">
+                                        <div class="carousel-hero-product__slide swiper-slide">
+                                            <div class="carousel-hero-product__image-wrap">
+                                                <img
+                                                    src="./img/webp/product.webp"
+                                                    alt=""
+                                                    class="carousel-hero-product__image"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="carousel-hero-product__slide swiper-slide">
+                                            <div class="carousel-hero-product__image-wrap">
+                                                <img
+                                                    src="./img/webp/product.webp"
+                                                    alt=""
+                                                    class="carousel-hero-product__image"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="carousel-hero-product__slide swiper-slide">
+                                            <div class="carousel-hero-product__image-wrap">
+                                                <img
+                                                    src="./img/webp/product.webp"
+                                                    alt=""
+                                                    class="carousel-hero-product__image"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-hero-product__control">
+                                    <button
+                                        type="button"
+                                        class="carousel-hero-product__control-btn carousel-hero-product__control-btn_prev"
+                                    ></button>
+                                    <button
+                                        type="button"
+                                        class="carousel-hero-product__control-btn carousel-hero-product__control-btn_next"
+                                    ></button>
+                                </div>
+                            </div>
+                            <div class="hero-product__description description-hero-product">
+                                <strong class="description-hero-product__text-strong text-strong circe"
+                                    >Артикул: <span>00002914</span></strong
                                 >
-                                <span class="info-hero-product__text text">для снятия усталости</span>
-                                <span class="info-hero-product__price text-price"
-                                    >600 <span class="rub">₽</span></span
-                                >
-                            </div>
-                            <a href="#!" class="info-hero-product__link link">
-                                <span>Подробнее</span>
-                                <div class="link__arrow-icon">
-                                    <svg viewBox="0 0 72 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            class="icon-circle"
-                                            d="M71 24.4286C71 38.9999 60.8833 53 46.7143 53C32.2741 53 19 41.2819 19 27C19 12.5979 29.8252 1 44.1429 1C58.6824 1 71 10.2335 71 24.4286Z"
-                                            stroke="#393531"
-                                            stroke-width="2"
-                                        ></path>
-                                        <path
-                                            class="icon-arrow"
-                                            d="M55.7071 26.7071C56.0976 26.3166 56.0976 25.6834 55.7071 25.2929L49.3431 18.9289C48.9526 18.5384 48.3195 18.5384 47.9289 18.9289C47.5384 19.3195 47.5384 19.9526 47.9289 20.3432L53.5858 26L47.9289 31.6569C47.5384 32.0474 47.5384 32.6805 47.9289 33.0711C48.3195 33.4616 48.9526 33.4616 49.3431 33.0711L55.7071 26.7071ZM-8.74228e-08 27L55 27L55 25L8.74228e-08 25L-8.74228e-08 27Z"
-                                            fill="#393531"
-                                        ></path>
-                                    </svg>
-                                </div>
-                                <div class="link__link-bg">
-                                    <svg viewBox="0 0 241 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M128.5 4.99992L182 4.99992L188.663 4.99992C192.869 4.99992 197.055 5.56408 201.11 6.67731L220.482 11.995C234.616 15.875 242.99 30.4143 239.252 44.5871C236.157 56.3227 225.543 64.4999 213.406 64.4999L200 64.4999L145.5 64.4999L88.5 71.4999L34.5381 71.4999C32.1858 71.4999 29.84 71.2539 27.539 70.7658L23.7153 69.9547C9.07632 66.8494 -0.885607 53.2321 0.587233 38.3401C1.74692 26.6145 9.80339 16.7176 21.0499 13.2031L51.5133 3.68332C61.4042 0.592438 71.814 -0.485748 82.1284 0.512405L128.5 4.99992Z"
-                                            fill="white"
-                                        ></path>
-                                    </svg>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="hero-product__carousel carousel-hero-product">
-                            <div class="carousel-hero-product__slider swiper">
-                                <div class="carousel-hero-product__wrapper swiper-wrapper">
-                                    <div class="carousel-hero-product__slide swiper-slide">
-                                        <div class="carousel-hero-product__image-wrap">
-                                            <img
-                                                src="./img/webp/product.webp"
-                                                alt=""
-                                                class="carousel-hero-product__image"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div class="carousel-hero-product__slide swiper-slide">
-                                        <div class="carousel-hero-product__image-wrap">
-                                            <img
-                                                src="./img/webp/product.webp"
-                                                alt=""
-                                                class="carousel-hero-product__image"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div class="carousel-hero-product__slide swiper-slide">
-                                        <div class="carousel-hero-product__image-wrap">
-                                            <img
-                                                src="./img/webp/product.webp"
-                                                alt=""
-                                                class="carousel-hero-product__image"
-                                            />
-                                        </div>
-                                    </div>
+                                <p class="description-hero-product__text text">
+                                    Отличный чай для снятия усталости и получения заряда бодрости. Насыщенный
+                                    и ароматный. Богат витаминами!
+                                </p>
+                                <div class="description-hero-product__chns-text">
+                                    <span class="text-chns">独家印</span>
+                                    <span class="text-chns">度红茶</span>
                                 </div>
                             </div>
-                            <div class="carousel-hero-product__control">
-                                <button
-                                    type="button"
-                                    class="carousel-hero-product__control-btn carousel-hero-product__control-btn_prev"
-                                ></button>
-                                <button
-                                    type="button"
-                                    class="carousel-hero-product__control-btn carousel-hero-product__control-btn_next"
-                                ></button>
+                        </div>
+                    </section>
+                    <section class="section">
+                        <div class="delivery-information">
+                            <div class="delivery__subtitle _desc">
+                                <p class="text-strong">Описание</p>
                             </div>
-                        </div>
-                        <div class="hero-product__description description-hero-product">
-                            <strong class="description-hero-product__text-strong text-strong circe"
-                                >Артикул: <span>00002914</span></strong
-                            >
-                            <p class="description-hero-product__text text">
-                                Отличный чай для снятия усталости и получения заряда бодрости. Насыщенный и
-                                ароматный. Богат витаминами!
-                            </p>
-                            <div class="description-hero-product__chns-text">
-                                <span class="text-chns">独家印</span>
-                                <span class="text-chns">度红茶</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="section">
-                    <div class="delivery-information">
-                        <div class="delivery__subtitle _desc">
-                            <p class="text-strong">Описание</p>
-                        </div>
-                        <div class="delivery__texts _desc">
-                            <p class="text-slim">
-                                Черный индийский чай с добавлением иван-чая, ягод брусники, черной смородины и
-                                малины, кусочков яблок, шиповника, листьев ежевики, веточек саган-дайля,
-                                лепестков синего василька и розы. Отличный чай для снятия усталости и
-                                получения заряда бодрости. Настой коричневого цвета, насыщенный и ароматный.
-                            </p>
-                            <p class="text-strong">
-                                Способ приготовления: <span class="circe">1</span> гр. на
-                                <span class="circe">100</span> мл воды, <span class="circe">t 95°C</span>.
-                                Время заваривания <span class="circe">5-6</span> мин.
-                            </p>
-                            <p class="text-slim">
-                                Для хранения этого вида чая Вы можете купить у нас банки для хранения чая. А
-                                для заваривания – стеклянные чайники или чайники гунфу.
-                            </p>
-                        </div>
-                        <div class="delivery__subtitle _delivery mobile-only">
-                            <p class="text-strong">Характеристики</p>
-                        </div>
-                        <div class="delivery__list _desc">
-                            <div class="delivery__element">
-                                <p class="text-strong">Состав:</p>
+                            <div class="delivery__texts _desc">
                                 <p class="text-slim">
-                                    черный чай, кипрей, ягоды брусники, клюквы, черной смородины, малины,
-                                    кусочки яблок, шиповника, веточки Саган Дайля, земляничые и ежевичные
-                                    листья, лепестки синего василька.
+                                    Черный индийский чай с добавлением иван-чая, ягод брусники, черной
+                                    смородины и малины, кусочков яблок, шиповника, листьев ежевики, веточек
+                                    саган-дайля, лепестков синего василька и розы. Отличный чай для снятия
+                                    усталости и получения заряда бодрости. Настой коричневого цвета,
+                                    насыщенный и ароматный.
+                                </p>
+                                <p class="text-strong">
+                                    Способ приготовления: <span class="circe">1</span> гр. на
+                                    <span class="circe">100</span> мл воды, <span class="circe">t 95°C</span>.
+                                    Время заваривания <span class="circe">5-6</span> мин.
+                                </p>
+                                <p class="text-slim">
+                                    Для хранения этого вида чая Вы можете купить у нас банки для хранения чая.
+                                    А для заваривания – стеклянные чайники или чайники гунфу.
                                 </p>
                             </div>
-                            <div class="delivery__element">
-                                <p class="text-strong">Способ заваривания::</p>
-                                <p class="text-slim">2-3 г на 250 мл воды</p>
+                            <div class="delivery__subtitle _delivery mobile-only">
+                                <p class="text-strong">Характеристики</p>
                             </div>
-                            <div class="delivery__element">
-                                <p class="text-strong">Температура воды:</p>
-                                <p class="text-slim">95 градусов</p>
-                            </div>
-                            <div class="delivery__element">
-                                <p class="text-strong">Время заваривания:</p>
-                                <p class="text-slim">3-5 мин</p>
+                            <div class="delivery__list _desc">
+                                <div class="delivery__element">
+                                    <p class="text-strong">Состав:</p>
+                                    <p class="text-slim">
+                                        черный чай, кипрей, ягоды брусники, клюквы, черной смородины, малины,
+                                        кусочки яблок, шиповника, веточки Саган Дайля, земляничые и ежевичные
+                                        листья, лепестки синего василька.
+                                    </p>
+                                </div>
+                                <div class="delivery__element">
+                                    <p class="text-strong">Способ заваривания::</p>
+                                    <p class="text-slim">2-3 г на 250 мл воды</p>
+                                </div>
+                                <div class="delivery__element">
+                                    <p class="text-strong">Температура воды:</p>
+                                    <p class="text-slim">95 градусов</p>
+                                </div>
+                                <div class="delivery__element">
+                                    <p class="text-strong">Время заваривания:</p>
+                                    <p class="text-slim">3-5 мин</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-
-                <section class="section pb18">
-                    <div class="ceremony">
-                        <span class="ceremony__subtitle text-strong">Чайная церемония</span>
-                        <div class="ceremony__slider swiper">
-                            <div class="ceremony__wrapper swiper-wrapper">
-                                <div class="ceremony__slide slide-ceremony swiper-slide">
-                                    <div class="slide-ceremony__head">
-                                        <span class="slide-ceremony__subtitle text">вариант 1</span>
-                                        <span class="slide-ceremony__title title"
-                                            >заваривание чая Проливом</span
+                    </section>
+                    <section class="section pb18">
+                        <div class="ceremony">
+                            <span class="ceremony__subtitle text-strong">Чайная церемония</span>
+                            <div class="ceremony__slider swiper">
+                                <div class="ceremony__wrapper swiper-wrapper">
+                                    <div class="ceremony__slide slide-ceremony swiper-slide">
+                                        <div class="slide-ceremony__head">
+                                            <span class="slide-ceremony__subtitle text">вариант 1</span>
+                                            <span class="slide-ceremony__title title"
+                                                >заваривание чая Проливом</span
+                                            >
+                                        </div>
+                                        <span class="slide-ceremony__symbols">
+                                            <span class="text-chns">独家印</span>
+                                            <span class="text-chns">度红茶</span>
+                                        </span>
+                                        <div class="slide-ceremony__body">
+                                            <div class="slide-ceremony__steps steps-slide-ceremony">
+                                                <span class="steps-slide-ceremony__steps-subtitle text-strong"
+                                                    >Способ заваривания:</span
+                                                >
+                                                <ul class="steps-slide-ceremony__list text">
+                                                    <li class="steps-slide-ceremony__list-item">
+                                                        1. Сполосните кипятком глиняный чайник
+                                                    </li>
+                                                    <li class="steps-slide-ceremony__list-item">
+                                                        2. Засыпьте чай, подождите 1 минуту
+                                                    </li>
+                                                    <li class="steps-slide-ceremony__list-item">
+                                                        3. Залейте чай водой (температура воды зависит от чая,
+                                                        обычно 80°)
+                                                    </li>
+                                                    <li class="steps-slide-ceremony__list-item">
+                                                        4. Сразу слейте воду, 1 пролив для очистки
+                                                    </li>
+                                                    <li class="steps-slide-ceremony__list-item">
+                                                        5. Еще раз залейте чай водой
+                                                    </li>
+                                                    <li class="steps-slide-ceremony__list-item">
+                                                        6. Сразу перелейте чай в кувшин
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="slide-ceremony__images">
+                                                <div
+                                                    class="slide-ceremony__img-wrap slide-ceremony__img-wrap_a"
+                                                >
+                                                    <img
+                                                        src="./img/webp/step-img-1.webp"
+                                                        alt=""
+                                                        class="slide-ceremony__image"
+                                                    />
+                                                    <span class="slide-ceremony__img-txt text-chns"
+                                                        ><span>酒</span><span>壶</span></span
+                                                    >
+                                                </div>
+                                                <div
+                                                    class="slide-ceremony__img-wrap slide-ceremony__img-wrap_b"
+                                                >
+                                                    <img
+                                                        src="./img/webp/step-img-2.webp"
+                                                        alt=""
+                                                        class="slide-ceremony__image"
+                                                    />
+                                                </div>
+                                                <div
+                                                    class="slide-ceremony__img-wrap slide-ceremony__img-wrap_c"
+                                                >
+                                                    <img
+                                                        src="./img/webp/step-img-3.webp"
+                                                        alt=""
+                                                        class="slide-ceremony__image"
+                                                    />
+                                                    <span class="slide-ceremony__img-txt text-chns"
+                                                        ><span>茶</span><span>壶</span></span
+                                                    >
+                                                </div>
+                                                <div
+                                                    class="slide-ceremony__img-wrap slide-ceremony__img-wrap_d"
+                                                >
+                                                    <img
+                                                        src="./img/webp/step-img-4.webp"
+                                                        alt=""
+                                                        class="slide-ceremony__image"
+                                                    />
+                                                    <span class="slide-ceremony__img-txt text-chns"
+                                                        ><span>一</span><span>杯</span></span
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="slide-ceremony__requires requires-slide-ceremony">
+                                                <span class="requires-slide-ceremony__subtitle text-strong"
+                                                    >Необходимо:</span
+                                                >
+                                                <ul class="requires-slide-ceremony__list text">
+                                                    <li class="requires-slide-ceremony__list-item">чашки</li>
+                                                    <li class="requires-slide-ceremony__list-item">кувшин</li>
+                                                    <li class="requires-slide-ceremony__list-item">
+                                                        Чайная доска
+                                                    </li>
+                                                    <li class="requires-slide-ceremony__list-item">
+                                                        Глиняный чайник
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ceremony__slide slide-ceremony swiper-slide">
+                                        <div class="slide-ceremony__head">
+                                            <span class="slide-ceremony__subtitle text">вариант 2</span>
+                                            <span class="slide-ceremony__title title"
+                                                >заваривание чая в гайвани</span
+                                            >
+                                        </div>
+                                        <span class="slide-ceremony__symbols">
+                                            <span class="text-chns">独家印</span>
+                                            <span class="text-chns">度红茶</span>
+                                        </span>
+                                        <div class="slide-ceremony__body">
+                                            <div class="slide-ceremony__steps steps-slide-ceremony">
+                                                <span class="steps-slide-ceremony__steps-subtitle text-strong"
+                                                    >Способ заваривания:</span
+                                                >
+                                                <ul class="steps-slide-ceremony__list text">
+                                                    <li class="steps-slide-ceremony__list-item">
+                                                        1. Залейте горячую воду в гайвань и подождите около
+                                                        минуты
+                                                    </li>
+                                                    <li class="steps-slide-ceremony__list-item">
+                                                        2. Слейте воду и насыпьте в гайвань чай
+                                                    </li>
+                                                    <li class="steps-slide-ceremony__list-item">
+                                                        3. Залейте чай водой, накройте крышкой и оставьте
+                                                        завариваться в течение нескольких секунд
+                                                    </li>
+                                                    <li class="steps-slide-ceremony__list-item">
+                                                        4. быстро слейте готовый настой в кувшин
+                                                    </li>
+                                                    <li class="steps-slide-ceremony__list-item">
+                                                        5. без спешки разливайте чай по чашкам
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="slide-ceremony__images">
+                                                <div
+                                                    class="slide-ceremony__img-wrap slide-ceremony__img-wrap_a"
+                                                >
+                                                    <img
+                                                        src="./img/webp/step-img-1.webp"
+                                                        alt=""
+                                                        class="slide-ceremony__image"
+                                                    />
+                                                    <span class="slide-ceremony__img-txt text-chns"
+                                                        ><span>酒</span><span>壶</span></span
+                                                    >
+                                                </div>
+                                                <div
+                                                    class="slide-ceremony__img-wrap slide-ceremony__img-wrap_b"
+                                                >
+                                                    <img
+                                                        src="./img/webp/step-img-2.webp"
+                                                        alt=""
+                                                        class="slide-ceremony__image"
+                                                    />
+                                                </div>
+                                                <div
+                                                    class="slide-ceremony__img-wrap slide-ceremony__img-wrap_c"
+                                                >
+                                                    <img
+                                                        src="./img/webp/step-img-6.webp"
+                                                        alt=""
+                                                        class="slide-ceremony__image"
+                                                    />
+                                                    <span class="slide-ceremony__img-txt text-chns"
+                                                        ><span>盖</span><span>湾</span></span
+                                                    >
+                                                </div>
+                                                <div
+                                                    class="slide-ceremony__img-wrap slide-ceremony__img-wrap_d"
+                                                >
+                                                    <img
+                                                        src="./img/webp/step-img-4.webp"
+                                                        alt=""
+                                                        class="slide-ceremony__image"
+                                                    />
+                                                    <span class="slide-ceremony__img-txt text-chns"
+                                                        ><span>一</span><span>杯</span></span
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="slide-ceremony__requires requires-slide-ceremony">
+                                                <span class="requires-slide-ceremony__subtitle text-strong"
+                                                    >Необходимо:</span
+                                                >
+                                                <ul class="requires-slide-ceremony__list text">
+                                                    <li class="requires-slide-ceremony__list-item">чашки</li>
+                                                    <li class="requires-slide-ceremony__list-item">кувшин</li>
+                                                    <li class="requires-slide-ceremony__list-item">
+                                                        гайвань
+                                                    </li>
+                                                    <li class="requires-slide-ceremony__list-item">
+                                                        Чайная доска
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="ceremony__slide ceremony__slide_v slide-ceremony swiper-slide"
+                                    >
+                                        <div class="slide-ceremony__head">
+                                            <span class="slide-ceremony__subtitle text">вариант 3</span>
+                                            <span class="slide-ceremony__title title"
+                                                >заваривание чая ВО ФРЕНЧ-ПРЕССЕ</span
+                                            >
+                                        </div>
+                                        <span class="slide-ceremony__symbols">
+                                            <span class="text-chns">独家印</span>
+                                            <span class="text-chns">度红茶</span>
+                                        </span>
+                                        <div class="slide-ceremony__body">
+                                            <div class="slide-ceremony__steps steps-slide-ceremony">
+                                                <span class="steps-slide-ceremony__steps-subtitle text-strong"
+                                                    >Способ заваривания:</span
+                                                >
+                                                <ul class="steps-slide-ceremony__list text">
+                                                    <li class="steps-slide-ceremony__list-item">
+                                                        1. Доведите воду до кипения, дайте ему полминуты
+                                                        остыть
+                                                    </li>
+                                                    <li class="steps-slide-ceremony__list-item">
+                                                        2. Вылейте воду в чайник, положите в френч-пресс
+                                                        порцию чая и залейте СВЕЖЕЙ порцией кипяченой воды.
+                                                        Накройте френч-пресс крышкой
+                                                    </li>
+                                                    <li class="steps-slide-ceremony__list-item">
+                                                        3. когда все чаинки всплывут на поверхность воды,
+                                                        опустите пресс до нижнего положения, пусть чай
+                                                        настоится 2-3 минуты
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="slide-ceremony__images">
+                                                <div
+                                                    class="slide-ceremony__img-wrap slide-ceremony__img-wrap_a"
+                                                >
+                                                    <img
+                                                        src="./img/webp/step-img-4.webp"
+                                                        alt=""
+                                                        class="slide-ceremony__image"
+                                                    />
+                                                    <span class="slide-ceremony__img-txt text-chns"
+                                                        ><span>一</span><span>杯</span></span
+                                                    >
+                                                </div>
+                                                <div
+                                                    class="slide-ceremony__img-wrap slide-ceremony__img-wrap_b"
+                                                >
+                                                    <img
+                                                        src="./img/webp/step-img-2.webp"
+                                                        alt=""
+                                                        class="slide-ceremony__image"
+                                                    />
+                                                </div>
+                                                <div
+                                                    class="slide-ceremony__img-wrap slide-ceremony__img-wrap_c"
+                                                >
+                                                    <img
+                                                        src="./img/webp/step-img-7.webp"
+                                                        alt=""
+                                                        class="slide-ceremony__image _vertical"
+                                                    />
+                                                    <span class="slide-ceremony__img-txt text-chns"
+                                                        ><span>法</span><span>压</span></span
+                                                    >
+                                                </div>
+                                                <div
+                                                    class="slide-ceremony__img-wrap slide-ceremony__img-wrap_d"
+                                                >
+                                                    <img
+                                                        src="./img/webp/step-img-4.webp"
+                                                        alt=""
+                                                        class="slide-ceremony__image"
+                                                    />
+                                                    <span class="slide-ceremony__img-txt text-chns"
+                                                        ><span>一</span><span>杯</span></span
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="slide-ceremony__requires requires-slide-ceremony">
+                                                <span class="requires-slide-ceremony__subtitle text-strong"
+                                                    >Необходимо:</span
+                                                >
+                                                <ul class="requires-slide-ceremony__list text">
+                                                    <li class="requires-slide-ceremony__list-item">чашки</li>
+                                                    <li class="requires-slide-ceremony__list-item">кувшин</li>
+                                                    <li class="requires-slide-ceremony__list-item">
+                                                        Чайная доска
+                                                    </li>
+                                                    <li class="requires-slide-ceremony__list-item">
+                                                        Глиняный чайник
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="ceremony__symbols">
+                                <span class="text-chns">独家印</span>
+                                <span class="text-chns">度红茶</span>
+                            </span>
+                            <div class="ceremony__group">
+                                <div class="ceremony__pag pag circe">
+                                    <span class="pag__current mobile-only">1</span>
+                                    <div class="pag__scrollbar-wrapper">
+                                        <div class="pag__scrollbar swiper-scrollbar"></div>
+                                    </div>
+                                    <div class="swiper-pagination _vertical"></div>
+                                </div>
+                                <a href="#!" class="ceremony__link link link--dark">
+                                    <span class="link__text">Все чаи</span>
+                                    <span class="link__text link__text--mob">Все</span>
+                                    <div class="link__arrow-icon">
+                                        <svg
+                                            viewBox="0 0 72 54"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
                                         >
+                                            <path
+                                                class="icon-circle"
+                                                d="M71 24.4286C71 38.9999 60.8833 53 46.7143 53C32.2741 53 19 41.2819 19 27C19 12.5979 29.8252 1 44.1429 1C58.6824 1 71 10.2335 71 24.4286Z"
+                                                stroke="#fff"
+                                                stroke-width="2"
+                                            ></path>
+                                            <path
+                                                class="icon-arrow"
+                                                d="M55.7071 26.7071C56.0976 26.3166 56.0976 25.6834 55.7071 25.2929L49.3431 18.9289C48.9526 18.5384 48.3195 18.5384 47.9289 18.9289C47.5384 19.3195 47.5384 19.9526 47.9289 20.3432L53.5858 26L47.9289 31.6569C47.5384 32.0474 47.5384 32.6805 47.9289 33.0711C48.3195 33.4616 48.9526 33.4616 49.3431 33.0711L55.7071 26.7071ZM-8.74228e-08 27L55 27L55 25L8.74228e-08 25L-8.74228e-08 27Z"
+                                                fill="#fff"
+                                            ></path>
+                                        </svg>
                                     </div>
-                                    <span class="slide-ceremony__symbols">
-                                        <span class="text-chns">独家印</span>
-                                        <span class="text-chns">度红茶</span>
-                                    </span>
-                                    <div class="slide-ceremony__body">
-                                        <div class="slide-ceremony__steps steps-slide-ceremony">
-                                            <span class="steps-slide-ceremony__steps-subtitle text-strong"
-                                                >Способ заваривания:</span
-                                            >
-                                            <ul class="steps-slide-ceremony__list text">
-                                                <li class="steps-slide-ceremony__list-item">
-                                                    1. Сполосните кипятком глиняный чайник
-                                                </li>
-                                                <li class="steps-slide-ceremony__list-item">
-                                                    2. Засыпьте чай, подождите 1 минуту
-                                                </li>
-                                                <li class="steps-slide-ceremony__list-item">
-                                                    3. Залейте чай водой (температура воды зависит от чая,
-                                                    обычно 80°)
-                                                </li>
-                                                <li class="steps-slide-ceremony__list-item">
-                                                    4. Сразу слейте воду, 1 пролив для очистки
-                                                </li>
-                                                <li class="steps-slide-ceremony__list-item">
-                                                    5. Еще раз залейте чай водой
-                                                </li>
-                                                <li class="steps-slide-ceremony__list-item">
-                                                    6. Сразу перелейте чай в кувшин
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="slide-ceremony__images">
-                                            <div class="slide-ceremony__img-wrap slide-ceremony__img-wrap_a">
-                                                <img
-                                                    src="./img/webp/step-img-1.webp"
-                                                    alt=""
-                                                    class="slide-ceremony__image"
-                                                />
-                                                <span class="slide-ceremony__img-txt text-chns"
-                                                    ><span>酒</span><span>壶</span></span
-                                                >
-                                            </div>
-                                            <div class="slide-ceremony__img-wrap slide-ceremony__img-wrap_b">
-                                                <img
-                                                    src="./img/webp/step-img-2.webp"
-                                                    alt=""
-                                                    class="slide-ceremony__image"
-                                                />
-                                            </div>
-                                            <div class="slide-ceremony__img-wrap slide-ceremony__img-wrap_c">
-                                                <img
-                                                    src="./img/webp/step-img-3.webp"
-                                                    alt=""
-                                                    class="slide-ceremony__image"
-                                                />
-                                                <span class="slide-ceremony__img-txt text-chns"
-                                                    ><span>茶</span><span>壶</span></span
-                                                >
-                                            </div>
-                                            <div class="slide-ceremony__img-wrap slide-ceremony__img-wrap_d">
-                                                <img
-                                                    src="./img/webp/step-img-4.webp"
-                                                    alt=""
-                                                    class="slide-ceremony__image"
-                                                />
-                                                <span class="slide-ceremony__img-txt text-chns"
-                                                    ><span>一</span><span>杯</span></span
-                                                >
-                                            </div>
-                                        </div>
-                                        <div class="slide-ceremony__requires requires-slide-ceremony">
-                                            <span class="requires-slide-ceremony__subtitle text-strong"
-                                                >Необходимо:</span
-                                            >
-                                            <ul class="requires-slide-ceremony__list text">
-                                                <li class="requires-slide-ceremony__list-item">чашки</li>
-                                                <li class="requires-slide-ceremony__list-item">кувшин</li>
-                                                <li class="requires-slide-ceremony__list-item">
-                                                    Чайная доска
-                                                </li>
-                                                <li class="requires-slide-ceremony__list-item">
-                                                    Глиняный чайник
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ceremony__slide slide-ceremony swiper-slide">
-                                    <div class="slide-ceremony__head">
-                                        <span class="slide-ceremony__subtitle text">вариант 2</span>
-                                        <span class="slide-ceremony__title title"
-                                            >заваривание чая в гайвани</span
+                                    <div class="link__link-bg">
+                                        <svg
+                                            class="link__bg-desc"
+                                            viewBox="0 0 241 72"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
                                         >
-                                    </div>
-                                    <span class="slide-ceremony__symbols">
-                                        <span class="text-chns">独家印</span>
-                                        <span class="text-chns">度红茶</span>
-                                    </span>
-                                    <div class="slide-ceremony__body">
-                                        <div class="slide-ceremony__steps steps-slide-ceremony">
-                                            <span class="steps-slide-ceremony__steps-subtitle text-strong"
-                                                >Способ заваривания:</span
-                                            >
-                                            <ul class="steps-slide-ceremony__list text">
-                                                <li class="steps-slide-ceremony__list-item">
-                                                    1. Залейте горячую воду в гайвань и подождите около минуты
-                                                </li>
-                                                <li class="steps-slide-ceremony__list-item">
-                                                    2. Слейте воду и насыпьте в гайвань чай
-                                                </li>
-                                                <li class="steps-slide-ceremony__list-item">
-                                                    3. Залейте чай водой, накройте крышкой и оставьте
-                                                    завариваться в течение нескольких секунд
-                                                </li>
-                                                <li class="steps-slide-ceremony__list-item">
-                                                    4. быстро слейте готовый настой в кувшин
-                                                </li>
-                                                <li class="steps-slide-ceremony__list-item">
-                                                    5. без спешки разливайте чай по чашкам
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="slide-ceremony__images">
-                                            <div class="slide-ceremony__img-wrap slide-ceremony__img-wrap_a">
-                                                <img
-                                                    src="./img/webp/step-img-1.webp"
-                                                    alt=""
-                                                    class="slide-ceremony__image"
-                                                />
-                                                <span class="slide-ceremony__img-txt text-chns"
-                                                    ><span>酒</span><span>壶</span></span
-                                                >
-                                            </div>
-                                            <div class="slide-ceremony__img-wrap slide-ceremony__img-wrap_b">
-                                                <img
-                                                    src="./img/webp/step-img-2.webp"
-                                                    alt=""
-                                                    class="slide-ceremony__image"
-                                                />
-                                            </div>
-                                            <div class="slide-ceremony__img-wrap slide-ceremony__img-wrap_c">
-                                                <img
-                                                    src="./img/webp/step-img-6.webp"
-                                                    alt=""
-                                                    class="slide-ceremony__image"
-                                                />
-                                                <span class="slide-ceremony__img-txt text-chns"
-                                                    ><span>盖</span><span>湾</span></span
-                                                >
-                                            </div>
-                                            <div class="slide-ceremony__img-wrap slide-ceremony__img-wrap_d">
-                                                <img
-                                                    src="./img/webp/step-img-4.webp"
-                                                    alt=""
-                                                    class="slide-ceremony__image"
-                                                />
-                                                <span class="slide-ceremony__img-txt text-chns"
-                                                    ><span>一</span><span>杯</span></span
-                                                >
-                                            </div>
-                                        </div>
-                                        <div class="slide-ceremony__requires requires-slide-ceremony">
-                                            <span class="requires-slide-ceremony__subtitle text-strong"
-                                                >Необходимо:</span
-                                            >
-                                            <ul class="requires-slide-ceremony__list text">
-                                                <li class="requires-slide-ceremony__list-item">чашки</li>
-                                                <li class="requires-slide-ceremony__list-item">кувшин</li>
-                                                <li class="requires-slide-ceremony__list-item">гайвань</li>
-                                                <li class="requires-slide-ceremony__list-item">
-                                                    Чайная доска
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ceremony__slide ceremony__slide_v slide-ceremony swiper-slide">
-                                    <div class="slide-ceremony__head">
-                                        <span class="slide-ceremony__subtitle text">вариант 3</span>
-                                        <span class="slide-ceremony__title title"
-                                            >заваривание чая ВО ФРЕНЧ-ПРЕССЕ</span
+                                            <path
+                                                d="M128.5 4.99992L182 4.99992L188.663 4.99992C192.869 4.99992 197.055 5.56408 201.11 6.67731L220.482 11.995C234.616 15.875 242.99 30.4143 239.252 44.5871C236.157 56.3227 225.543 64.4999 213.406 64.4999L200 64.4999L145.5 64.4999L88.5 71.4999L34.5381 71.4999C32.1858 71.4999 29.84 71.2539 27.539 70.7658L23.7153 69.9547C9.07632 66.8494 -0.885607 53.2321 0.587233 38.3401C1.74692 26.6145 9.80339 16.7176 21.0499 13.2031L51.5133 3.68332C61.4042 0.592438 71.814 -0.485748 82.1284 0.512405L128.5 4.99992Z"
+                                                fill="#393531"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="link__bg-mob"
+                                            viewBox="0 0 125 70"
+                                            fill="none"
                                         >
-                                    </div>
-                                    <span class="slide-ceremony__symbols">
-                                        <span class="text-chns">独家印</span>
-                                        <span class="text-chns">度红茶</span>
-                                    </span>
-                                    <div class="slide-ceremony__body">
-                                        <div class="slide-ceremony__steps steps-slide-ceremony">
-                                            <span class="steps-slide-ceremony__steps-subtitle text-strong"
-                                                >Способ заваривания:</span
-                                            >
-                                            <ul class="steps-slide-ceremony__list text">
-                                                <li class="steps-slide-ceremony__list-item">
-                                                    1. Доведите воду до кипения, дайте ему полминуты остыть
-                                                </li>
-                                                <li class="steps-slide-ceremony__list-item">
-                                                    2. Вылейте воду в чайник, положите в френч-пресс порцию
-                                                    чая и залейте СВЕЖЕЙ порцией кипяченой воды. Накройте
-                                                    френч-пресс крышкой
-                                                </li>
-                                                <li class="steps-slide-ceremony__list-item">
-                                                    3. когда все чаинки всплывут на поверхность воды, опустите
-                                                    пресс до нижнего положения, пусть чай настоится 2-3 минуты
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="slide-ceremony__images">
-                                            <div class="slide-ceremony__img-wrap slide-ceremony__img-wrap_a">
-                                                <img
-                                                    src="./img/webp/step-img-4.webp"
-                                                    alt=""
-                                                    class="slide-ceremony__image"
-                                                />
-                                                <span class="slide-ceremony__img-txt text-chns"
-                                                    ><span>一</span><span>杯</span></span
-                                                >
-                                            </div>
-                                            <div class="slide-ceremony__img-wrap slide-ceremony__img-wrap_b">
-                                                <img
-                                                    src="./img/webp/step-img-2.webp"
-                                                    alt=""
-                                                    class="slide-ceremony__image"
-                                                />
-                                            </div>
-                                            <div class="slide-ceremony__img-wrap slide-ceremony__img-wrap_c">
-                                                <img
-                                                    src="./img/webp/step-img-7.webp"
-                                                    alt=""
-                                                    class="slide-ceremony__image _vertical"
-                                                />
-                                                <span class="slide-ceremony__img-txt text-chns"
-                                                    ><span>法</span><span>压</span></span
-                                                >
-                                            </div>
-                                            <div class="slide-ceremony__img-wrap slide-ceremony__img-wrap_d">
-                                                <img
-                                                    src="./img/webp/step-img-4.webp"
-                                                    alt=""
-                                                    class="slide-ceremony__image"
-                                                />
-                                                <span class="slide-ceremony__img-txt text-chns"
-                                                    ><span>一</span><span>杯</span></span
-                                                >
-                                            </div>
-                                        </div>
-                                        <div class="slide-ceremony__requires requires-slide-ceremony">
-                                            <span class="requires-slide-ceremony__subtitle text-strong"
-                                                >Необходимо:</span
-                                            >
-                                            <ul class="requires-slide-ceremony__list text">
-                                                <li class="requires-slide-ceremony__list-item">чашки</li>
-                                                <li class="requires-slide-ceremony__list-item">кувшин</li>
-                                                <li class="requires-slide-ceremony__list-item">
-                                                    Чайная доска
-                                                </li>
-                                                <li class="requires-slide-ceremony__list-item">
-                                                    Глиняный чайник
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <span class="ceremony__symbols">
-                            <span class="text-chns">独家印</span>
-                            <span class="text-chns">度红茶</span>
-                        </span>
-                        <div class="ceremony__group">
-                            <div class="ceremony__pag pag circe">
-                                <span class="pag__current mobile-only">1</span>
-                                <div class="pag__scrollbar-wrapper">
-                                    <div class="pag__scrollbar swiper-scrollbar"></div>
-                                </div>
-                                <div class="swiper-pagination _vertical"></div>
-                            </div>
-                            <a href="#!" class="ceremony__link link link--dark">
-                                <span class="link__text">Все чаи</span>
-                                <span class="link__text link__text--mob">Все</span>
-                                <div class="link__arrow-icon">
-                                    <svg viewBox="0 0 72 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            class="icon-circle"
-                                            d="M71 24.4286C71 38.9999 60.8833 53 46.7143 53C32.2741 53 19 41.2819 19 27C19 12.5979 29.8252 1 44.1429 1C58.6824 1 71 10.2335 71 24.4286Z"
-                                            stroke="#fff"
-                                            stroke-width="2"
-                                        ></path>
-                                        <path
-                                            class="icon-arrow"
-                                            d="M55.7071 26.7071C56.0976 26.3166 56.0976 25.6834 55.7071 25.2929L49.3431 18.9289C48.9526 18.5384 48.3195 18.5384 47.9289 18.9289C47.5384 19.3195 47.5384 19.9526 47.9289 20.3432L53.5858 26L47.9289 31.6569C47.5384 32.0474 47.5384 32.6805 47.9289 33.0711C48.3195 33.4616 48.9526 33.4616 49.3431 33.0711L55.7071 26.7071ZM-8.74228e-08 27L55 27L55 25L8.74228e-08 25L-8.74228e-08 27Z"
-                                            fill="#fff"
-                                        ></path>
-                                    </svg>
-                                </div>
-                                <div class="link__link-bg">
-                                    <svg
-                                        class="link__bg-desc"
-                                        viewBox="0 0 241 72"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M128.5 4.99992L182 4.99992L188.663 4.99992C192.869 4.99992 197.055 5.56408 201.11 6.67731L220.482 11.995C234.616 15.875 242.99 30.4143 239.252 44.5871C236.157 56.3227 225.543 64.4999 213.406 64.4999L200 64.4999L145.5 64.4999L88.5 71.4999L34.5381 71.4999C32.1858 71.4999 29.84 71.2539 27.539 70.7658L23.7153 69.9547C9.07632 66.8494 -0.885607 53.2321 0.587233 38.3401C1.74692 26.6145 9.80339 16.7176 21.0499 13.2031L51.5133 3.68332C61.4042 0.592438 71.814 -0.485748 82.1284 0.512405L128.5 4.99992Z"
-                                            fill="#393531"
-                                        ></path>
-                                    </svg>
-
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="link__bg-mob"
-                                        viewBox="0 0 125 70"
-                                        fill="none"
-                                    >
-                                        <path
-                                            d="M81.9011 1.40249L98.754 5.1257C111.378 7.91462 121.189 17.8539 123.813 30.5129C128.037 50.8871 112.481 70 91.6732 70L34.509 70C32.176 70 29.8492 69.7576 27.5663 69.2767L23.5548 68.4316C9.01498 65.3687 -0.884493 51.8469 0.58798 37.0612C1.74693 25.4237 9.75763 15.6096 20.9271 12.1433L51.4363 2.67493C61.3082 -0.388762 71.8081 -0.827315 81.9011 1.40249Z"
-                                            fill="#393531"
-                                        ></path>
-                                    </svg>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="section product-carousel">
-                    <div class="hor-slider popular">
-                        <div class="hor-slider__head">
-                            <div class="pag circe">
-                                <span class="pag__current">1</span>
-                                <div class="pag__scrollbar-wrapper">
-                                    <div class="pag__scrollbar swiper-scrollbar"></div>
-                                </div>
-                                <div class="swiper-pagination"></div>
-                            </div>
-                            <div class="slider-title">
-                                <strong class="text-strong">Чайные подборки</strong>
-                                <span class="text">более 50 видов</span>
-                                <p class="title">Популярные чаи</p>
-                            </div>
-
-                            <a href="#!" class="link link--dark">
-                                <span class="link__text">Все чаи</span>
-                                <span class="link__text link__text--mob">Все</span>
-                                <div class="link__arrow-icon">
-                                    <svg viewBox="0 0 72 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            class="icon-circle"
-                                            d="M71 24.4286C71 38.9999 60.8833 53 46.7143 53C32.2741 53 19 41.2819 19 27C19 12.5979 29.8252 1 44.1429 1C58.6824 1 71 10.2335 71 24.4286Z"
-                                            stroke="#fff"
-                                            stroke-width="2"
-                                        />
-                                        <path
-                                            class="icon-arrow"
-                                            d="M55.7071 26.7071C56.0976 26.3166 56.0976 25.6834 55.7071 25.2929L49.3431 18.9289C48.9526 18.5384 48.3195 18.5384 47.9289 18.9289C47.5384 19.3195 47.5384 19.9526 47.9289 20.3432L53.5858 26L47.9289 31.6569C47.5384 32.0474 47.5384 32.6805 47.9289 33.0711C48.3195 33.4616 48.9526 33.4616 49.3431 33.0711L55.7071 26.7071ZM-8.74228e-08 27L55 27L55 25L8.74228e-08 25L-8.74228e-08 27Z"
-                                            fill="#fff"
-                                        />
-                                    </svg>
-                                </div>
-                                <div class="link__link-bg">
-                                    <svg
-                                        class="link__bg-desc"
-                                        viewBox="0 0 241 72"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M128.5 4.99992L182 4.99992L188.663 4.99992C192.869 4.99992 197.055 5.56408 201.11 6.67731L220.482 11.995C234.616 15.875 242.99 30.4143 239.252 44.5871C236.157 56.3227 225.543 64.4999 213.406 64.4999L200 64.4999L145.5 64.4999L88.5 71.4999L34.5381 71.4999C32.1858 71.4999 29.84 71.2539 27.539 70.7658L23.7153 69.9547C9.07632 66.8494 -0.885607 53.2321 0.587233 38.3401C1.74692 26.6145 9.80339 16.7176 21.0499 13.2031L51.5133 3.68332C61.4042 0.592438 71.814 -0.485748 82.1284 0.512405L128.5 4.99992Z"
-                                            fill="#393531"
-                                        />
-                                    </svg>
-
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="link__bg-mob"
-                                        viewBox="0 0 125 70"
-                                        fill="none"
-                                    >
-                                        <path
-                                            d="M81.9011 1.40249L98.754 5.1257C111.378 7.91462 121.189 17.8539 123.813 30.5129C128.037 50.8871 112.481 70 91.6732 70L34.509 70C32.176 70 29.8492 69.7576 27.5663 69.2767L23.5548 68.4316C9.01498 65.3687 -0.884493 51.8469 0.58798 37.0612C1.74693 25.4237 9.75763 15.6096 20.9271 12.1433L51.4363 2.67493C61.3082 -0.388762 71.8081 -0.827315 81.9011 1.40249Z"
-                                            fill="#393531"
-                                        />
-                                    </svg>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="hor-slider__wrapper popular-slider swiper">
-                            <div class="swiper-wrapper">
-                                <a href="#!" class="swiper-slide cl-p">
-                                    <div class="hor-slider__content">
-                                        <div class="hor-slider__item">
-                                            <div
-                                                class="hor-slider__item-content hor-slider__item-content--white"
-                                            >
-                                                <div class="hor-slider__item-img">
-                                                    <img src="./img/webp/popular-card-img-1.webp" alt="" />
-                                                </div>
-
-                                                <div class="hor-slider__item-text">
-                                                    <strong class="text-strong">тата</strong>
-                                                    <span class="text-slim">Индийский Для бодрости</span>
-                                                    <div class="hor-slider__item-price">
-                                                        <span class="text-slim">150 г/</span>
-                                                        <strong class="text-strong"
-                                                            >600 <span class="rub">₽</span></strong
-                                                        >
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="hor-slider__item-next-icon">
-                                                <img src="./img/icon/next-icon.svg" alt="" />
-                                            </div>
-                                            <div class="hor-slider__item-cart-controlls">
-                                                <button
-                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
-                                                >
-                                                    <span>-</span>
-                                                </button>
-                                                <div class="hor-slider__item-cart-icon">
-                                                    <img src="./img/icon/cart-icon.svg" alt="" />
-                                                    <div class="hor-slider__item-cart-value">
-                                                        <span>11</span>
-                                                    </div>
-                                                </div>
-                                                <button
-                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
-                                                >
-                                                    <span>+</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="#!" class="swiper-slide cl-p">
-                                    <div class="hor-slider__content">
-                                        <div class="hor-slider__item">
-                                            <div
-                                                class="hor-slider__item-content hor-slider__item-content--white"
-                                            >
-                                                <div class="hor-slider__item-img">
-                                                    <img src="./img/webp/popular-card-img-1.webp" alt="" />
-                                                </div>
-
-                                                <div class="hor-slider__item-text">
-                                                    <strong class="text-strong">тата</strong>
-                                                    <span class="text-slim">Индийский Для бодрости</span>
-                                                    <div class="hor-slider__item-price">
-                                                        <span class="text-slim">150 г/</span>
-                                                        <strong class="text-strong"
-                                                            >600 <span class="rub">₽</span></strong
-                                                        >
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="hor-slider__item-next-icon">
-                                                <img src="./img/icon/next-icon.svg" alt="" />
-                                            </div>
-                                            <div class="hor-slider__item-cart-controlls">
-                                                <button
-                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
-                                                >
-                                                    <span>-</span>
-                                                </button>
-                                                <div class="hor-slider__item-cart-icon">
-                                                    <img src="./img/icon/cart-icon.svg" alt="" />
-                                                    <div class="hor-slider__item-cart-value">
-                                                        <span>11</span>
-                                                    </div>
-                                                </div>
-                                                <button
-                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
-                                                >
-                                                    <span>+</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="#!" class="swiper-slide cl-p">
-                                    <div class="hor-slider__content">
-                                        <div class="hor-slider__item">
-                                            <div
-                                                class="hor-slider__item-content hor-slider__item-content--white"
-                                            >
-                                                <div class="hor-slider__item-img">
-                                                    <img src="./img/webp/popular-card-img-1.webp" alt="" />
-                                                </div>
-
-                                                <div class="hor-slider__item-text">
-                                                    <strong class="text-strong">тата</strong>
-                                                    <span class="text-slim">Индийский Для бодрости</span>
-                                                    <div class="hor-slider__item-price">
-                                                        <span class="text-slim">150 г/</span>
-                                                        <strong class="text-strong"
-                                                            >600 <span class="rub">₽</span></strong
-                                                        >
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="hor-slider__item-next-icon">
-                                                <img src="./img/icon/next-icon.svg" alt="" />
-                                            </div>
-                                            <div class="hor-slider__item-cart-controlls">
-                                                <button
-                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
-                                                >
-                                                    <span>-</span>
-                                                </button>
-                                                <div class="hor-slider__item-cart-icon">
-                                                    <img src="./img/icon/cart-icon.svg" alt="" />
-                                                    <div class="hor-slider__item-cart-value">
-                                                        <span>11</span>
-                                                    </div>
-                                                </div>
-                                                <button
-                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
-                                                >
-                                                    <span>+</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="#!" class="swiper-slide cl-p">
-                                    <div class="hor-slider__content">
-                                        <div class="hor-slider__item">
-                                            <div
-                                                class="hor-slider__item-content hor-slider__item-content--white"
-                                            >
-                                                <div class="hor-slider__item-img">
-                                                    <img src="./img/webp/popular-card-img-1.webp" alt="" />
-                                                </div>
-
-                                                <div class="hor-slider__item-text">
-                                                    <strong class="text-strong">тата</strong>
-                                                    <span class="text-slim">Индийский Для бодрости</span>
-                                                    <div class="hor-slider__item-price">
-                                                        <span class="text-slim">150 г/</span>
-                                                        <strong class="text-strong"
-                                                            >600 <span class="rub">₽</span></strong
-                                                        >
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="hor-slider__item-next-icon">
-                                                <img src="./img/icon/next-icon.svg" alt="" />
-                                            </div>
-                                            <div class="hor-slider__item-cart-controlls">
-                                                <button
-                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
-                                                >
-                                                    <span>-</span>
-                                                </button>
-                                                <div class="hor-slider__item-cart-icon">
-                                                    <img src="./img/icon/cart-icon.svg" alt="" />
-                                                    <div class="hor-slider__item-cart-value">
-                                                        <span>11</span>
-                                                    </div>
-                                                </div>
-                                                <button
-                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
-                                                >
-                                                    <span>+</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="#!" class="swiper-slide cl-p">
-                                    <div class="hor-slider__content">
-                                        <div class="hor-slider__item">
-                                            <div
-                                                class="hor-slider__item-content hor-slider__item-content--white"
-                                            >
-                                                <div class="hor-slider__item-img">
-                                                    <img src="./img/webp/popular-card-img-1.webp" alt="" />
-                                                </div>
-
-                                                <div class="hor-slider__item-text">
-                                                    <strong class="text-strong">тата</strong>
-                                                    <span class="text-slim">Индийский Для бодрости</span>
-                                                    <div class="hor-slider__item-price">
-                                                        <span class="text-slim">150 г/</span>
-                                                        <strong class="text-strong"
-                                                            >600 <span class="rub">₽</span></strong
-                                                        >
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="hor-slider__item-next-icon">
-                                                <img src="./img/icon/next-icon.svg" alt="" />
-                                            </div>
-                                            <div class="hor-slider__item-cart-controlls">
-                                                <button
-                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
-                                                >
-                                                    <span>-</span>
-                                                </button>
-                                                <div class="hor-slider__item-cart-icon">
-                                                    <img src="./img/icon/cart-icon.svg" alt="" />
-                                                    <div class="hor-slider__item-cart-value">
-                                                        <span>11</span>
-                                                    </div>
-                                                </div>
-                                                <button
-                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
-                                                >
-                                                    <span>+</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="#!" class="swiper-slide cl-p">
-                                    <div class="hor-slider__content">
-                                        <div class="hor-slider__item">
-                                            <div
-                                                class="hor-slider__item-content hor-slider__item-content--white"
-                                            >
-                                                <div class="hor-slider__item-img">
-                                                    <img src="./img/webp/popular-card-img-1.webp" alt="" />
-                                                </div>
-
-                                                <div class="hor-slider__item-text">
-                                                    <strong class="text-strong">тата</strong>
-                                                    <span class="text-slim">Индийский Для бодрости</span>
-                                                    <div class="hor-slider__item-price">
-                                                        <span class="text-slim">150 г/</span>
-                                                        <strong class="text-strong"
-                                                            >600 <span class="rub">₽</span></strong
-                                                        >
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="hor-slider__item-next-icon">
-                                                <img src="./img/icon/next-icon.svg" alt="" />
-                                            </div>
-                                            <div class="hor-slider__item-cart-controlls">
-                                                <button
-                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
-                                                >
-                                                    <span>-</span>
-                                                </button>
-                                                <div class="hor-slider__item-cart-icon">
-                                                    <img src="./img/icon/cart-icon.svg" alt="" />
-                                                    <div class="hor-slider__item-cart-value">
-                                                        <span>11</span>
-                                                    </div>
-                                                </div>
-                                                <button
-                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
-                                                >
-                                                    <span>+</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="#!" class="swiper-slide cl-p">
-                                    <div class="hor-slider__content">
-                                        <div class="hor-slider__item">
-                                            <div
-                                                class="hor-slider__item-content hor-slider__item-content--white"
-                                            >
-                                                <div class="hor-slider__item-img">
-                                                    <img src="./img/webp/popular-card-img-1.webp" alt="" />
-                                                </div>
-
-                                                <div class="hor-slider__item-text">
-                                                    <strong class="text-strong">тата</strong>
-                                                    <span class="text-slim">Индийский Для бодрости</span>
-                                                    <div class="hor-slider__item-price">
-                                                        <span class="text-slim">150 г/</span>
-                                                        <strong class="text-strong"
-                                                            >600 <span class="rub">₽</span></strong
-                                                        >
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="hor-slider__item-next-icon">
-                                                <img src="./img/icon/next-icon.svg" alt="" />
-                                            </div>
-                                            <div class="hor-slider__item-cart-controlls">
-                                                <button
-                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
-                                                >
-                                                    <span>-</span>
-                                                </button>
-                                                <div class="hor-slider__item-cart-icon">
-                                                    <img src="./img/icon/cart-icon.svg" alt="" />
-                                                    <div class="hor-slider__item-cart-value">
-                                                        <span>11</span>
-                                                    </div>
-                                                </div>
-                                                <button
-                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
-                                                >
-                                                    <span>+</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="#!" class="swiper-slide cl-p">
-                                    <div class="hor-slider__content">
-                                        <div class="hor-slider__item">
-                                            <div
-                                                class="hor-slider__item-content hor-slider__item-content--white"
-                                            >
-                                                <div class="hor-slider__item-img">
-                                                    <img src="./img/webp/popular-card-img-1.webp" alt="" />
-                                                </div>
-
-                                                <div class="hor-slider__item-text">
-                                                    <strong class="text-strong">тата</strong>
-                                                    <span class="text-slim">Индийский Для бодрости</span>
-                                                    <div class="hor-slider__item-price">
-                                                        <span class="text-slim">150 г/</span>
-                                                        <strong class="text-strong"
-                                                            >600 <span class="rub">₽</span></strong
-                                                        >
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="hor-slider__item-next-icon">
-                                                <img src="./img/icon/next-icon.svg" alt="" />
-                                            </div>
-                                            <div class="hor-slider__item-cart-controlls">
-                                                <button
-                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
-                                                >
-                                                    <span>-</span>
-                                                </button>
-                                                <div class="hor-slider__item-cart-icon">
-                                                    <img src="./img/icon/cart-icon.svg" alt="" />
-                                                    <div class="hor-slider__item-cart-value">
-                                                        <span>11</span>
-                                                    </div>
-                                                </div>
-                                                <button
-                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
-                                                >
-                                                    <span>+</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="#!" class="swiper-slide cl-p">
-                                    <div class="hor-slider__content">
-                                        <div class="hor-slider__item">
-                                            <div
-                                                class="hor-slider__item-content hor-slider__item-content--white"
-                                            >
-                                                <div class="hor-slider__item-img">
-                                                    <img src="./img/webp/popular-card-img-1.webp" alt="" />
-                                                </div>
-
-                                                <div class="hor-slider__item-text">
-                                                    <strong class="text-strong">тата</strong>
-                                                    <span class="text-slim">Индийский Для бодрости</span>
-                                                    <div class="hor-slider__item-price">
-                                                        <span class="text-slim">150 г/</span>
-                                                        <strong class="text-strong"
-                                                            >600 <span class="rub">₽</span></strong
-                                                        >
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="hor-slider__item-next-icon">
-                                                <img src="./img/icon/next-icon.svg" alt="" />
-                                            </div>
-                                            <div class="hor-slider__item-cart-controlls">
-                                                <button
-                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
-                                                >
-                                                    <span>-</span>
-                                                </button>
-                                                <div class="hor-slider__item-cart-icon">
-                                                    <img src="./img/icon/cart-icon.svg" alt="" />
-                                                    <div class="hor-slider__item-cart-value">
-                                                        <span>11</span>
-                                                    </div>
-                                                </div>
-                                                <button
-                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
-                                                >
-                                                    <span>+</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="#!" class="swiper-slide cl-p">
-                                    <div class="hor-slider__content">
-                                        <div class="hor-slider__item">
-                                            <div
-                                                class="hor-slider__item-content hor-slider__item-content--white"
-                                            >
-                                                <div class="hor-slider__item-img">
-                                                    <img src="./img/webp/popular-card-img-1.webp" alt="" />
-                                                </div>
-
-                                                <div class="hor-slider__item-text">
-                                                    <strong class="text-strong">тата</strong>
-                                                    <span class="text-slim">Индийский Для бодрости</span>
-                                                    <div class="hor-slider__item-price">
-                                                        <span class="text-slim">150 г/</span>
-                                                        <strong class="text-strong"
-                                                            >600 <span class="rub">₽</span></strong
-                                                        >
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="hor-slider__item-next-icon">
-                                                <img src="./img/icon/next-icon.svg" alt="" />
-                                            </div>
-                                            <div class="hor-slider__item-cart-controlls">
-                                                <button
-                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
-                                                >
-                                                    <span>-</span>
-                                                </button>
-                                                <div class="hor-slider__item-cart-icon">
-                                                    <img src="./img/icon/cart-icon.svg" alt="" />
-                                                    <div class="hor-slider__item-cart-value">
-                                                        <span>11</span>
-                                                    </div>
-                                                </div>
-                                                <button
-                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
-                                                >
-                                                    <span>+</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="#!" class="swiper-slide cl-p">
-                                    <div class="hor-slider__content">
-                                        <div class="hor-slider__item">
-                                            <div
-                                                class="hor-slider__item-content hor-slider__item-content--white"
-                                            >
-                                                <div class="hor-slider__item-img">
-                                                    <img src="./img/webp/popular-card-img-1.webp" alt="" />
-                                                </div>
-
-                                                <div class="hor-slider__item-text">
-                                                    <strong class="text-strong">тата</strong>
-                                                    <span class="text-slim">Индийский Для бодрости</span>
-                                                    <div class="hor-slider__item-price">
-                                                        <span class="text-slim">150 г/</span>
-                                                        <strong class="text-strong"
-                                                            >600 <span class="rub">₽</span></strong
-                                                        >
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="hor-slider__item-next-icon">
-                                                <img src="./img/icon/next-icon.svg" alt="" />
-                                            </div>
-                                            <div class="hor-slider__item-cart-controlls">
-                                                <button
-                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
-                                                >
-                                                    <span>-</span>
-                                                </button>
-                                                <div class="hor-slider__item-cart-icon">
-                                                    <img src="./img/icon/cart-icon.svg" alt="" />
-                                                    <div class="hor-slider__item-cart-value">
-                                                        <span>11</span>
-                                                    </div>
-                                                </div>
-                                                <button
-                                                    class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
-                                                >
-                                                    <span>+</span>
-                                                </button>
-                                            </div>
-                                        </div>
+                                            <path
+                                                d="M81.9011 1.40249L98.754 5.1257C111.378 7.91462 121.189 17.8539 123.813 30.5129C128.037 50.8871 112.481 70 91.6732 70L34.509 70C32.176 70 29.8492 69.7576 27.5663 69.2767L23.5548 68.4316C9.01498 65.3687 -0.884493 51.8469 0.58798 37.0612C1.74693 25.4237 9.75763 15.6096 20.9271 12.1433L51.4363 2.67493C61.3082 -0.388762 71.8081 -0.827315 81.9011 1.40249Z"
+                                                fill="#393531"
+                                            ></path>
+                                        </svg>
                                     </div>
                                 </a>
                             </div>
                         </div>
-                    </div>
-                </section>
-            </main>
-        </div>
-        <footer class="section footer">
+                    </section>
+                    <section class="section product-carousel pb3">
+                        <div class="hor-slider popular">
+                            <div class="hor-slider__head">
+                                <div class="pag circe">
+                                    <span class="pag__current">1</span>
+                                    <div class="pag__scrollbar-wrapper">
+                                        <div class="pag__scrollbar swiper-scrollbar"></div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <div class="slider-title">
+                                    <strong class="text-strong">Чайные подборки</strong>
+                                    <span class="text">более 50 видов</span>
+                                    <p class="title">Популярные чаи</p>
+                                </div>
+                                <a href="#!" class="link link--dark">
+                                    <span class="link__text">Все чаи</span>
+                                    <span class="link__text link__text--mob">Все</span>
+                                    <div class="link__arrow-icon">
+                                        <svg
+                                            viewBox="0 0 72 54"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                class="icon-circle"
+                                                d="M71 24.4286C71 38.9999 60.8833 53 46.7143 53C32.2741 53 19 41.2819 19 27C19 12.5979 29.8252 1 44.1429 1C58.6824 1 71 10.2335 71 24.4286Z"
+                                                stroke="#fff"
+                                                stroke-width="2"
+                                            />
+                                            <path
+                                                class="icon-arrow"
+                                                d="M55.7071 26.7071C56.0976 26.3166 56.0976 25.6834 55.7071 25.2929L49.3431 18.9289C48.9526 18.5384 48.3195 18.5384 47.9289 18.9289C47.5384 19.3195 47.5384 19.9526 47.9289 20.3432L53.5858 26L47.9289 31.6569C47.5384 32.0474 47.5384 32.6805 47.9289 33.0711C48.3195 33.4616 48.9526 33.4616 49.3431 33.0711L55.7071 26.7071ZM-8.74228e-08 27L55 27L55 25L8.74228e-08 25L-8.74228e-08 27Z"
+                                                fill="#fff"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <div class="link__link-bg">
+                                        <svg
+                                            class="link__bg-desc"
+                                            viewBox="0 0 241 72"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M128.5 4.99992L182 4.99992L188.663 4.99992C192.869 4.99992 197.055 5.56408 201.11 6.67731L220.482 11.995C234.616 15.875 242.99 30.4143 239.252 44.5871C236.157 56.3227 225.543 64.4999 213.406 64.4999L200 64.4999L145.5 64.4999L88.5 71.4999L34.5381 71.4999C32.1858 71.4999 29.84 71.2539 27.539 70.7658L23.7153 69.9547C9.07632 66.8494 -0.885607 53.2321 0.587233 38.3401C1.74692 26.6145 9.80339 16.7176 21.0499 13.2031L51.5133 3.68332C61.4042 0.592438 71.814 -0.485748 82.1284 0.512405L128.5 4.99992Z"
+                                                fill="#393531"
+                                            />
+                                        </svg>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="link__bg-mob"
+                                            viewBox="0 0 125 70"
+                                            fill="none"
+                                        >
+                                            <path
+                                                d="M81.9011 1.40249L98.754 5.1257C111.378 7.91462 121.189 17.8539 123.813 30.5129C128.037 50.8871 112.481 70 91.6732 70L34.509 70C32.176 70 29.8492 69.7576 27.5663 69.2767L23.5548 68.4316C9.01498 65.3687 -0.884493 51.8469 0.58798 37.0612C1.74693 25.4237 9.75763 15.6096 20.9271 12.1433L51.4363 2.67493C61.3082 -0.388762 71.8081 -0.827315 81.9011 1.40249Z"
+                                                fill="#393531"
+                                            />
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="hor-slider__wrapper popular-slider swiper">
+                                <div class="swiper-wrapper">
+                                    <a href="#!" class="swiper-slide cl-p">
+                                        <div class="hor-slider__content">
+                                            <div class="hor-slider__item">
+                                                <div
+                                                    class="hor-slider__item-content hor-slider__item-content--white"
+                                                >
+                                                    <div class="hor-slider__item-img">
+                                                        <img
+                                                            src="./img/webp/popular-card-img-1.webp"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div class="hor-slider__item-text">
+                                                        <strong class="text-strong">тата</strong>
+                                                        <span class="text-slim">Индийский Для бодрости</span>
+                                                        <div class="hor-slider__item-price">
+                                                            <span class="text-slim">150 г/</span>
+                                                            <strong class="text-strong"
+                                                                >600 <span class="rub">₽</span></strong
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="hor-slider__item-next-icon">
+                                                    <img src="./img/icon/next-icon.svg" alt="" />
+                                                </div>
+                                                <div class="hor-slider__item-cart-controlls">
+                                                    <button
+                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
+                                                    >
+                                                        <span>-</span>
+                                                    </button>
+                                                    <div class="hor-slider__item-cart-icon">
+                                                        <img src="./img/icon/cart-icon.svg" alt="" />
+                                                        <div class="hor-slider__item-cart-value">
+                                                            <span>11</span>
+                                                        </div>
+                                                    </div>
+                                                    <button
+                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
+                                                    >
+                                                        <span>+</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#!" class="swiper-slide cl-p">
+                                        <div class="hor-slider__content">
+                                            <div class="hor-slider__item">
+                                                <div
+                                                    class="hor-slider__item-content hor-slider__item-content--white"
+                                                >
+                                                    <div class="hor-slider__item-img">
+                                                        <img
+                                                            src="./img/webp/popular-card-img-1.webp"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div class="hor-slider__item-text">
+                                                        <strong class="text-strong">тата</strong>
+                                                        <span class="text-slim">Индийский Для бодрости</span>
+                                                        <div class="hor-slider__item-price">
+                                                            <span class="text-slim">150 г/</span>
+                                                            <strong class="text-strong"
+                                                                >600 <span class="rub">₽</span></strong
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="hor-slider__item-next-icon">
+                                                    <img src="./img/icon/next-icon.svg" alt="" />
+                                                </div>
+                                                <div class="hor-slider__item-cart-controlls">
+                                                    <button
+                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
+                                                    >
+                                                        <span>-</span>
+                                                    </button>
+                                                    <div class="hor-slider__item-cart-icon">
+                                                        <img src="./img/icon/cart-icon.svg" alt="" />
+                                                        <div class="hor-slider__item-cart-value">
+                                                            <span>11</span>
+                                                        </div>
+                                                    </div>
+                                                    <button
+                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
+                                                    >
+                                                        <span>+</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#!" class="swiper-slide cl-p">
+                                        <div class="hor-slider__content">
+                                            <div class="hor-slider__item">
+                                                <div
+                                                    class="hor-slider__item-content hor-slider__item-content--white"
+                                                >
+                                                    <div class="hor-slider__item-img">
+                                                        <img
+                                                            src="./img/webp/popular-card-img-1.webp"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div class="hor-slider__item-text">
+                                                        <strong class="text-strong">тата</strong>
+                                                        <span class="text-slim">Индийский Для бодрости</span>
+                                                        <div class="hor-slider__item-price">
+                                                            <span class="text-slim">150 г/</span>
+                                                            <strong class="text-strong"
+                                                                >600 <span class="rub">₽</span></strong
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="hor-slider__item-next-icon">
+                                                    <img src="./img/icon/next-icon.svg" alt="" />
+                                                </div>
+                                                <div class="hor-slider__item-cart-controlls">
+                                                    <button
+                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
+                                                    >
+                                                        <span>-</span>
+                                                    </button>
+                                                    <div class="hor-slider__item-cart-icon">
+                                                        <img src="./img/icon/cart-icon.svg" alt="" />
+                                                        <div class="hor-slider__item-cart-value">
+                                                            <span>11</span>
+                                                        </div>
+                                                    </div>
+                                                    <button
+                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
+                                                    >
+                                                        <span>+</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#!" class="swiper-slide cl-p">
+                                        <div class="hor-slider__content">
+                                            <div class="hor-slider__item">
+                                                <div
+                                                    class="hor-slider__item-content hor-slider__item-content--white"
+                                                >
+                                                    <div class="hor-slider__item-img">
+                                                        <img
+                                                            src="./img/webp/popular-card-img-1.webp"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div class="hor-slider__item-text">
+                                                        <strong class="text-strong">тата</strong>
+                                                        <span class="text-slim">Индийский Для бодрости</span>
+                                                        <div class="hor-slider__item-price">
+                                                            <span class="text-slim">150 г/</span>
+                                                            <strong class="text-strong"
+                                                                >600 <span class="rub">₽</span></strong
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="hor-slider__item-next-icon">
+                                                    <img src="./img/icon/next-icon.svg" alt="" />
+                                                </div>
+                                                <div class="hor-slider__item-cart-controlls">
+                                                    <button
+                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
+                                                    >
+                                                        <span>-</span>
+                                                    </button>
+                                                    <div class="hor-slider__item-cart-icon">
+                                                        <img src="./img/icon/cart-icon.svg" alt="" />
+                                                        <div class="hor-slider__item-cart-value">
+                                                            <span>11</span>
+                                                        </div>
+                                                    </div>
+                                                    <button
+                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
+                                                    >
+                                                        <span>+</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#!" class="swiper-slide cl-p">
+                                        <div class="hor-slider__content">
+                                            <div class="hor-slider__item">
+                                                <div
+                                                    class="hor-slider__item-content hor-slider__item-content--white"
+                                                >
+                                                    <div class="hor-slider__item-img">
+                                                        <img
+                                                            src="./img/webp/popular-card-img-1.webp"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div class="hor-slider__item-text">
+                                                        <strong class="text-strong">тата</strong>
+                                                        <span class="text-slim">Индийский Для бодрости</span>
+                                                        <div class="hor-slider__item-price">
+                                                            <span class="text-slim">150 г/</span>
+                                                            <strong class="text-strong"
+                                                                >600 <span class="rub">₽</span></strong
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="hor-slider__item-next-icon">
+                                                    <img src="./img/icon/next-icon.svg" alt="" />
+                                                </div>
+                                                <div class="hor-slider__item-cart-controlls">
+                                                    <button
+                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
+                                                    >
+                                                        <span>-</span>
+                                                    </button>
+                                                    <div class="hor-slider__item-cart-icon">
+                                                        <img src="./img/icon/cart-icon.svg" alt="" />
+                                                        <div class="hor-slider__item-cart-value">
+                                                            <span>11</span>
+                                                        </div>
+                                                    </div>
+                                                    <button
+                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
+                                                    >
+                                                        <span>+</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#!" class="swiper-slide cl-p">
+                                        <div class="hor-slider__content">
+                                            <div class="hor-slider__item">
+                                                <div
+                                                    class="hor-slider__item-content hor-slider__item-content--white"
+                                                >
+                                                    <div class="hor-slider__item-img">
+                                                        <img
+                                                            src="./img/webp/popular-card-img-1.webp"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div class="hor-slider__item-text">
+                                                        <strong class="text-strong">тата</strong>
+                                                        <span class="text-slim">Индийский Для бодрости</span>
+                                                        <div class="hor-slider__item-price">
+                                                            <span class="text-slim">150 г/</span>
+                                                            <strong class="text-strong"
+                                                                >600 <span class="rub">₽</span></strong
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="hor-slider__item-next-icon">
+                                                    <img src="./img/icon/next-icon.svg" alt="" />
+                                                </div>
+                                                <div class="hor-slider__item-cart-controlls">
+                                                    <button
+                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
+                                                    >
+                                                        <span>-</span>
+                                                    </button>
+                                                    <div class="hor-slider__item-cart-icon">
+                                                        <img src="./img/icon/cart-icon.svg" alt="" />
+                                                        <div class="hor-slider__item-cart-value">
+                                                            <span>11</span>
+                                                        </div>
+                                                    </div>
+                                                    <button
+                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
+                                                    >
+                                                        <span>+</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#!" class="swiper-slide cl-p">
+                                        <div class="hor-slider__content">
+                                            <div class="hor-slider__item">
+                                                <div
+                                                    class="hor-slider__item-content hor-slider__item-content--white"
+                                                >
+                                                    <div class="hor-slider__item-img">
+                                                        <img
+                                                            src="./img/webp/popular-card-img-1.webp"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div class="hor-slider__item-text">
+                                                        <strong class="text-strong">тата</strong>
+                                                        <span class="text-slim">Индийский Для бодрости</span>
+                                                        <div class="hor-slider__item-price">
+                                                            <span class="text-slim">150 г/</span>
+                                                            <strong class="text-strong"
+                                                                >600 <span class="rub">₽</span></strong
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="hor-slider__item-next-icon">
+                                                    <img src="./img/icon/next-icon.svg" alt="" />
+                                                </div>
+                                                <div class="hor-slider__item-cart-controlls">
+                                                    <button
+                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
+                                                    >
+                                                        <span>-</span>
+                                                    </button>
+                                                    <div class="hor-slider__item-cart-icon">
+                                                        <img src="./img/icon/cart-icon.svg" alt="" />
+                                                        <div class="hor-slider__item-cart-value">
+                                                            <span>11</span>
+                                                        </div>
+                                                    </div>
+                                                    <button
+                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
+                                                    >
+                                                        <span>+</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#!" class="swiper-slide cl-p">
+                                        <div class="hor-slider__content">
+                                            <div class="hor-slider__item">
+                                                <div
+                                                    class="hor-slider__item-content hor-slider__item-content--white"
+                                                >
+                                                    <div class="hor-slider__item-img">
+                                                        <img
+                                                            src="./img/webp/popular-card-img-1.webp"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div class="hor-slider__item-text">
+                                                        <strong class="text-strong">тата</strong>
+                                                        <span class="text-slim">Индийский Для бодрости</span>
+                                                        <div class="hor-slider__item-price">
+                                                            <span class="text-slim">150 г/</span>
+                                                            <strong class="text-strong"
+                                                                >600 <span class="rub">₽</span></strong
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="hor-slider__item-next-icon">
+                                                    <img src="./img/icon/next-icon.svg" alt="" />
+                                                </div>
+                                                <div class="hor-slider__item-cart-controlls">
+                                                    <button
+                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
+                                                    >
+                                                        <span>-</span>
+                                                    </button>
+                                                    <div class="hor-slider__item-cart-icon">
+                                                        <img src="./img/icon/cart-icon.svg" alt="" />
+                                                        <div class="hor-slider__item-cart-value">
+                                                            <span>11</span>
+                                                        </div>
+                                                    </div>
+                                                    <button
+                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
+                                                    >
+                                                        <span>+</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#!" class="swiper-slide cl-p">
+                                        <div class="hor-slider__content">
+                                            <div class="hor-slider__item">
+                                                <div
+                                                    class="hor-slider__item-content hor-slider__item-content--white"
+                                                >
+                                                    <div class="hor-slider__item-img">
+                                                        <img
+                                                            src="./img/webp/popular-card-img-1.webp"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div class="hor-slider__item-text">
+                                                        <strong class="text-strong">тата</strong>
+                                                        <span class="text-slim">Индийский Для бодрости</span>
+                                                        <div class="hor-slider__item-price">
+                                                            <span class="text-slim">150 г/</span>
+                                                            <strong class="text-strong"
+                                                                >600 <span class="rub">₽</span></strong
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="hor-slider__item-next-icon">
+                                                    <img src="./img/icon/next-icon.svg" alt="" />
+                                                </div>
+                                                <div class="hor-slider__item-cart-controlls">
+                                                    <button
+                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
+                                                    >
+                                                        <span>-</span>
+                                                    </button>
+                                                    <div class="hor-slider__item-cart-icon">
+                                                        <img src="./img/icon/cart-icon.svg" alt="" />
+                                                        <div class="hor-slider__item-cart-value">
+                                                            <span>11</span>
+                                                        </div>
+                                                    </div>
+                                                    <button
+                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
+                                                    >
+                                                        <span>+</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#!" class="swiper-slide cl-p">
+                                        <div class="hor-slider__content">
+                                            <div class="hor-slider__item">
+                                                <div
+                                                    class="hor-slider__item-content hor-slider__item-content--white"
+                                                >
+                                                    <div class="hor-slider__item-img">
+                                                        <img
+                                                            src="./img/webp/popular-card-img-1.webp"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div class="hor-slider__item-text">
+                                                        <strong class="text-strong">тата</strong>
+                                                        <span class="text-slim">Индийский Для бодрости</span>
+                                                        <div class="hor-slider__item-price">
+                                                            <span class="text-slim">150 г/</span>
+                                                            <strong class="text-strong"
+                                                                >600 <span class="rub">₽</span></strong
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="hor-slider__item-next-icon">
+                                                    <img src="./img/icon/next-icon.svg" alt="" />
+                                                </div>
+                                                <div class="hor-slider__item-cart-controlls">
+                                                    <button
+                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
+                                                    >
+                                                        <span>-</span>
+                                                    </button>
+                                                    <div class="hor-slider__item-cart-icon">
+                                                        <img src="./img/icon/cart-icon.svg" alt="" />
+                                                        <div class="hor-slider__item-cart-value">
+                                                            <span>11</span>
+                                                        </div>
+                                                    </div>
+                                                    <button
+                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
+                                                    >
+                                                        <span>+</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#!" class="swiper-slide cl-p">
+                                        <div class="hor-slider__content">
+                                            <div class="hor-slider__item">
+                                                <div
+                                                    class="hor-slider__item-content hor-slider__item-content--white"
+                                                >
+                                                    <div class="hor-slider__item-img">
+                                                        <img
+                                                            src="./img/webp/popular-card-img-1.webp"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div class="hor-slider__item-text">
+                                                        <strong class="text-strong">тата</strong>
+                                                        <span class="text-slim">Индийский Для бодрости</span>
+                                                        <div class="hor-slider__item-price">
+                                                            <span class="text-slim">150 г/</span>
+                                                            <strong class="text-strong"
+                                                                >600 <span class="rub">₽</span></strong
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="hor-slider__item-next-icon">
+                                                    <img src="./img/icon/next-icon.svg" alt="" />
+                                                </div>
+                                                <div class="hor-slider__item-cart-controlls">
+                                                    <button
+                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
+                                                    >
+                                                        <span>-</span>
+                                                    </button>
+                                                    <div class="hor-slider__item-cart-icon">
+                                                        <img src="./img/icon/cart-icon.svg" alt="" />
+                                                        <div class="hor-slider__item-cart-value">
+                                                            <span>11</span>
+                                                        </div>
+                                                    </div>
+                                                    <button
+                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
+                                                    >
+                                                        <span>+</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+            <footer class="section footer">
     <div class="footer__box">
         <a href="#!" class="footer__title">
             <strong class="text-strong">Teaport</strong>
@@ -2532,5 +2586,6 @@
     </div>
 </div>
 
+        </div>
     </body>
 </html>

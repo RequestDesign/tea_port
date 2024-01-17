@@ -44,6 +44,11 @@ body {
     }
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 .checkbox,
 .radio {
     display: -webkit-box;
@@ -132,4 +137,9 @@ body {
 .checkbox input:checked::before,
 .radio input:checked::before {
     opacity: 1;
+}
+@media (min-width: 1920px) {
+    html {
+        font-size: 10px;
+    }
 }

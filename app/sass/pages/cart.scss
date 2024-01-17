@@ -1,17 +1,15 @@
 .cart {
-    margin: 0;
-    width: 100%;
-    background-image: url('../img/webp/cart-bg.webp');
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: 100% 100%;
-    overflow: hidden;
+    &.wrapper__content::before {
+        background-image: url('../img/webp/cart-bg.webp');
+    }
 
     @media (max-width: 48em) {
-        margin-bottom: 18rem;
-        background-image: url('../img/webp/cart-bg-mob.webp');
-        background-size: cover;
-        background-position: center bottom;
+        &.wrapper__content {
+            margin-bottom: 18rem;
+            &::before {
+                background-image: url('../img/webp/cart-bg-mob.webp');
+            }
+        }
     }
 
     &__title {

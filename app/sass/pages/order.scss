@@ -1,12 +1,14 @@
 .order {
-    background-image: url('../img/order/background.svg');
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: 100%;
-
+    &.wrapper__content::before {
+        background-image: url('../img/order/order-bg.webp');
+    }
     @include small-tablet {
-        background-image: url('../img/order/background-mobile.svg');
-        overflow: hidden;
+        &.wrapper__content {
+            margin-bottom: 18rem;
+            &::before {
+                background-image: url('../img/order/order-bg-mob.webp');
+            }
+        }
     }
 
     .section {
@@ -14,7 +16,8 @@
         padding-bottom: 29rem;
 
         @include small-tablet {
-            margin-top: 12rem;
+            margin-top: 18rem;
+            padding-bottom: 50rem;
         }
     }
 
@@ -653,7 +656,6 @@
         &-field {
             margin-bottom: 10rem;
             width: 100%;
-            border-top: 0.1rem solid #ffffff;
             border-bottom: 0.1rem solid #fff;
             resize: none;
             appearance: none;
@@ -665,10 +667,13 @@
             line-height: normal;
             letter-spacing: 0.54rem;
             text-transform: uppercase;
-            padding: 1rem 0;
+            padding-bottom: 1rem;
+            &.text {
+                text-align: left;
+            }
 
             @include small-tablet {
-                padding: 2rem 0;
+                padding-bottom: 2rem;
                 height: 8.6rem;
 
                 font-size: 3rem;

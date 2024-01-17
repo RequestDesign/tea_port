@@ -1,13 +1,7 @@
 .personal-account {
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0;
-    background-image: url(../img/webp/personal-account-bg.webp);
-
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: 100% 100%;
-    overflow: hidden;
+    &.wrapper__content::before {
+        background-image: url(../img/webp/personal-account-bg.webp);
+    }
 }
 .account-information {
     box-sizing: border-box;
@@ -206,7 +200,7 @@
     box-sizing: border-box;
     width: 160rem;
     margin: 0 auto;
-    padding-bottom: 23rem;
+    padding-bottom: 25rem;
     // .account-detail__inner
     &__inner {
         display: flex;
@@ -272,14 +266,12 @@
 
 @media (max-width: 48em) {
     .personal-account {
-        margin: 0;
-        margin-bottom: 18rem;
-        box-sizing: border-box;
-        width: 100%;
-        background-image: url(../img/webp/personal-account-bg-mob.webp);
-
-        background-repeat: no-repeat;
-        overflow: hidden;
+        &.wrapper__content {
+            margin-bottom: 18rem;
+            &::before {
+                background-image: url(../img/webp/personal-account-bg-mob.webp);
+            }
+        }
     }
     .account-information {
         box-sizing: border-box;

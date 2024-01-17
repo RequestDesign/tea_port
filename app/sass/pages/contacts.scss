@@ -1,15 +1,11 @@
 .contacts {
-    margin: 0;
-    width: 100%;
-    background-image: url('../img/webp/contacts-bg.webp');
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 100%;
-    mix-blend-mode: darken;
-    overflow: hidden;
+    &.wrapper__content::before {
+        background-image: url('../img/webp/contacts-bg.webp');
+    }
 
     @media (max-width: 48em) {
-        background-image: url('../img/webp/contacts-bg-mob.webp');
-        background-size: 100%;
+        &.wrapper__content::before {
+            background-image: url('../img/webp/contacts-bg-mob.webp');
+        }
     }
 }

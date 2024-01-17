@@ -12,8 +12,9 @@
         <title>TEAPORT - Доставка и оплата</title>
     </head>
     <body style="opacity: 0">
-        <div class="order">
-            <header class="header">
+        <div class="wrapper">
+            <div class="wrapper__content order">
+                <header class="header">
     <div class="header__links-bar">
         <button class="header__burger-btn">
             <img src="./img/icon/burger-icon.svg" alt="" />
@@ -357,836 +358,825 @@
     </div>
 </div>
 
-            <main>
-                <div class="mob-bar">
-                    <div class="mob-bar__box">
-                        <div class="mob-bar__bg">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="393"
-                                height="123"
-                                viewBox="0 0 393 123"
-                                fill="none"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M229.348 16.5926L227.044 14.2057C209.684 -3.78399 180.741 -3.38497 163.883 15.0765L162.8 16.2624C155.283 24.495 144.649 29.1852 133.5 29.1852L110 29.1852L86.875 29.1852H20C8.95432 29.1852 4.82823e-07 38.1395 0 49.1852L8.9414e-06 95.0002V123H393V104V95.0002V49.1852C393 38.1395 384.046 29.1852 373 29.1852H305.5L282 29.1852L259 29.1852C247.817 29.1852 237.114 24.6399 229.348 16.5926Z"
-                                    fill="white"
-                                />
-                            </svg>
-                        </div>
-
-                        <a href="" class="mob-bar__link">
-                            <span class="mob-bar__link-icon">
+                <main>
+                    <div class="mob-bar">
+                        <div class="mob-bar__box">
+                            <div class="mob-bar__bg">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    width="78"
-                                    height="79"
-                                    viewBox="0 0 78 79"
+                                    width="393"
+                                    height="123"
+                                    viewBox="0 0 393 123"
                                     fill="none"
                                 >
-                                    <circle
-                                        cx="39"
-                                        cy="39.5"
-                                        r="38"
-                                        fill="#9DB1B8"
-                                        stroke="white"
-                                        stroke-width="2"
-                                    />
-                                    <circle
-                                        cx="10"
-                                        cy="10"
-                                        r="10"
-                                        transform="matrix(-1 0 0 1 49 30)"
-                                        fill="#393531"
-                                    />
                                     <path
-                                        d="M40.8938 39.7145L37.6268 36.1181C37.4835 35.9606 37.2512 35.9606 37.1075 36.1181C36.9642 36.2756 36.9642 36.5313 37.1075 36.6888L40.1153 39.9998L37.1079 43.3108C36.9645 43.4683 36.9645 43.724 37.1079 43.8819C37.2512 44.0394 37.4838 44.0394 37.6272 43.8819L40.8942 40.2855C41.0353 40.1297 41.0353 39.8699 40.8938 39.7145Z"
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M229.348 16.5926L227.044 14.2057C209.684 -3.78399 180.741 -3.38497 163.883 15.0765L162.8 16.2624C155.283 24.495 144.649 29.1852 133.5 29.1852L110 29.1852L86.875 29.1852H20C8.95432 29.1852 4.82823e-07 38.1395 0 49.1852L8.9414e-06 95.0002V123H393V104V95.0002V49.1852C393 38.1395 384.046 29.1852 373 29.1852H305.5L282 29.1852L259 29.1852C247.817 29.1852 237.114 24.6399 229.348 16.5926Z"
                                         fill="white"
-                                        stroke="white"
                                     />
                                 </svg>
-                            </span>
-                        </a>
-
-                        <div class="mob-bar__price">
-                            <span class="text">цена:</span>
-                            <strong class="text-strong">900 <span class="rub">₽</span></strong>
-                        </div>
-
-                        <div class="mob-bar__count">
-                            <span class="text">товаров:</span>
-                            <strong class="text-strong">2</strong>
-                        </div>
-
-                        <a href="#!" class="mob-bar__message text-strong"> Оформить заказ </a>
-                    </div>
-                </div>
-
-                <section class="section">
-                    <div class="order__heading">
-                        <a href="#!" class="order__heading-link">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="72"
-                                height="54"
-                                viewBox="0 0 72 54"
-                                fill="none"
-                                class="desktop"
-                            >
-                                <path
-                                    d="M1 24.4286C1 38.9999 11.1167 53 25.2857 53C39.7259 53 53 41.2819 53 27C53 12.5979 42.1748 1 27.8571 1C13.3176 1 1 10.2335 1 24.4286Z"
-                                    stroke="#393531"
-                                    stroke-width="2"
-                                />
-                                <path
-                                    d="M16.2929 26.7071C15.9024 26.3166 15.9024 25.6834 16.2929 25.2929L22.6569 18.9289C23.0474 18.5384 23.6805 18.5384 24.0711 18.9289C24.4616 19.3195 24.4616 19.9526 24.0711 20.3431L18.4142 26L24.0711 31.6569C24.4616 32.0474 24.4616 32.6805 24.0711 33.0711C23.6805 33.4616 23.0474 33.4616 22.6569 33.0711L16.2929 26.7071ZM72 27L17 27L17 25L72 25L72 27Z"
-                                    fill="#393531"
-                                />
-                            </svg>
-
-                            <svg
-                                class="mobile"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="25"
-                                height="16"
-                                viewBox="0 0 25 16"
-                                fill="none"
-                            >
-                                <path
-                                    d="M0.292892 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM25 7L1 7V9L25 9V7Z"
-                                    fill="#393531"
-                                />
-                            </svg>
-                        </a>
-                        <h1 class="order__heading-title title">оформление заказа</h1>
-                    </div>
-
-                    <form data-dev action="#!" class="order__content">
-                        <div class="order__content-wrapper">
-                            <div class="order__contacts">
-                                <h2 class="order__contacts-title title">контакты</h2>
-                                <ul class="order__contacts-fields">
-                                    <li class="order__contacts-field">
-                                        <label for="name" class="inp">
-                                            <input
-                                                data-validate
-                                                data-required
-                                                type="text"
-                                                id="name"
-                                                placeholder="Ваше имя"
-                                            />
-                                        </label>
-                                    </li>
-                                    <li class="order__contacts-field">
-                                        <label for="surname" class="inp">
-                                            <input
-                                                data-validate
-                                                data-required
-                                                type="text"
-                                                id="surname"
-                                                placeholder="Фамилия"
-                                            />
-                                        </label>
-                                    </li>
-                                    <li class="order__contacts-field">
-                                        <label class="inp">
-                                            <input
-                                                data-validate
-                                                data-required
-                                                type="tel"
-                                                data-tel-mask
-                                                placeholder="ваш телефон"
-                                            />
-                                        </label>
-                                    </li>
-                                    <li class="order__contacts-field">
-                                        <label class="inp">
-                                            <input
-                                                data-validate
-                                                data-required
-                                                type="email"
-                                                placeholder="e-mail"
-                                            />
-                                        </label>
-                                    </li>
-                                </ul>
                             </div>
-                            <div class="order__delivery">
-                                <div class="order__delivery-heading">
-                                    <h3 class="order__delivery-title title">доставка</h3>
-
-                                    <label for="other-people" class="checkbox">
-                                        <input id="other-people" type="checkbox" name="radAnswer" />
-                                        <span>Доставить другому человеку</span>
-                                    </label>
-                                </div>
-                                <div data-tabs data-tabs-index="0" class="order__delivery-tabs _tabs-init">
-                                    <ul data-tabs-titles class="order__delivery-placements">
-                                        <li data-tabs-title class="order__delivery-placement tab _active">
-                                            <strong class="order__delivery-placement-title">
-                                                самовывоз
-                                            </strong>
-
-                                            <span class="order__delivery-placement-subtitle">
-                                                БЕСПЛАТНО
-                                            </span>
+                            <a href="" class="mob-bar__link">
+                                <span class="mob-bar__link-icon">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="78"
+                                        height="79"
+                                        viewBox="0 0 78 79"
+                                        fill="none"
+                                    >
+                                        <circle
+                                            cx="39"
+                                            cy="39.5"
+                                            r="38"
+                                            fill="#9DB1B8"
+                                            stroke="white"
+                                            stroke-width="2"
+                                        />
+                                        <circle
+                                            cx="10"
+                                            cy="10"
+                                            r="10"
+                                            transform="matrix(-1 0 0 1 49 30)"
+                                            fill="#393531"
+                                        />
+                                        <path
+                                            d="M40.8938 39.7145L37.6268 36.1181C37.4835 35.9606 37.2512 35.9606 37.1075 36.1181C36.9642 36.2756 36.9642 36.5313 37.1075 36.6888L40.1153 39.9998L37.1079 43.3108C36.9645 43.4683 36.9645 43.724 37.1079 43.8819C37.2512 44.0394 37.4838 44.0394 37.6272 43.8819L40.8942 40.2855C41.0353 40.1297 41.0353 39.8699 40.8938 39.7145Z"
+                                            fill="white"
+                                            stroke="white"
+                                        />
+                                    </svg>
+                                </span>
+                            </a>
+                            <div class="mob-bar__price">
+                                <span class="text">цена:</span>
+                                <strong class="text-strong">900 <span class="rub">₽</span></strong>
+                            </div>
+                            <div class="mob-bar__count">
+                                <span class="text">товаров:</span>
+                                <strong class="text-strong">2</strong>
+                            </div>
+                            <a href="#!" class="mob-bar__message text-strong"> Оформить заказ </a>
+                        </div>
+                    </div>
+                    <section class="section">
+                        <div class="order__heading">
+                            <a href="#!" class="order__heading-link">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="72"
+                                    height="54"
+                                    viewBox="0 0 72 54"
+                                    fill="none"
+                                    class="desktop"
+                                >
+                                    <path
+                                        d="M1 24.4286C1 38.9999 11.1167 53 25.2857 53C39.7259 53 53 41.2819 53 27C53 12.5979 42.1748 1 27.8571 1C13.3176 1 1 10.2335 1 24.4286Z"
+                                        stroke="#393531"
+                                        stroke-width="2"
+                                    />
+                                    <path
+                                        d="M16.2929 26.7071C15.9024 26.3166 15.9024 25.6834 16.2929 25.2929L22.6569 18.9289C23.0474 18.5384 23.6805 18.5384 24.0711 18.9289C24.4616 19.3195 24.4616 19.9526 24.0711 20.3431L18.4142 26L24.0711 31.6569C24.4616 32.0474 24.4616 32.6805 24.0711 33.0711C23.6805 33.4616 23.0474 33.4616 22.6569 33.0711L16.2929 26.7071ZM72 27L17 27L17 25L72 25L72 27Z"
+                                        fill="#393531"
+                                    />
+                                </svg>
+                                <svg
+                                    class="mobile"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="25"
+                                    height="16"
+                                    viewBox="0 0 25 16"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M0.292892 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM25 7L1 7V9L25 9V7Z"
+                                        fill="#393531"
+                                    />
+                                </svg>
+                            </a>
+                            <h1 class="order__heading-title title">оформление заказа</h1>
+                        </div>
+                        <form data-dev action="#!" class="order__content">
+                            <div class="order__content-wrapper">
+                                <div class="order__contacts">
+                                    <h2 class="order__contacts-title title">контакты</h2>
+                                    <ul class="order__contacts-fields">
+                                        <li class="order__contacts-field">
+                                            <label for="name" class="inp">
+                                                <input
+                                                    data-validate
+                                                    data-required
+                                                    type="text"
+                                                    id="name"
+                                                    placeholder="Ваше имя"
+                                                />
+                                            </label>
                                         </li>
-                                        <li data-tabs-title class="order__delivery-placement tab">
-                                            <strong class="order__delivery-placement-title">
-                                                Москва и МО
-                                            </strong>
-
-                                            <span class="order__delivery-placement-subtitle circe">
-                                                500 ₽
-                                            </span>
+                                        <li class="order__contacts-field">
+                                            <label for="surname" class="inp">
+                                                <input
+                                                    data-validate
+                                                    data-required
+                                                    type="text"
+                                                    id="surname"
+                                                    placeholder="Фамилия"
+                                                />
+                                            </label>
                                         </li>
-                                        <li data-tabs-title class="order__delivery-placement tab">
-                                            <strong class="order__delivery-placement-title">
-                                                самовывоз
-                                            </strong>
+                                        <li class="order__contacts-field">
+                                            <label class="inp">
+                                                <input
+                                                    data-validate
+                                                    data-required
+                                                    type="tel"
+                                                    data-tel-mask
+                                                    placeholder="ваш телефон"
+                                                />
+                                            </label>
                                         </li>
-                                        <li data-tabs-title class="order__delivery-placement tab">
-                                            <strong class="order__delivery-placement-title">
-                                                самовывоз
-                                            </strong>
-
-                                            <span class="order__delivery-placement-subtitle circe">
-                                                500 ₽
-                                            </span>
+                                        <li class="order__contacts-field">
+                                            <label class="inp">
+                                                <input
+                                                    data-validate
+                                                    data-required
+                                                    type="email"
+                                                    placeholder="e-mail"
+                                                />
+                                            </label>
                                         </li>
                                     </ul>
-                                    <div data-tabs-body class="order__delivery-tabs-content select-close">
-                                        <div class="order__delivery-tab-body" data-tabs-item="">
-                                            <div action="#!">
-                                                <ul class="order__delivery-form-fields">
-                                                    <li
-                                                        class="order__delivery-form-field select-item select-change"
-                                                    >
-                                                        <span class="text-strong select-value"
-                                                            >выбрать город</span
+                                </div>
+                                <div class="order__delivery">
+                                    <div class="order__delivery-heading">
+                                        <h3 class="order__delivery-title title">доставка</h3>
+                                        <label for="other-people" class="checkbox">
+                                            <input id="other-people" type="checkbox" name="radAnswer" />
+                                            <span>Доставить другому человеку</span>
+                                        </label>
+                                    </div>
+                                    <div
+                                        data-tabs
+                                        data-tabs-index="0"
+                                        class="order__delivery-tabs _tabs-init"
+                                    >
+                                        <ul data-tabs-titles class="order__delivery-placements">
+                                            <li data-tabs-title class="order__delivery-placement tab _active">
+                                                <strong class="order__delivery-placement-title">
+                                                    самовывоз
+                                                </strong>
+                                                <span class="order__delivery-placement-subtitle">
+                                                    БЕСПЛАТНО
+                                                </span>
+                                            </li>
+                                            <li data-tabs-title class="order__delivery-placement tab">
+                                                <strong class="order__delivery-placement-title">
+                                                    Москва и МО
+                                                </strong>
+                                                <span class="order__delivery-placement-subtitle circe">
+                                                    500 ₽
+                                                </span>
+                                            </li>
+                                            <li data-tabs-title class="order__delivery-placement tab">
+                                                <strong class="order__delivery-placement-title">
+                                                    самовывоз
+                                                </strong>
+                                            </li>
+                                            <li data-tabs-title class="order__delivery-placement tab">
+                                                <strong class="order__delivery-placement-title">
+                                                    самовывоз
+                                                </strong>
+                                                <span class="order__delivery-placement-subtitle circe">
+                                                    500 ₽
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <div data-tabs-body class="order__delivery-tabs-content select-close">
+                                            <div class="order__delivery-tab-body" data-tabs-item="">
+                                                <div action="#!">
+                                                    <ul class="order__delivery-form-fields">
+                                                        <li
+                                                            class="order__delivery-form-field select-item select-change"
                                                         >
-                                                        <div class="order__delivery-form-field-icon">
+                                                            <span class="text-strong select-value"
+                                                                >выбрать город</span
+                                                            >
+                                                            <div class="order__delivery-form-field-icon">
+                                                                <svg
+                                                                    width="20"
+                                                                    height="17"
+                                                                    viewBox="0 0 20 17"
+                                                                    fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                >
+                                                                    <path
+                                                                        fill-rule="evenodd"
+                                                                        clip-rule="evenodd"
+                                                                        d="M13.9612 14.1935C11.9594 16.7071 8.14032 16.7072 6.13858 14.1935C5.91751 13.9159 5.9372 13.5226 6.12957 13.2244C6.50655 12.6399 6.72532 11.9438 6.72532 11.1966C6.72532 9.12784 5.04823 7.45076 2.97945 7.45076C2.0644 7.45076 1.02675 7.09019 0.998444 6.17558C0.916687 3.53384 2.97546 1 6.00546 1H10.0499H14.0943C17.1257 1 19.185 3.53623 19.1012 6.17932C19.0723 7.09045 18.0395 7.45076 17.1279 7.45076C15.0591 7.45076 13.382 9.12784 13.382 11.1966C13.382 11.9396 13.5983 12.6321 13.9715 13.2145C14.1647 13.5162 14.1844 13.9132 13.9612 14.1935Z"
+                                                                        fill="#393531"
+                                                                    />
+                                                                </svg>
+                                                            </div>
+                                                            <ul class="order__delivery-form-field-popup">
+                                                                <li class="text select-target active">
+                                                                    любое
+                                                                </li>
+                                                                <li class="text select-target">черный</li>
+                                                                <li class="text select-target">белый</li>
+                                                                <li class="text select-target">красный</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li
+                                                            class="order__delivery-form-field select-item select-change"
+                                                        >
+                                                            <span class="text-strong select-value"
+                                                                >выбрать дату</span
+                                                            >
+                                                            <div class="order__delivery-form-field-icon">
+                                                                <svg
+                                                                    width="20"
+                                                                    height="17"
+                                                                    viewBox="0 0 20 17"
+                                                                    fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                >
+                                                                    <path
+                                                                        fill-rule="evenodd"
+                                                                        clip-rule="evenodd"
+                                                                        d="M13.9612 14.1935C11.9594 16.7071 8.14032 16.7072 6.13858 14.1935C5.91751 13.9159 5.9372 13.5226 6.12957 13.2244C6.50655 12.6399 6.72532 11.9438 6.72532 11.1966C6.72532 9.12784 5.04823 7.45076 2.97945 7.45076C2.0644 7.45076 1.02675 7.09019 0.998444 6.17558C0.916687 3.53384 2.97546 1 6.00546 1H10.0499H14.0943C17.1257 1 19.185 3.53623 19.1012 6.17932C19.0723 7.09045 18.0395 7.45076 17.1279 7.45076C15.0591 7.45076 13.382 9.12784 13.382 11.1966C13.382 11.9396 13.5983 12.6321 13.9715 13.2145C14.1647 13.5162 14.1844 13.9132 13.9612 14.1935Z"
+                                                                        fill="#393531"
+                                                                    />
+                                                                </svg>
+                                                            </div>
+                                                            <ul class="order__delivery-form-field-popup">
+                                                                <li class="text select-target active">
+                                                                    любое
+                                                                </li>
+                                                                <li class="text select-target">черный</li>
+                                                                <li class="text select-target">белый</li>
+                                                                <li class="text select-target">красный</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li
+                                                            class="order__delivery-form-field select-item select-change"
+                                                        >
+                                                            <span class="text-strong select-value"
+                                                                >АДРЕС ВЫДАЧИ</span
+                                                            >
+                                                            <div class="order__delivery-form-field-icon">
+                                                                <svg
+                                                                    width="20"
+                                                                    height="17"
+                                                                    viewBox="0 0 20 17"
+                                                                    fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                >
+                                                                    <path
+                                                                        fill-rule="evenodd"
+                                                                        clip-rule="evenodd"
+                                                                        d="M13.9612 14.1935C11.9594 16.7071 8.14032 16.7072 6.13858 14.1935C5.91751 13.9159 5.9372 13.5226 6.12957 13.2244C6.50655 12.6399 6.72532 11.9438 6.72532 11.1966C6.72532 9.12784 5.04823 7.45076 2.97945 7.45076C2.0644 7.45076 1.02675 7.09019 0.998444 6.17558C0.916687 3.53384 2.97546 1 6.00546 1H10.0499H14.0943C17.1257 1 19.185 3.53623 19.1012 6.17932C19.0723 7.09045 18.0395 7.45076 17.1279 7.45076C15.0591 7.45076 13.382 9.12784 13.382 11.1966C13.382 11.9396 13.5983 12.6321 13.9715 13.2145C14.1647 13.5162 14.1844 13.9132 13.9612 14.1935Z"
+                                                                        fill="#393531"
+                                                                    />
+                                                                </svg>
+                                                            </div>
+                                                            <ul class="order__delivery-form-field-popup">
+                                                                <li class="text select-target active">
+                                                                    любое
+                                                                </li>
+                                                                <li class="text select-target">черный</li>
+                                                                <li class="text select-target">белый</li>
+                                                                <li class="text select-target">красный</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="order__delivery-form-field">
+                                                            <label for="working-time">
+                                                                <input
+                                                                    type="text"
+                                                                    id="working-time"
+                                                                    placeholder="время работы"
+                                                                />
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                    <button
+                                                        type="button"
+                                                        class="order__delivery-form-button link"
+                                                        data-modal="map"
+                                                    >
+                                                        <span>карта</span>
+                                                        <div class="link__arrow-icon">
                                                             <svg
-                                                                width="20"
-                                                                height="17"
-                                                                viewBox="0 0 20 17"
+                                                                viewBox="0 0 72 54"
                                                                 fill="none"
                                                                 xmlns="http://www.w3.org/2000/svg"
                                                             >
                                                                 <path
-                                                                    fill-rule="evenodd"
-                                                                    clip-rule="evenodd"
-                                                                    d="M13.9612 14.1935C11.9594 16.7071 8.14032 16.7072 6.13858 14.1935C5.91751 13.9159 5.9372 13.5226 6.12957 13.2244C6.50655 12.6399 6.72532 11.9438 6.72532 11.1966C6.72532 9.12784 5.04823 7.45076 2.97945 7.45076C2.0644 7.45076 1.02675 7.09019 0.998444 6.17558C0.916687 3.53384 2.97546 1 6.00546 1H10.0499H14.0943C17.1257 1 19.185 3.53623 19.1012 6.17932C19.0723 7.09045 18.0395 7.45076 17.1279 7.45076C15.0591 7.45076 13.382 9.12784 13.382 11.1966C13.382 11.9396 13.5983 12.6321 13.9715 13.2145C14.1647 13.5162 14.1844 13.9132 13.9612 14.1935Z"
+                                                                    class="icon-circle"
+                                                                    d="M71 24.4286C71 38.9999 60.8833 53 46.7143 53C32.2741 53 19 41.2819 19 27C19 12.5979 29.8252 1 44.1429 1C58.6824 1 71 10.2335 71 24.4286Z"
+                                                                    stroke="#393531"
+                                                                    stroke-width="2"
+                                                                ></path>
+                                                                <path
+                                                                    class="icon-arrow"
+                                                                    d="M55.7071 26.7071C56.0976 26.3166 56.0976 25.6834 55.7071 25.2929L49.3431 18.9289C48.9526 18.5384 48.3195 18.5384 47.9289 18.9289C47.5384 19.3195 47.5384 19.9526 47.9289 20.3432L53.5858 26L47.9289 31.6569C47.5384 32.0474 47.5384 32.6805 47.9289 33.0711C48.3195 33.4616 48.9526 33.4616 49.3431 33.0711L55.7071 26.7071ZM-8.74228e-08 27L55 27L55 25L8.74228e-08 25L-8.74228e-08 27Z"
                                                                     fill="#393531"
-                                                                />
+                                                                ></path>
                                                             </svg>
                                                         </div>
-                                                        <ul class="order__delivery-form-field-popup">
-                                                            <li class="text select-target active">любое</li>
-                                                            <li class="text select-target">черный</li>
-                                                            <li class="text select-target">белый</li>
-                                                            <li class="text select-target">красный</li>
-                                                        </ul>
-                                                    </li>
-                                                    <li
-                                                        class="order__delivery-form-field select-item select-change"
-                                                    >
-                                                        <span class="text-strong select-value"
-                                                            >выбрать дату</span
-                                                        >
-
-                                                        <div class="order__delivery-form-field-icon">
+                                                        <div class="link__link-bg">
                                                             <svg
-                                                                width="20"
-                                                                height="17"
-                                                                viewBox="0 0 20 17"
+                                                                viewBox="0 0 241 72"
                                                                 fill="none"
                                                                 xmlns="http://www.w3.org/2000/svg"
                                                             >
                                                                 <path
-                                                                    fill-rule="evenodd"
-                                                                    clip-rule="evenodd"
-                                                                    d="M13.9612 14.1935C11.9594 16.7071 8.14032 16.7072 6.13858 14.1935C5.91751 13.9159 5.9372 13.5226 6.12957 13.2244C6.50655 12.6399 6.72532 11.9438 6.72532 11.1966C6.72532 9.12784 5.04823 7.45076 2.97945 7.45076C2.0644 7.45076 1.02675 7.09019 0.998444 6.17558C0.916687 3.53384 2.97546 1 6.00546 1H10.0499H14.0943C17.1257 1 19.185 3.53623 19.1012 6.17932C19.0723 7.09045 18.0395 7.45076 17.1279 7.45076C15.0591 7.45076 13.382 9.12784 13.382 11.1966C13.382 11.9396 13.5983 12.6321 13.9715 13.2145C14.1647 13.5162 14.1844 13.9132 13.9612 14.1935Z"
-                                                                    fill="#393531"
-                                                                />
+                                                                    d="M128.5 4.99992L182 4.99992L188.663 4.99992C192.869 4.99992 197.055 5.56408 201.11 6.67731L220.482 11.995C234.616 15.875 242.99 30.4143 239.252 44.5871C236.157 56.3227 225.543 64.4999 213.406 64.4999L200 64.4999L145.5 64.4999L88.5 71.4999L34.5381 71.4999C32.1858 71.4999 29.84 71.2539 27.539 70.7658L23.7153 69.9547C9.07632 66.8494 -0.885607 53.2321 0.587233 38.3401C1.74692 26.6145 9.80339 16.7176 21.0499 13.2031L51.5133 3.68332C61.4042 0.592438 71.814 -0.485748 82.1284 0.512405L128.5 4.99992Z"
+                                                                    fill="white"
+                                                                ></path>
                                                             </svg>
                                                         </div>
-
-                                                        <ul class="order__delivery-form-field-popup">
-                                                            <li class="text select-target active">любое</li>
-                                                            <li class="text select-target">черный</li>
-                                                            <li class="text select-target">белый</li>
-                                                            <li class="text select-target">красный</li>
-                                                        </ul>
-                                                    </li>
-                                                    <li
-                                                        class="order__delivery-form-field select-item select-change"
-                                                    >
-                                                        <span class="text-strong select-value"
-                                                            >АДРЕС ВЫДАЧИ</span
-                                                        >
-
-                                                        <div class="order__delivery-form-field-icon">
-                                                            <svg
-                                                                width="20"
-                                                                height="17"
-                                                                viewBox="0 0 20 17"
-                                                                fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                            >
-                                                                <path
-                                                                    fill-rule="evenodd"
-                                                                    clip-rule="evenodd"
-                                                                    d="M13.9612 14.1935C11.9594 16.7071 8.14032 16.7072 6.13858 14.1935C5.91751 13.9159 5.9372 13.5226 6.12957 13.2244C6.50655 12.6399 6.72532 11.9438 6.72532 11.1966C6.72532 9.12784 5.04823 7.45076 2.97945 7.45076C2.0644 7.45076 1.02675 7.09019 0.998444 6.17558C0.916687 3.53384 2.97546 1 6.00546 1H10.0499H14.0943C17.1257 1 19.185 3.53623 19.1012 6.17932C19.0723 7.09045 18.0395 7.45076 17.1279 7.45076C15.0591 7.45076 13.382 9.12784 13.382 11.1966C13.382 11.9396 13.5983 12.6321 13.9715 13.2145C14.1647 13.5162 14.1844 13.9132 13.9612 14.1935Z"
-                                                                    fill="#393531"
-                                                                />
-                                                            </svg>
-                                                        </div>
-
-                                                        <ul class="order__delivery-form-field-popup">
-                                                            <li class="text select-target active">любое</li>
-                                                            <li class="text select-target">черный</li>
-                                                            <li class="text select-target">белый</li>
-                                                            <li class="text select-target">красный</li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="order__delivery-form-field">
-                                                        <label for="working-time">
-                                                            <input
-                                                                type="text"
-                                                                id="working-time"
-                                                                placeholder="время работы"
-                                                            />
-                                                        </label>
-                                                    </li>
-                                                </ul>
-                                                <button
-                                                    type="button"
-                                                    class="order__delivery-form-button link"
-                                                    data-modal="map"
-                                                >
-                                                    <span>карта</span>
-
-                                                    <div class="link__arrow-icon">
-                                                        <svg
-                                                            viewBox="0 0 72 54"
-                                                            fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                        >
-                                                            <path
-                                                                class="icon-circle"
-                                                                d="M71 24.4286C71 38.9999 60.8833 53 46.7143 53C32.2741 53 19 41.2819 19 27C19 12.5979 29.8252 1 44.1429 1C58.6824 1 71 10.2335 71 24.4286Z"
-                                                                stroke="#393531"
-                                                                stroke-width="2"
-                                                            ></path>
-                                                            <path
-                                                                class="icon-arrow"
-                                                                d="M55.7071 26.7071C56.0976 26.3166 56.0976 25.6834 55.7071 25.2929L49.3431 18.9289C48.9526 18.5384 48.3195 18.5384 47.9289 18.9289C47.5384 19.3195 47.5384 19.9526 47.9289 20.3432L53.5858 26L47.9289 31.6569C47.5384 32.0474 47.5384 32.6805 47.9289 33.0711C48.3195 33.4616 48.9526 33.4616 49.3431 33.0711L55.7071 26.7071ZM-8.74228e-08 27L55 27L55 25L8.74228e-08 25L-8.74228e-08 27Z"
-                                                                fill="#393531"
-                                                            ></path>
-                                                        </svg>
-                                                    </div>
-                                                    <div class="link__link-bg">
-                                                        <svg
-                                                            viewBox="0 0 241 72"
-                                                            fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                        >
-                                                            <path
-                                                                d="M128.5 4.99992L182 4.99992L188.663 4.99992C192.869 4.99992 197.055 5.56408 201.11 6.67731L220.482 11.995C234.616 15.875 242.99 30.4143 239.252 44.5871C236.157 56.3227 225.543 64.4999 213.406 64.4999L200 64.4999L145.5 64.4999L88.5 71.4999L34.5381 71.4999C32.1858 71.4999 29.84 71.2539 27.539 70.7658L23.7153 69.9547C9.07632 66.8494 -0.885607 53.2321 0.587233 38.3401C1.74692 26.6145 9.80339 16.7176 21.0499 13.2031L51.5133 3.68332C61.4042 0.592438 71.814 -0.485748 82.1284 0.512405L128.5 4.99992Z"
-                                                                fill="white"
-                                                            ></path>
-                                                        </svg>
-                                                    </div>
-                                                </button>
+                                                    </button>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="order__delivery-tab-body" data-tabs-item="">
-                                            <div>
-                                                <ul class="order__delivery-form-fields">
-                                                    <li
-                                                        class="order__delivery-form-field select-item select-change"
-                                                    >
-                                                        <span class="text-strong select-value"
-                                                            >выбрать город</span
+                                            <div class="order__delivery-tab-body" data-tabs-item="">
+                                                <div>
+                                                    <ul class="order__delivery-form-fields">
+                                                        <li
+                                                            class="order__delivery-form-field select-item select-change"
                                                         >
-
-                                                        <div class="order__delivery-form-field-icon">
+                                                            <span class="text-strong select-value"
+                                                                >выбрать город</span
+                                                            >
+                                                            <div class="order__delivery-form-field-icon">
+                                                                <svg
+                                                                    width="20"
+                                                                    height="17"
+                                                                    viewBox="0 0 20 17"
+                                                                    fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                >
+                                                                    <path
+                                                                        fill-rule="evenodd"
+                                                                        clip-rule="evenodd"
+                                                                        d="M13.9612 14.1935C11.9594 16.7071 8.14032 16.7072 6.13858 14.1935C5.91751 13.9159 5.9372 13.5226 6.12957 13.2244C6.50655 12.6399 6.72532 11.9438 6.72532 11.1966C6.72532 9.12784 5.04823 7.45076 2.97945 7.45076C2.0644 7.45076 1.02675 7.09019 0.998444 6.17558C0.916687 3.53384 2.97546 1 6.00546 1H10.0499H14.0943C17.1257 1 19.185 3.53623 19.1012 6.17932C19.0723 7.09045 18.0395 7.45076 17.1279 7.45076C15.0591 7.45076 13.382 9.12784 13.382 11.1966C13.382 11.9396 13.5983 12.6321 13.9715 13.2145C14.1647 13.5162 14.1844 13.9132 13.9612 14.1935Z"
+                                                                        fill="#393531"
+                                                                    />
+                                                                </svg>
+                                                            </div>
+                                                            <ul class="order__delivery-form-field-popup">
+                                                                <li class="text select-target active">
+                                                                    любое
+                                                                </li>
+                                                                <li class="text select-target">черный</li>
+                                                                <li class="text select-target">белый</li>
+                                                                <li class="text select-target">красный</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="order__delivery-form-field">
+                                                            <label for="working-time">
+                                                                <input
+                                                                    type="text"
+                                                                    id="place"
+                                                                    placeholder="подъезд, квартира, этаж"
+                                                                />
+                                                            </label>
+                                                        </li>
+                                                        <li
+                                                            class="order__delivery-form-field select-item select-change"
+                                                        >
+                                                            <span class="text-strong select-value"
+                                                                >АДРЕС ВЫДАЧИ</span
+                                                            >
+                                                            <div class="order__delivery-form-field-icon">
+                                                                <svg
+                                                                    width="20"
+                                                                    height="17"
+                                                                    viewBox="0 0 20 17"
+                                                                    fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                >
+                                                                    <path
+                                                                        fill-rule="evenodd"
+                                                                        clip-rule="evenodd"
+                                                                        d="M13.9612 14.1935C11.9594 16.7071 8.14032 16.7072 6.13858 14.1935C5.91751 13.9159 5.9372 13.5226 6.12957 13.2244C6.50655 12.6399 6.72532 11.9438 6.72532 11.1966C6.72532 9.12784 5.04823 7.45076 2.97945 7.45076C2.0644 7.45076 1.02675 7.09019 0.998444 6.17558C0.916687 3.53384 2.97546 1 6.00546 1H10.0499H14.0943C17.1257 1 19.185 3.53623 19.1012 6.17932C19.0723 7.09045 18.0395 7.45076 17.1279 7.45076C15.0591 7.45076 13.382 9.12784 13.382 11.1966C13.382 11.9396 13.5983 12.6321 13.9715 13.2145C14.1647 13.5162 14.1844 13.9132 13.9612 14.1935Z"
+                                                                        fill="#393531"
+                                                                    />
+                                                                </svg>
+                                                            </div>
+                                                            <ul class="order__delivery-form-field-popup">
+                                                                <li class="text select-target active">
+                                                                    любое
+                                                                </li>
+                                                                <li class="text select-target">черный</li>
+                                                                <li class="text select-target">белый</li>
+                                                                <li class="text select-target">красный</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="order__delivery-form-field">
+                                                            <label for="private-house" class="checkbox">
+                                                                <input id="private-house" type="checkbox" />
+                                                                <span>Частный дом</span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                    <button
+                                                        type="button"
+                                                        class="order__delivery-form-button link"
+                                                        data-modal="map"
+                                                    >
+                                                        <span>карта</span>
+                                                        <div class="link__arrow-icon">
                                                             <svg
-                                                                width="20"
-                                                                height="17"
-                                                                viewBox="0 0 20 17"
+                                                                viewBox="0 0 72 54"
                                                                 fill="none"
                                                                 xmlns="http://www.w3.org/2000/svg"
                                                             >
                                                                 <path
-                                                                    fill-rule="evenodd"
-                                                                    clip-rule="evenodd"
-                                                                    d="M13.9612 14.1935C11.9594 16.7071 8.14032 16.7072 6.13858 14.1935C5.91751 13.9159 5.9372 13.5226 6.12957 13.2244C6.50655 12.6399 6.72532 11.9438 6.72532 11.1966C6.72532 9.12784 5.04823 7.45076 2.97945 7.45076C2.0644 7.45076 1.02675 7.09019 0.998444 6.17558C0.916687 3.53384 2.97546 1 6.00546 1H10.0499H14.0943C17.1257 1 19.185 3.53623 19.1012 6.17932C19.0723 7.09045 18.0395 7.45076 17.1279 7.45076C15.0591 7.45076 13.382 9.12784 13.382 11.1966C13.382 11.9396 13.5983 12.6321 13.9715 13.2145C14.1647 13.5162 14.1844 13.9132 13.9612 14.1935Z"
+                                                                    class="icon-circle"
+                                                                    d="M71 24.4286C71 38.9999 60.8833 53 46.7143 53C32.2741 53 19 41.2819 19 27C19 12.5979 29.8252 1 44.1429 1C58.6824 1 71 10.2335 71 24.4286Z"
+                                                                    stroke="#393531"
+                                                                    stroke-width="2"
+                                                                ></path>
+                                                                <path
+                                                                    class="icon-arrow"
+                                                                    d="M55.7071 26.7071C56.0976 26.3166 56.0976 25.6834 55.7071 25.2929L49.3431 18.9289C48.9526 18.5384 48.3195 18.5384 47.9289 18.9289C47.5384 19.3195 47.5384 19.9526 47.9289 20.3432L53.5858 26L47.9289 31.6569C47.5384 32.0474 47.5384 32.6805 47.9289 33.0711C48.3195 33.4616 48.9526 33.4616 49.3431 33.0711L55.7071 26.7071ZM-8.74228e-08 27L55 27L55 25L8.74228e-08 25L-8.74228e-08 27Z"
                                                                     fill="#393531"
-                                                                />
+                                                                ></path>
                                                             </svg>
                                                         </div>
-
-                                                        <ul class="order__delivery-form-field-popup">
-                                                            <li class="text select-target active">любое</li>
-                                                            <li class="text select-target">черный</li>
-                                                            <li class="text select-target">белый</li>
-                                                            <li class="text select-target">красный</li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="order__delivery-form-field">
-                                                        <label for="working-time">
-                                                            <input
-                                                                type="text"
-                                                                id="place"
-                                                                placeholder="подъезд, квартира, этаж"
-                                                            />
-                                                        </label>
-                                                    </li>
-                                                    <li
-                                                        class="order__delivery-form-field select-item select-change"
-                                                    >
-                                                        <span class="text-strong select-value"
-                                                            >АДРЕС ВЫДАЧИ</span
-                                                        >
-
-                                                        <div class="order__delivery-form-field-icon">
+                                                        <div class="link__link-bg">
                                                             <svg
-                                                                width="20"
-                                                                height="17"
-                                                                viewBox="0 0 20 17"
+                                                                viewBox="0 0 241 72"
                                                                 fill="none"
                                                                 xmlns="http://www.w3.org/2000/svg"
                                                             >
                                                                 <path
-                                                                    fill-rule="evenodd"
-                                                                    clip-rule="evenodd"
-                                                                    d="M13.9612 14.1935C11.9594 16.7071 8.14032 16.7072 6.13858 14.1935C5.91751 13.9159 5.9372 13.5226 6.12957 13.2244C6.50655 12.6399 6.72532 11.9438 6.72532 11.1966C6.72532 9.12784 5.04823 7.45076 2.97945 7.45076C2.0644 7.45076 1.02675 7.09019 0.998444 6.17558C0.916687 3.53384 2.97546 1 6.00546 1H10.0499H14.0943C17.1257 1 19.185 3.53623 19.1012 6.17932C19.0723 7.09045 18.0395 7.45076 17.1279 7.45076C15.0591 7.45076 13.382 9.12784 13.382 11.1966C13.382 11.9396 13.5983 12.6321 13.9715 13.2145C14.1647 13.5162 14.1844 13.9132 13.9612 14.1935Z"
-                                                                    fill="#393531"
-                                                                />
+                                                                    d="M128.5 4.99992L182 4.99992L188.663 4.99992C192.869 4.99992 197.055 5.56408 201.11 6.67731L220.482 11.995C234.616 15.875 242.99 30.4143 239.252 44.5871C236.157 56.3227 225.543 64.4999 213.406 64.4999L200 64.4999L145.5 64.4999L88.5 71.4999L34.5381 71.4999C32.1858 71.4999 29.84 71.2539 27.539 70.7658L23.7153 69.9547C9.07632 66.8494 -0.885607 53.2321 0.587233 38.3401C1.74692 26.6145 9.80339 16.7176 21.0499 13.2031L51.5133 3.68332C61.4042 0.592438 71.814 -0.485748 82.1284 0.512405L128.5 4.99992Z"
+                                                                    fill="white"
+                                                                ></path>
                                                             </svg>
                                                         </div>
-
-                                                        <ul class="order__delivery-form-field-popup">
-                                                            <li class="text select-target active">любое</li>
-                                                            <li class="text select-target">черный</li>
-                                                            <li class="text select-target">белый</li>
-                                                            <li class="text select-target">красный</li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="order__delivery-form-field">
-                                                        <label for="private-house" class="checkbox">
-                                                            <input id="private-house" type="checkbox" />
-                                                            <span>Частный дом</span>
-                                                        </label>
-                                                    </li>
-                                                </ul>
-
-                                                <button
-                                                    type="button"
-                                                    class="order__delivery-form-button link"
-                                                    data-modal="map"
-                                                >
-                                                    <span>карта</span>
-
-                                                    <div class="link__arrow-icon">
-                                                        <svg
-                                                            viewBox="0 0 72 54"
-                                                            fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                        >
-                                                            <path
-                                                                class="icon-circle"
-                                                                d="M71 24.4286C71 38.9999 60.8833 53 46.7143 53C32.2741 53 19 41.2819 19 27C19 12.5979 29.8252 1 44.1429 1C58.6824 1 71 10.2335 71 24.4286Z"
-                                                                stroke="#393531"
-                                                                stroke-width="2"
-                                                            ></path>
-                                                            <path
-                                                                class="icon-arrow"
-                                                                d="M55.7071 26.7071C56.0976 26.3166 56.0976 25.6834 55.7071 25.2929L49.3431 18.9289C48.9526 18.5384 48.3195 18.5384 47.9289 18.9289C47.5384 19.3195 47.5384 19.9526 47.9289 20.3432L53.5858 26L47.9289 31.6569C47.5384 32.0474 47.5384 32.6805 47.9289 33.0711C48.3195 33.4616 48.9526 33.4616 49.3431 33.0711L55.7071 26.7071ZM-8.74228e-08 27L55 27L55 25L8.74228e-08 25L-8.74228e-08 27Z"
-                                                                fill="#393531"
-                                                            ></path>
-                                                        </svg>
-                                                    </div>
-                                                    <div class="link__link-bg">
-                                                        <svg
-                                                            viewBox="0 0 241 72"
-                                                            fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                        >
-                                                            <path
-                                                                d="M128.5 4.99992L182 4.99992L188.663 4.99992C192.869 4.99992 197.055 5.56408 201.11 6.67731L220.482 11.995C234.616 15.875 242.99 30.4143 239.252 44.5871C236.157 56.3227 225.543 64.4999 213.406 64.4999L200 64.4999L145.5 64.4999L88.5 71.4999L34.5381 71.4999C32.1858 71.4999 29.84 71.2539 27.539 70.7658L23.7153 69.9547C9.07632 66.8494 -0.885607 53.2321 0.587233 38.3401C1.74692 26.6145 9.80339 16.7176 21.0499 13.2031L51.5133 3.68332C61.4042 0.592438 71.814 -0.485748 82.1284 0.512405L128.5 4.99992Z"
-                                                                fill="white"
-                                                            ></path>
-                                                        </svg>
-                                                    </div>
-                                                </button>
+                                                    </button>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="order__delivery-tab-body" data-tabs-item="">
-                                            <div>
-                                                <ul class="order__delivery-form-fields">
-                                                    <li
-                                                        class="order__delivery-form-field select-item select-change"
-                                                    >
-                                                        <span class="text-strong select-value"
-                                                            >выбрать город</span
+                                            <div class="order__delivery-tab-body" data-tabs-item="">
+                                                <div>
+                                                    <ul class="order__delivery-form-fields">
+                                                        <li
+                                                            class="order__delivery-form-field select-item select-change"
                                                         >
-
-                                                        <div class="order__delivery-form-field-icon">
+                                                            <span class="text-strong select-value"
+                                                                >выбрать город</span
+                                                            >
+                                                            <div class="order__delivery-form-field-icon">
+                                                                <svg
+                                                                    width="20"
+                                                                    height="17"
+                                                                    viewBox="0 0 20 17"
+                                                                    fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                >
+                                                                    <path
+                                                                        fill-rule="evenodd"
+                                                                        clip-rule="evenodd"
+                                                                        d="M13.9612 14.1935C11.9594 16.7071 8.14032 16.7072 6.13858 14.1935C5.91751 13.9159 5.9372 13.5226 6.12957 13.2244C6.50655 12.6399 6.72532 11.9438 6.72532 11.1966C6.72532 9.12784 5.04823 7.45076 2.97945 7.45076C2.0644 7.45076 1.02675 7.09019 0.998444 6.17558C0.916687 3.53384 2.97546 1 6.00546 1H10.0499H14.0943C17.1257 1 19.185 3.53623 19.1012 6.17932C19.0723 7.09045 18.0395 7.45076 17.1279 7.45076C15.0591 7.45076 13.382 9.12784 13.382 11.1966C13.382 11.9396 13.5983 12.6321 13.9715 13.2145C14.1647 13.5162 14.1844 13.9132 13.9612 14.1935Z"
+                                                                        fill="#393531"
+                                                                    />
+                                                                </svg>
+                                                            </div>
+                                                            <ul class="order__delivery-form-field-popup">
+                                                                <li class="text select-target active">
+                                                                    любое
+                                                                </li>
+                                                                <li class="text select-target">черный</li>
+                                                                <li class="text select-target">белый</li>
+                                                                <li class="text select-target">красный</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="order__delivery-form-field">
+                                                            <label for="working-time-2">
+                                                                <input
+                                                                    type="text"
+                                                                    id="working-time-2"
+                                                                    placeholder="время работы"
+                                                                />
+                                                            </label>
+                                                        </li>
+                                                        <li
+                                                            class="order__delivery-form-field select-item select-change"
+                                                        >
+                                                            <span class="text-strong select-value"
+                                                                >АДРЕС ВЫДАЧИ</span
+                                                            >
+                                                            <div class="order__delivery-form-field-icon">
+                                                                <svg
+                                                                    width="20"
+                                                                    height="17"
+                                                                    viewBox="0 0 20 17"
+                                                                    fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                >
+                                                                    <path
+                                                                        fill-rule="evenodd"
+                                                                        clip-rule="evenodd"
+                                                                        d="M13.9612 14.1935C11.9594 16.7071 8.14032 16.7072 6.13858 14.1935C5.91751 13.9159 5.9372 13.5226 6.12957 13.2244C6.50655 12.6399 6.72532 11.9438 6.72532 11.1966C6.72532 9.12784 5.04823 7.45076 2.97945 7.45076C2.0644 7.45076 1.02675 7.09019 0.998444 6.17558C0.916687 3.53384 2.97546 1 6.00546 1H10.0499H14.0943C17.1257 1 19.185 3.53623 19.1012 6.17932C19.0723 7.09045 18.0395 7.45076 17.1279 7.45076C15.0591 7.45076 13.382 9.12784 13.382 11.1966C13.382 11.9396 13.5983 12.6321 13.9715 13.2145C14.1647 13.5162 14.1844 13.9132 13.9612 14.1935Z"
+                                                                        fill="#393531"
+                                                                    />
+                                                                </svg>
+                                                            </div>
+                                                            <ul class="order__delivery-form-field-popup">
+                                                                <li class="text select-target active">
+                                                                    любое
+                                                                </li>
+                                                                <li class="text select-target">черный</li>
+                                                                <li class="text select-target">белый</li>
+                                                                <li class="text select-target">красный</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="order__delivery-form-field">
+                                                            <label for="working-time">
+                                                                <input
+                                                                    type="text"
+                                                                    id="price"
+                                                                    placeholder="стоимость"
+                                                                />
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                    <button
+                                                        type="button"
+                                                        class="order__delivery-form-button link"
+                                                        data-modal="map"
+                                                    >
+                                                        <span>карта</span>
+                                                        <div class="link__arrow-icon">
                                                             <svg
-                                                                width="20"
-                                                                height="17"
-                                                                viewBox="0 0 20 17"
+                                                                viewBox="0 0 72 54"
                                                                 fill="none"
                                                                 xmlns="http://www.w3.org/2000/svg"
                                                             >
                                                                 <path
-                                                                    fill-rule="evenodd"
-                                                                    clip-rule="evenodd"
-                                                                    d="M13.9612 14.1935C11.9594 16.7071 8.14032 16.7072 6.13858 14.1935C5.91751 13.9159 5.9372 13.5226 6.12957 13.2244C6.50655 12.6399 6.72532 11.9438 6.72532 11.1966C6.72532 9.12784 5.04823 7.45076 2.97945 7.45076C2.0644 7.45076 1.02675 7.09019 0.998444 6.17558C0.916687 3.53384 2.97546 1 6.00546 1H10.0499H14.0943C17.1257 1 19.185 3.53623 19.1012 6.17932C19.0723 7.09045 18.0395 7.45076 17.1279 7.45076C15.0591 7.45076 13.382 9.12784 13.382 11.1966C13.382 11.9396 13.5983 12.6321 13.9715 13.2145C14.1647 13.5162 14.1844 13.9132 13.9612 14.1935Z"
+                                                                    class="icon-circle"
+                                                                    d="M71 24.4286C71 38.9999 60.8833 53 46.7143 53C32.2741 53 19 41.2819 19 27C19 12.5979 29.8252 1 44.1429 1C58.6824 1 71 10.2335 71 24.4286Z"
+                                                                    stroke="#393531"
+                                                                    stroke-width="2"
+                                                                ></path>
+                                                                <path
+                                                                    class="icon-arrow"
+                                                                    d="M55.7071 26.7071C56.0976 26.3166 56.0976 25.6834 55.7071 25.2929L49.3431 18.9289C48.9526 18.5384 48.3195 18.5384 47.9289 18.9289C47.5384 19.3195 47.5384 19.9526 47.9289 20.3432L53.5858 26L47.9289 31.6569C47.5384 32.0474 47.5384 32.6805 47.9289 33.0711C48.3195 33.4616 48.9526 33.4616 49.3431 33.0711L55.7071 26.7071ZM-8.74228e-08 27L55 27L55 25L8.74228e-08 25L-8.74228e-08 27Z"
                                                                     fill="#393531"
-                                                                />
+                                                                ></path>
                                                             </svg>
                                                         </div>
-
-                                                        <ul class="order__delivery-form-field-popup">
-                                                            <li class="text select-target active">любое</li>
-                                                            <li class="text select-target">черный</li>
-                                                            <li class="text select-target">белый</li>
-                                                            <li class="text select-target">красный</li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="order__delivery-form-field">
-                                                        <label for="working-time-2">
-                                                            <input
-                                                                type="text"
-                                                                id="working-time-2"
-                                                                placeholder="время работы"
-                                                            />
-                                                        </label>
-                                                    </li>
-                                                    <li
-                                                        class="order__delivery-form-field select-item select-change"
-                                                    >
-                                                        <span class="text-strong select-value"
-                                                            >АДРЕС ВЫДАЧИ</span
-                                                        >
-
-                                                        <div class="order__delivery-form-field-icon">
+                                                        <div class="link__link-bg">
                                                             <svg
-                                                                width="20"
-                                                                height="17"
-                                                                viewBox="0 0 20 17"
+                                                                viewBox="0 0 241 72"
                                                                 fill="none"
                                                                 xmlns="http://www.w3.org/2000/svg"
                                                             >
                                                                 <path
-                                                                    fill-rule="evenodd"
-                                                                    clip-rule="evenodd"
-                                                                    d="M13.9612 14.1935C11.9594 16.7071 8.14032 16.7072 6.13858 14.1935C5.91751 13.9159 5.9372 13.5226 6.12957 13.2244C6.50655 12.6399 6.72532 11.9438 6.72532 11.1966C6.72532 9.12784 5.04823 7.45076 2.97945 7.45076C2.0644 7.45076 1.02675 7.09019 0.998444 6.17558C0.916687 3.53384 2.97546 1 6.00546 1H10.0499H14.0943C17.1257 1 19.185 3.53623 19.1012 6.17932C19.0723 7.09045 18.0395 7.45076 17.1279 7.45076C15.0591 7.45076 13.382 9.12784 13.382 11.1966C13.382 11.9396 13.5983 12.6321 13.9715 13.2145C14.1647 13.5162 14.1844 13.9132 13.9612 14.1935Z"
-                                                                    fill="#393531"
-                                                                />
+                                                                    d="M128.5 4.99992L182 4.99992L188.663 4.99992C192.869 4.99992 197.055 5.56408 201.11 6.67731L220.482 11.995C234.616 15.875 242.99 30.4143 239.252 44.5871C236.157 56.3227 225.543 64.4999 213.406 64.4999L200 64.4999L145.5 64.4999L88.5 71.4999L34.5381 71.4999C32.1858 71.4999 29.84 71.2539 27.539 70.7658L23.7153 69.9547C9.07632 66.8494 -0.885607 53.2321 0.587233 38.3401C1.74692 26.6145 9.80339 16.7176 21.0499 13.2031L51.5133 3.68332C61.4042 0.592438 71.814 -0.485748 82.1284 0.512405L128.5 4.99992Z"
+                                                                    fill="white"
+                                                                ></path>
                                                             </svg>
                                                         </div>
-
-                                                        <ul class="order__delivery-form-field-popup">
-                                                            <li class="text select-target active">любое</li>
-                                                            <li class="text select-target">черный</li>
-                                                            <li class="text select-target">белый</li>
-                                                            <li class="text select-target">красный</li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="order__delivery-form-field">
-                                                        <label for="working-time">
-                                                            <input
-                                                                type="text"
-                                                                id="price"
-                                                                placeholder="стоимость"
-                                                            />
-                                                        </label>
-                                                    </li>
-                                                </ul>
-
-                                                <button
-                                                    type="button"
-                                                    class="order__delivery-form-button link"
-                                                    data-modal="map"
-                                                >
-                                                    <span>карта</span>
-
-                                                    <div class="link__arrow-icon">
-                                                        <svg
-                                                            viewBox="0 0 72 54"
-                                                            fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                        >
-                                                            <path
-                                                                class="icon-circle"
-                                                                d="M71 24.4286C71 38.9999 60.8833 53 46.7143 53C32.2741 53 19 41.2819 19 27C19 12.5979 29.8252 1 44.1429 1C58.6824 1 71 10.2335 71 24.4286Z"
-                                                                stroke="#393531"
-                                                                stroke-width="2"
-                                                            ></path>
-                                                            <path
-                                                                class="icon-arrow"
-                                                                d="M55.7071 26.7071C56.0976 26.3166 56.0976 25.6834 55.7071 25.2929L49.3431 18.9289C48.9526 18.5384 48.3195 18.5384 47.9289 18.9289C47.5384 19.3195 47.5384 19.9526 47.9289 20.3432L53.5858 26L47.9289 31.6569C47.5384 32.0474 47.5384 32.6805 47.9289 33.0711C48.3195 33.4616 48.9526 33.4616 49.3431 33.0711L55.7071 26.7071ZM-8.74228e-08 27L55 27L55 25L8.74228e-08 25L-8.74228e-08 27Z"
-                                                                fill="#393531"
-                                                            ></path>
-                                                        </svg>
-                                                    </div>
-                                                    <div class="link__link-bg">
-                                                        <svg
-                                                            viewBox="0 0 241 72"
-                                                            fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                        >
-                                                            <path
-                                                                d="M128.5 4.99992L182 4.99992L188.663 4.99992C192.869 4.99992 197.055 5.56408 201.11 6.67731L220.482 11.995C234.616 15.875 242.99 30.4143 239.252 44.5871C236.157 56.3227 225.543 64.4999 213.406 64.4999L200 64.4999L145.5 64.4999L88.5 71.4999L34.5381 71.4999C32.1858 71.4999 29.84 71.2539 27.539 70.7658L23.7153 69.9547C9.07632 66.8494 -0.885607 53.2321 0.587233 38.3401C1.74692 26.6145 9.80339 16.7176 21.0499 13.2031L51.5133 3.68332C61.4042 0.592438 71.814 -0.485748 82.1284 0.512405L128.5 4.99992Z"
-                                                                fill="white"
-                                                            ></path>
-                                                        </svg>
-                                                    </div>
-                                                </button>
+                                                    </button>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="order__delivery-tab-body" data-tabs-item="">
-                                            <div>
-                                                <ul class="order__delivery-form-fields">
-                                                    <li
-                                                        class="order__delivery-form-field select-item select-change"
-                                                    >
-                                                        <span class="text-strong select-value"
-                                                            >выбрать город</span
+                                            <div class="order__delivery-tab-body" data-tabs-item="">
+                                                <div>
+                                                    <ul class="order__delivery-form-fields">
+                                                        <li
+                                                            class="order__delivery-form-field select-item select-change"
                                                         >
-
-                                                        <div class="order__delivery-form-field-icon">
+                                                            <span class="text-strong select-value"
+                                                                >выбрать город</span
+                                                            >
+                                                            <div class="order__delivery-form-field-icon">
+                                                                <svg
+                                                                    width="20"
+                                                                    height="17"
+                                                                    viewBox="0 0 20 17"
+                                                                    fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                >
+                                                                    <path
+                                                                        fill-rule="evenodd"
+                                                                        clip-rule="evenodd"
+                                                                        d="M13.9612 14.1935C11.9594 16.7071 8.14032 16.7072 6.13858 14.1935C5.91751 13.9159 5.9372 13.5226 6.12957 13.2244C6.50655 12.6399 6.72532 11.9438 6.72532 11.1966C6.72532 9.12784 5.04823 7.45076 2.97945 7.45076C2.0644 7.45076 1.02675 7.09019 0.998444 6.17558C0.916687 3.53384 2.97546 1 6.00546 1H10.0499H14.0943C17.1257 1 19.185 3.53623 19.1012 6.17932C19.0723 7.09045 18.0395 7.45076 17.1279 7.45076C15.0591 7.45076 13.382 9.12784 13.382 11.1966C13.382 11.9396 13.5983 12.6321 13.9715 13.2145C14.1647 13.5162 14.1844 13.9132 13.9612 14.1935Z"
+                                                                        fill="#393531"
+                                                                    />
+                                                                </svg>
+                                                            </div>
+                                                            <ul class="order__delivery-form-field-popup">
+                                                                <li class="text select-target active">
+                                                                    любое
+                                                                </li>
+                                                                <li class="text select-target">черный</li>
+                                                                <li class="text select-target">белый</li>
+                                                                <li class="text select-target">красный</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="order__delivery-form-field">
+                                                            <label for="home">
+                                                                <input
+                                                                    type="text"
+                                                                    id="home"
+                                                                    placeholder="квартира"
+                                                                />
+                                                            </label>
+                                                        </li>
+                                                        <li
+                                                            class="order__delivery-form-field select-item select-change"
+                                                        >
+                                                            <span class="text-strong select-value"
+                                                                >АДРЕС ВЫДАЧИ</span
+                                                            >
+                                                            <div class="order__delivery-form-field-icon">
+                                                                <svg
+                                                                    width="20"
+                                                                    height="17"
+                                                                    viewBox="0 0 20 17"
+                                                                    fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                >
+                                                                    <path
+                                                                        fill-rule="evenodd"
+                                                                        clip-rule="evenodd"
+                                                                        d="M13.9612 14.1935C11.9594 16.7071 8.14032 16.7072 6.13858 14.1935C5.91751 13.9159 5.9372 13.5226 6.12957 13.2244C6.50655 12.6399 6.72532 11.9438 6.72532 11.1966C6.72532 9.12784 5.04823 7.45076 2.97945 7.45076C2.0644 7.45076 1.02675 7.09019 0.998444 6.17558C0.916687 3.53384 2.97546 1 6.00546 1H10.0499H14.0943C17.1257 1 19.185 3.53623 19.1012 6.17932C19.0723 7.09045 18.0395 7.45076 17.1279 7.45076C15.0591 7.45076 13.382 9.12784 13.382 11.1966C13.382 11.9396 13.5983 12.6321 13.9715 13.2145C14.1647 13.5162 14.1844 13.9132 13.9612 14.1935Z"
+                                                                        fill="#393531"
+                                                                    />
+                                                                </svg>
+                                                            </div>
+                                                            <ul class="order__delivery-form-field-popup">
+                                                                <li class="text select-target active">
+                                                                    любое
+                                                                </li>
+                                                                <li class="text select-target">черный</li>
+                                                                <li class="text select-target">белый</li>
+                                                                <li class="text select-target">красный</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="order__delivery-form-field">
+                                                            <label for="private-house-2" class="checkbox">
+                                                                <input id="private-house-2" type="checkbox" />
+                                                                <span>Частный дом</span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                    <button
+                                                        type="button"
+                                                        class="order__delivery-form-button link"
+                                                        data-modal="map"
+                                                    >
+                                                        <span>карта</span>
+                                                        <div class="link__arrow-icon">
                                                             <svg
-                                                                width="20"
-                                                                height="17"
-                                                                viewBox="0 0 20 17"
+                                                                viewBox="0 0 72 54"
                                                                 fill="none"
                                                                 xmlns="http://www.w3.org/2000/svg"
                                                             >
                                                                 <path
-                                                                    fill-rule="evenodd"
-                                                                    clip-rule="evenodd"
-                                                                    d="M13.9612 14.1935C11.9594 16.7071 8.14032 16.7072 6.13858 14.1935C5.91751 13.9159 5.9372 13.5226 6.12957 13.2244C6.50655 12.6399 6.72532 11.9438 6.72532 11.1966C6.72532 9.12784 5.04823 7.45076 2.97945 7.45076C2.0644 7.45076 1.02675 7.09019 0.998444 6.17558C0.916687 3.53384 2.97546 1 6.00546 1H10.0499H14.0943C17.1257 1 19.185 3.53623 19.1012 6.17932C19.0723 7.09045 18.0395 7.45076 17.1279 7.45076C15.0591 7.45076 13.382 9.12784 13.382 11.1966C13.382 11.9396 13.5983 12.6321 13.9715 13.2145C14.1647 13.5162 14.1844 13.9132 13.9612 14.1935Z"
+                                                                    class="icon-circle"
+                                                                    d="M71 24.4286C71 38.9999 60.8833 53 46.7143 53C32.2741 53 19 41.2819 19 27C19 12.5979 29.8252 1 44.1429 1C58.6824 1 71 10.2335 71 24.4286Z"
+                                                                    stroke="#393531"
+                                                                    stroke-width="2"
+                                                                ></path>
+                                                                <path
+                                                                    class="icon-arrow"
+                                                                    d="M55.7071 26.7071C56.0976 26.3166 56.0976 25.6834 55.7071 25.2929L49.3431 18.9289C48.9526 18.5384 48.3195 18.5384 47.9289 18.9289C47.5384 19.3195 47.5384 19.9526 47.9289 20.3432L53.5858 26L47.9289 31.6569C47.5384 32.0474 47.5384 32.6805 47.9289 33.0711C48.3195 33.4616 48.9526 33.4616 49.3431 33.0711L55.7071 26.7071ZM-8.74228e-08 27L55 27L55 25L8.74228e-08 25L-8.74228e-08 27Z"
                                                                     fill="#393531"
-                                                                />
+                                                                ></path>
                                                             </svg>
                                                         </div>
-
-                                                        <ul class="order__delivery-form-field-popup">
-                                                            <li class="text select-target active">любое</li>
-                                                            <li class="text select-target">черный</li>
-                                                            <li class="text select-target">белый</li>
-                                                            <li class="text select-target">красный</li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="order__delivery-form-field">
-                                                        <label for="home">
-                                                            <input
-                                                                type="text"
-                                                                id="home"
-                                                                placeholder="квартира"
-                                                            />
-                                                        </label>
-                                                    </li>
-                                                    <li
-                                                        class="order__delivery-form-field select-item select-change"
-                                                    >
-                                                        <span class="text-strong select-value"
-                                                            >АДРЕС ВЫДАЧИ</span
-                                                        >
-
-                                                        <div class="order__delivery-form-field-icon">
+                                                        <div class="link__link-bg">
                                                             <svg
-                                                                width="20"
-                                                                height="17"
-                                                                viewBox="0 0 20 17"
+                                                                viewBox="0 0 241 72"
                                                                 fill="none"
                                                                 xmlns="http://www.w3.org/2000/svg"
                                                             >
                                                                 <path
-                                                                    fill-rule="evenodd"
-                                                                    clip-rule="evenodd"
-                                                                    d="M13.9612 14.1935C11.9594 16.7071 8.14032 16.7072 6.13858 14.1935C5.91751 13.9159 5.9372 13.5226 6.12957 13.2244C6.50655 12.6399 6.72532 11.9438 6.72532 11.1966C6.72532 9.12784 5.04823 7.45076 2.97945 7.45076C2.0644 7.45076 1.02675 7.09019 0.998444 6.17558C0.916687 3.53384 2.97546 1 6.00546 1H10.0499H14.0943C17.1257 1 19.185 3.53623 19.1012 6.17932C19.0723 7.09045 18.0395 7.45076 17.1279 7.45076C15.0591 7.45076 13.382 9.12784 13.382 11.1966C13.382 11.9396 13.5983 12.6321 13.9715 13.2145C14.1647 13.5162 14.1844 13.9132 13.9612 14.1935Z"
-                                                                    fill="#393531"
-                                                                />
+                                                                    d="M128.5 4.99992L182 4.99992L188.663 4.99992C192.869 4.99992 197.055 5.56408 201.11 6.67731L220.482 11.995C234.616 15.875 242.99 30.4143 239.252 44.5871C236.157 56.3227 225.543 64.4999 213.406 64.4999L200 64.4999L145.5 64.4999L88.5 71.4999L34.5381 71.4999C32.1858 71.4999 29.84 71.2539 27.539 70.7658L23.7153 69.9547C9.07632 66.8494 -0.885607 53.2321 0.587233 38.3401C1.74692 26.6145 9.80339 16.7176 21.0499 13.2031L51.5133 3.68332C61.4042 0.592438 71.814 -0.485748 82.1284 0.512405L128.5 4.99992Z"
+                                                                    fill="white"
+                                                                ></path>
                                                             </svg>
                                                         </div>
-
-                                                        <ul class="order__delivery-form-field-popup">
-                                                            <li class="text select-target active">любое</li>
-                                                            <li class="text select-target">черный</li>
-                                                            <li class="text select-target">белый</li>
-                                                            <li class="text select-target">красный</li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="order__delivery-form-field">
-                                                        <label for="private-house-2" class="checkbox">
-                                                            <input id="private-house-2" type="checkbox" />
-                                                            <span>Частный дом</span>
-                                                        </label>
-                                                    </li>
-                                                </ul>
-
-                                                <button
-                                                    type="button"
-                                                    class="order__delivery-form-button link"
-                                                    data-modal="map"
-                                                >
-                                                    <span>карта</span>
-
-                                                    <div class="link__arrow-icon">
-                                                        <svg
-                                                            viewBox="0 0 72 54"
-                                                            fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                        >
-                                                            <path
-                                                                class="icon-circle"
-                                                                d="M71 24.4286C71 38.9999 60.8833 53 46.7143 53C32.2741 53 19 41.2819 19 27C19 12.5979 29.8252 1 44.1429 1C58.6824 1 71 10.2335 71 24.4286Z"
-                                                                stroke="#393531"
-                                                                stroke-width="2"
-                                                            ></path>
-                                                            <path
-                                                                class="icon-arrow"
-                                                                d="M55.7071 26.7071C56.0976 26.3166 56.0976 25.6834 55.7071 25.2929L49.3431 18.9289C48.9526 18.5384 48.3195 18.5384 47.9289 18.9289C47.5384 19.3195 47.5384 19.9526 47.9289 20.3432L53.5858 26L47.9289 31.6569C47.5384 32.0474 47.5384 32.6805 47.9289 33.0711C48.3195 33.4616 48.9526 33.4616 49.3431 33.0711L55.7071 26.7071ZM-8.74228e-08 27L55 27L55 25L8.74228e-08 25L-8.74228e-08 27Z"
-                                                                fill="#393531"
-                                                            ></path>
-                                                        </svg>
-                                                    </div>
-                                                    <div class="link__link-bg">
-                                                        <svg
-                                                            viewBox="0 0 241 72"
-                                                            fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                        >
-                                                            <path
-                                                                d="M128.5 4.99992L182 4.99992L188.663 4.99992C192.869 4.99992 197.055 5.56408 201.11 6.67731L220.482 11.995C234.616 15.875 242.99 30.4143 239.252 44.5871C236.157 56.3227 225.543 64.4999 213.406 64.4999L200 64.4999L145.5 64.4999L88.5 71.4999L34.5381 71.4999C32.1858 71.4999 29.84 71.2539 27.539 70.7658L23.7153 69.9547C9.07632 66.8494 -0.885607 53.2321 0.587233 38.3401C1.74692 26.6145 9.80339 16.7176 21.0499 13.2031L51.5133 3.68332C61.4042 0.592438 71.814 -0.485748 82.1284 0.512405L128.5 4.99992Z"
-                                                                fill="white"
-                                                            ></path>
-                                                        </svg>
-                                                    </div>
-                                                </button>
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="order__type">
+                                    <h4 class="order__type-title title">оплата</h4>
+                                    <ul class="order__type-fields">
+                                        <li>
+                                            <label for="card-on-the-site" class="radio">
+                                                <input
+                                                    checked
+                                                    id="card-on-the-site"
+                                                    type="radio"
+                                                    name="payment"
+                                                />
+                                                <span>КАРТОЙ НА САЙТЕ</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="after-getting" class="radio">
+                                                <input id="after-getting" type="radio" name="payment" />
+                                                <span>ПРИ ПОЛУЧЕНИИ</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="order__type">
+                                    <h5 class="order__type-title title">подтвеРДИТЬ ЗАКАЗ</h5>
+                                    <ul class="order__type-fields">
+                                        <li>
+                                            <label for="get-sms" class="radio">
+                                                <input checked id="get-sms" type="radio" name="accept" />
+                                                <span>ПОЛУЧИТЬ СМС</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="calling-operator" class="radio">
+                                                <input id="calling-operator" type="radio" name="accept" />
+                                                <span>ЗВОНОК ОПЕРАТОРА</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="order__comment">
+                                    <h5 class="order__comment-title title">коММЕНТАРИЙ</h5>
+                                    <textarea
+                                        data-validate
+                                        data-required
+                                        class="order__comment-field input text"
+                                    ></textarea>
+                                </div>
                             </div>
-
-                            <div class="order__type">
-                                <h4 class="order__type-title title">оплата</h4>
-
-                                <ul class="order__type-fields">
-                                    <li>
-                                        <label for="card-on-the-site" class="radio">
-                                            <input
-                                                checked
-                                                id="card-on-the-site"
-                                                type="radio"
-                                                name="payment"
-                                            />
-                                            <span>КАРТОЙ НА САЙТЕ</span>
-                                        </label>
+                            <aside class="order__checkout">
+                                <figure class="order__checkout-icon">
+                                    <img src="img/order/checkout-icon.svg" alt="" />
+                                </figure>
+                                <ul class="order__checkout-list">
+                                    <li class="order__checkout-item">
+                                        <span class="order__checkout-item-title"> 3 товара </span>
+                                        <strong class="order__checkout-item-price circe"> 600 ₽ </strong>
                                     </li>
-                                    <li>
-                                        <label for="after-getting" class="radio">
-                                            <input id="after-getting" type="radio" name="payment" />
-                                            <span>ПРИ ПОЛУЧЕНИИ</span>
-                                        </label>
+                                    <li class="order__checkout-item">
+                                        <span class="order__checkout-item-title"> приют </span>
+                                        <strong class="order__checkout-item-price circe"> 100 ₽ </strong>
+                                    </li>
+                                    <li class="order__checkout-item">
+                                        <span class="order__checkout-item-title"> доставка </span>
+                                        <strong class="order__checkout-item-price">бесплатно</strong>
                                     </li>
                                 </ul>
-                            </div>
-
-                            <div class="order__type">
-                                <h5 class="order__type-title title">подтвеРДИТЬ ЗАКАЗ</h5>
-
-                                <ul class="order__type-fields">
-                                    <li>
-                                        <label for="get-sms" class="radio">
-                                            <input checked id="get-sms" type="radio" name="accept" />
-                                            <span>ПОЛУЧИТЬ СМС</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label for="calling-operator" class="radio">
-                                            <input id="calling-operator" type="radio" name="accept" />
-                                            <span>ЗВОНОК ОПЕРАТОРА</span>
-                                        </label>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="order__comment">
-                                <h5 class="order__comment-title title">коММЕНТАРИЙ</h5>
-
-                                <textarea class="order__comment-field"></textarea>
-                            </div>
-                        </div>
-
-                        <aside class="order__checkout">
-                            <figure class="order__checkout-icon">
-                                <img src="img/order/checkout-icon.svg" alt="" />
-                            </figure>
-
-                            <ul class="order__checkout-list">
-                                <li class="order__checkout-item">
-                                    <span class="order__checkout-item-title"> 3 товара </span>
-                                    <strong class="order__checkout-item-price circe"> 600 ₽ </strong>
-                                </li>
-                                <li class="order__checkout-item">
-                                    <span class="order__checkout-item-title"> приют </span>
-                                    <strong class="order__checkout-item-price circe"> 100 ₽ </strong>
-                                </li>
-                                <li class="order__checkout-item">
-                                    <span class="order__checkout-item-title"> доставка </span>
-                                    <strong class="order__checkout-item-price">бесплатно</strong>
-                                </li>
-                            </ul>
-
-                            <div class="order__checkout-total">
-                                <span class="order__checkout-item-title">Итог: </span>
-                                <strong class="order__checkout-total-price circe"> 700₽ </strong>
-                            </div>
-
-                            <button class="order__checkout-button link">
-                                <span>Оформить</span>
-
-                                <div class="link__arrow-icon">
-                                    <svg viewBox="0 0 72 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            class="icon-circle"
-                                            d="M71 24.4286C71 38.9999 60.8833 53 46.7143 53C32.2741 53 19 41.2819 19 27C19 12.5979 29.8252 1 44.1429 1C58.6824 1 71 10.2335 71 24.4286Z"
-                                            stroke="#393531"
-                                            stroke-width="2"
-                                        ></path>
-                                        <path
-                                            class="icon-arrow"
-                                            d="M55.7071 26.7071C56.0976 26.3166 56.0976 25.6834 55.7071 25.2929L49.3431 18.9289C48.9526 18.5384 48.3195 18.5384 47.9289 18.9289C47.5384 19.3195 47.5384 19.9526 47.9289 20.3432L53.5858 26L47.9289 31.6569C47.5384 32.0474 47.5384 32.6805 47.9289 33.0711C48.3195 33.4616 48.9526 33.4616 49.3431 33.0711L55.7071 26.7071ZM-8.74228e-08 27L55 27L55 25L8.74228e-08 25L-8.74228e-08 27Z"
-                                            fill="#393531"
-                                        ></path>
-                                    </svg>
+                                <div class="order__checkout-total">
+                                    <span class="order__checkout-item-title">Итог: </span>
+                                    <strong class="order__checkout-total-price circe"> 700₽ </strong>
                                 </div>
-                                <div class="link__link-bg">
-                                    <svg viewBox="0 0 241 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M128.5 4.99992L182 4.99992L188.663 4.99992C192.869 4.99992 197.055 5.56408 201.11 6.67731L220.482 11.995C234.616 15.875 242.99 30.4143 239.252 44.5871C236.157 56.3227 225.543 64.4999 213.406 64.4999L200 64.4999L145.5 64.4999L88.5 71.4999L34.5381 71.4999C32.1858 71.4999 29.84 71.2539 27.539 70.7658L23.7153 69.9547C9.07632 66.8494 -0.885607 53.2321 0.587233 38.3401C1.74692 26.6145 9.80339 16.7176 21.0499 13.2031L51.5133 3.68332C61.4042 0.592438 71.814 -0.485748 82.1284 0.512405L128.5 4.99992Z"
-                                            fill="white"
-                                        ></path>
-                                    </svg>
-                                </div>
-                            </button>
-                        </aside>
-                    </form>
-                </section>
-            </main>
-        </div>
-        <footer class="section footer">
+                                <button class="order__checkout-button link">
+                                    <span>Оформить</span>
+                                    <div class="link__arrow-icon">
+                                        <svg
+                                            viewBox="0 0 72 54"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                class="icon-circle"
+                                                d="M71 24.4286C71 38.9999 60.8833 53 46.7143 53C32.2741 53 19 41.2819 19 27C19 12.5979 29.8252 1 44.1429 1C58.6824 1 71 10.2335 71 24.4286Z"
+                                                stroke="#393531"
+                                                stroke-width="2"
+                                            ></path>
+                                            <path
+                                                class="icon-arrow"
+                                                d="M55.7071 26.7071C56.0976 26.3166 56.0976 25.6834 55.7071 25.2929L49.3431 18.9289C48.9526 18.5384 48.3195 18.5384 47.9289 18.9289C47.5384 19.3195 47.5384 19.9526 47.9289 20.3432L53.5858 26L47.9289 31.6569C47.5384 32.0474 47.5384 32.6805 47.9289 33.0711C48.3195 33.4616 48.9526 33.4616 49.3431 33.0711L55.7071 26.7071ZM-8.74228e-08 27L55 27L55 25L8.74228e-08 25L-8.74228e-08 27Z"
+                                                fill="#393531"
+                                            ></path>
+                                        </svg>
+                                    </div>
+                                    <div class="link__link-bg">
+                                        <svg
+                                            viewBox="0 0 241 72"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M128.5 4.99992L182 4.99992L188.663 4.99992C192.869 4.99992 197.055 5.56408 201.11 6.67731L220.482 11.995C234.616 15.875 242.99 30.4143 239.252 44.5871C236.157 56.3227 225.543 64.4999 213.406 64.4999L200 64.4999L145.5 64.4999L88.5 71.4999L34.5381 71.4999C32.1858 71.4999 29.84 71.2539 27.539 70.7658L23.7153 69.9547C9.07632 66.8494 -0.885607 53.2321 0.587233 38.3401C1.74692 26.6145 9.80339 16.7176 21.0499 13.2031L51.5133 3.68332C61.4042 0.592438 71.814 -0.485748 82.1284 0.512405L128.5 4.99992Z"
+                                                fill="white"
+                                            ></path>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </aside>
+                        </form>
+                    </section>
+                </main>
+            </div>
+            <footer class="section footer">
     <div class="footer__box">
         <a href="#!" class="footer__title">
             <strong class="text-strong">Teaport</strong>
@@ -2289,5 +2279,6 @@
     </div>
 </div>
 
+        </div>
     </body>
 </html>
