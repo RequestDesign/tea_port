@@ -234,6 +234,7 @@
                 .hor-slider__item-cart-controlls,
                 .hor-slider__item-next-icon {
                     opacity: 1 !important;
+                    transition: opacity 1s linear !important;
                 }
             }
         }

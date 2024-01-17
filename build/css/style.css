@@ -3190,7 +3190,7 @@ body.locked {
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 300;
-  line-height: normal;
+  line-height: 1.35;
   letter-spacing: 0.54rem;
   text-transform: uppercase;
 }
@@ -3241,7 +3241,7 @@ body.locked {
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  line-height: 1.35;
   letter-spacing: 0.54rem;
   text-transform: uppercase;
 }
@@ -4746,6 +4746,8 @@ html.lock {
   .hor-slider__wrapper .swiper-slide-next + .swiper-slide + .swiper-slide .hor-slider__item-cart-controlls,
   .hor-slider__wrapper .swiper-slide-next + .swiper-slide + .swiper-slide .hor-slider__item-next-icon {
     opacity: 1 !important;
+    -webkit-transition: opacity 1s linear !important;
+    transition: opacity 1s linear !important;
   }
 }
 .hor-slider__item-text {
