@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Inria+Sans:300,regular,700);
 @font-face {
   font-family: "Inria Sans";
   font-weight: normal;
@@ -4491,8 +4492,12 @@ html.lock {
           flex-direction: column;
   gap: 8.5rem;
 }
-.hor-slider.our .hor-slider__item-img {
+.hor-slider.our .hor-slider__item-img, .hor-slider.country .hor-slider__item-img {
   border-radius: 0;
+}
+.hor-slider.our .hor-slider__item-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .hor-slider.articles {
   display: -webkit-box;
@@ -5419,8 +5424,8 @@ html.lock {
   width: 100%;
   z-index: 100;
   overflow: auto;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateY(-110%);
+          transform: translateY(-110%);
   -webkit-transition: 0.4s -webkit-transform ease-in-out;
   transition: 0.4s -webkit-transform ease-in-out;
   transition: 0.4s transform ease-in-out;

@@ -2,9 +2,15 @@
     display: flex;
     flex-direction: column;
     gap: 8.5rem;
-    &.our {
+    &.our,
+    &.country {
         .hor-slider__item-img {
             border-radius: 0;
+        }
+    }
+    &.our {
+        .hor-slider__item-img img {
+            object-fit: cover;
         }
     }
 
