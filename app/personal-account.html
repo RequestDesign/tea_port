@@ -14,9 +14,9 @@
         <title>TEAPORT - Личный кабинет</title>
     </head>
     <body style="opacity: 0">
-        <main>
-            <div class="personal-account">
-                @@include('./template/header.html') @@include('./template/burger-menu.html')
+        <div class="personal-account">
+            @@include('./template/header.html') @@include('./template/burger-menu.html')
+            <main>
                 <div class="account-information">
                     <div class="account-information__inner">
                         <div class="account-information__card account-card">
@@ -213,8 +213,8 @@
                         </form>
                     </div>
                 </div>
-            </div>
-        </main>
+            </main>
+        </div>
         @@include('./template/footer.html') @@include('./template/modals.html')
     </body>
 </html>

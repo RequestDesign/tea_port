@@ -14,10 +14,9 @@
         <title>TEAPORT - Главная</title>
     </head>
     <body style="opacity: 0">
-        <main>
-            <div class="main">
-                @@include('./template/header.html') @@include('./template/burger-menu.html')
-
+        <div class="main">
+            @@include('./template/header.html') @@include('./template/burger-menu.html')
+            <main>
                 <section class="section section--hero">
                     <div class="hero-slider">
                         <div class="pag circe">
@@ -1672,8 +1671,7 @@
                         </div>
                     </div>
                 </section>
-            </div>
-            <!-- <section class="section section--inst">
+                <!-- <section class="section section--inst">
                 <div class="inst">
                     <div class="inst__head">
                         <div class="inst__profile-photo">
@@ -1727,7 +1725,8 @@
                     </div>
                 </div>
             </section> -->
-        </main>
+            </main>
+        </div>
         @@include('./template/footer.html') @@include('./template/modals.html')
     </body>
 </html>

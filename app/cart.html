@@ -14,10 +14,9 @@
         <title>TEAPORT - Корзина</title>
     </head>
     <body style="opacity: 0">
-        <main>
-            <div class="cart">
-                @@include('./template/header.html') @@include('./template/burger-menu.html')
-
+        <div class="cart">
+            @@include('./template/header.html') @@include('./template/burger-menu.html')
+            <main>
                 <section class="section cart__box">
                     <p class="cart__title title">Корзина</p>
                     <div class="cart__content">
@@ -331,8 +330,8 @@
                         </div>
                     </div>
                 </section>
-            </div>
-        </main>
+            </main>
+        </div>
         @@include('./template/footer.html') @@include('./template/modals.html')
     </body>
 </html>
