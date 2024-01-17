@@ -583,3 +583,7 @@ document.addEventListener('click', function (e) {
         document.documentElement.classList.remove('lock');
     }
 });
+
+window.addEventListener('load', function () {
+    document.body.style.opacity = '1';
+});
