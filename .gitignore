@@ -11,4 +11,3 @@ node_modules/
 npm-debug.*
 Thumbs.db
 app/sass/blocks/!!!.scss
-build/
