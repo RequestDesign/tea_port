@@ -306,6 +306,15 @@
     z-index: 1;
 }
 
+input::placeholder,
+textarea::placeholder {
+    color: #423e39;
+}
+input.text,
+textarea.text {
+    color: #000;
+}
+
 .pag {
     display: flex;
     align-items: center;

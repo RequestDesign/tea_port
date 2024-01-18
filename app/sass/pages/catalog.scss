@@ -1,17 +1,15 @@
 .catalog {
-    margin: 0;
-    width: 100%;
-    background-image: url('../img/webp/catalog-bg.webp');
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 100%;
-    overflow: hidden;
+    &.wrapper__content::before {
+        background-image: url('../img/webp/catalog-bg.webp');
+    }
 
     @media (max-width: 48em) {
-        margin-bottom: 18rem;
-        background-image: url('../img/webp/catalog-bg-mob.webp');
-        background-size: 100% 100%;
-        background-position: center bottom;
+        &.wrapper__content {
+            margin-bottom: 18rem;
+            &::before {
+                background-image: url('../img/webp/catalog-bg-mob.webp');
+            }
+        }
     }
 
     .seo {
