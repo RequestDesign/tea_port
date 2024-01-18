@@ -157,6 +157,7 @@
 
         &:not(.cl-p &) {
             backdrop-filter: blur(2rem);
+            will-change: transform;
         }
 
         &--white {
@@ -240,34 +241,34 @@
             padding-left: 1rem;
             padding-right: 1rem;
         }
-        @media (min-width: 48em) {
-            .swiper-wrapper {
-                transition: none !important;
-            }
-            .swiper-slide {
-                .hor-slider__title,
-                .hor-slider__item-img,
-                .hor-slider__item-text,
-                .hor-slider__item-cart-controlls,
-                .hor-slider__item-next-icon {
-                    opacity: 0 !important;
-                    transition: opacity 1s linear !important;
-                }
-            }
-            .swiper-slide-active,
-            .swiper-slide-next,
-            .swiper-slide-next + .swiper-slide,
-            .swiper-slide-next + .swiper-slide + .swiper-slide {
-                .hor-slider__title,
-                .hor-slider__item-img,
-                .hor-slider__item-text,
-                .hor-slider__item-cart-controlls,
-                .hor-slider__item-next-icon {
-                    opacity: 1 !important;
-                    transition: opacity 1s linear !important;
-                }
-            }
-        }
+        // @media (min-width: 48em) {
+        //     .swiper-wrapper {
+        //         transition: none !important;
+        //     }
+        //     .swiper-slide {
+        //         .hor-slider__title,
+        //         .hor-slider__item-img,
+        //         .hor-slider__item-text,
+        //         .hor-slider__item-cart-controlls,
+        //         .hor-slider__item-next-icon {
+        //             opacity: 0 !important;
+        //             transition: opacity 1s linear !important;
+        //         }
+        //     }
+        //     .swiper-slide-active,
+        //     .swiper-slide-next,
+        //     .swiper-slide-next + .swiper-slide,
+        //     .swiper-slide-next + .swiper-slide + .swiper-slide {
+        //         .hor-slider__title,
+        //         .hor-slider__item-img,
+        //         .hor-slider__item-text,
+        //         .hor-slider__item-cart-controlls,
+        //         .hor-slider__item-next-icon {
+        //             opacity: 1 !important;
+        //             transition: opacity 1s linear !important;
+        //         }
+        //     }
+        // }
     }
 
     &__item-text {

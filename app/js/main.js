@@ -32,6 +32,23 @@ const createPag = (activeIndex, classPart, scrollbar, slider) => {
     window.addEventListener('resize', init);
 };
 
+const animatesSlides = (slides, active, blur) => {
+    if (window.innerWidth > 768) {
+        const aProps = { opacity: 0, 'backdrop-filter': 'blur(0rem)', duration: 0 };
+        const bProps = { opacity: 1, 'backdrop-filter': `blur(${blur ? 2 : 0}rem)`, duration: 0.4 };
+        const tl = gsap.timeline();
+
+        tl.to(slides[active], aProps, 0)
+            .to(slides[active + 1], aProps, 0)
+            .to(slides[active + 2], aProps, 0)
+            .to(slides[active + 3], aProps, 0);
+        tl.to(slides[active], bProps, 0.1)
+            .to(slides[active + 1], bProps)
+            .to(slides[active + 2], bProps)
+            .to(slides[active + 3], bProps);
+    }
+};
+
 const initSliders = () => {
     if (document.querySelector('.carousel-hero-product__slider')) {
         const productHeroSlider = new Swiper('.carousel-hero-product__slider', {
@@ -202,6 +219,9 @@ const initSliders = () => {
                     const slidesPerGroup = this.params.slidesPerGroup;
                     const activePaginationIndex = Math.floor(activeSlideIndex / slidesPerGroup) + 1;
                     createPag(activePaginationIndex, '.mood', null, swiper);
+                },
+                slideChange: (swiper) => {
+                    animatesSlides(swiper.slides, swiper.activeIndex, blur);
                 }
             }
         });
@@ -263,6 +283,9 @@ const initSliders = () => {
                     const slidesPerGroup = this.params.slidesPerGroup;
                     const activePaginationIndex = Math.floor(activeSlideIndex / slidesPerGroup) + 1;
                     createPag(activePaginationIndex, '.our', null, swiper);
+                },
+                slideChange: (swiper) => {
+                    animatesSlides(swiper.slides, swiper.activeIndex, blur);
                 }
             }
         });
@@ -323,6 +346,9 @@ const initSliders = () => {
                     const slidesPerGroup = this.params.slidesPerGroup;
                     const activePaginationIndex = Math.floor(activeSlideIndex / slidesPerGroup) + 1;
                     createPag(activePaginationIndex, '.popular', null, swiper);
+                },
+                slideChange: (swiper) => {
+                    animatesSlides(swiper.slides, swiper.activeIndex);
                 }
             }
         });
@@ -385,6 +411,9 @@ const initSliders = () => {
                     const slidesPerGroup = this.params.slidesPerGroup;
                     const activePaginationIndex = Math.floor(activeSlideIndex / slidesPerGroup) + 1;
                     createPag(activePaginationIndex, '.country', null, swiper);
+                },
+                slideChange: (swiper) => {
+                    animatesSlides(swiper.slides, swiper.activeIndex, blur);
                 }
             }
         });
