@@ -123,6 +123,10 @@
             &:not(&._mobile-only) {
                 display: none;
             }
+            .catalog & {
+                width: 76rem;
+                height: auto;
+            }
             img {
                 object-fit: contain;
             }
@@ -144,6 +148,10 @@
         &__right-side {
             margin-top: 8rem;
             width: 100%;
+
+            .catalog & {
+                margin-top: 12rem;
+            }
 
             &-title {
                 margin-top: 4.4rem;

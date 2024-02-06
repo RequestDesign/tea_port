@@ -5992,6 +5992,10 @@ html.lock {
   .seo__center-image:not(.seo__center-image._mobile-only) {
     display: none;
   }
+  .catalog .seo__center-image {
+    width: 76rem;
+    height: auto;
+  }
   .seo__center-image img {
     -o-object-fit: contain;
        object-fit: contain;
@@ -6010,6 +6014,9 @@ html.lock {
   .seo__right-side {
     margin-top: 8rem;
     width: 100%;
+  }
+  .catalog .seo__right-side {
+    margin-top: 12rem;
   }
   .seo__right-side-title {
     margin-top: 4.4rem;
