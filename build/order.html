@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="./css/style.min.css" />
         <link rel="icon" type="image/x-icon" href="./img/fav.png" />
         <script src="https://unpkg.com/imask"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <script
             src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=cb93da52-9741-4ffe-86ea-93a91ce99a1c"
             type="text/javascript"
@@ -422,7 +423,13 @@
                         </div>
                     </div> -->
                     <section class="section">
-                        <div class="order__heading">
+                        <div
+                            data-aos="fade-up"
+                            data-aos-offset="200"
+                            data-aos-delay="100"
+                            data-aos-once="true"
+                            class="order__heading"
+                        >
                             <a href="#!" class="order__heading-link">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -460,7 +467,13 @@
                         </div>
                         <form data-dev action="#!" class="order__content">
                             <div class="order__content-wrapper">
-                                <div class="order__contacts">
+                                <div
+                                    data-aos="fade-up"
+                                    data-aos-offset="200"
+                                    data-aos-delay="50"
+                                    data-aos-once="true"
+                                    class="order__contacts"
+                                >
                                     <h2 class="order__contacts-title title">контакты</h2>
                                     <ul class="order__contacts-fields">
                                         <li class="order__contacts-field">
@@ -508,7 +521,13 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="order__delivery">
+                                <div
+                                    data-aos="fade-up"
+                                    data-aos-offset="200"
+                                    data-aos-delay="50"
+                                    data-aos-once="true"
+                                    class="order__delivery"
+                                >
                                     <div class="order__delivery-heading">
                                         <h3 class="order__delivery-title title">доставка</h3>
                                         <label for="other-people" class="checkbox">
@@ -1068,7 +1087,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="order__type">
+                                <div
+                                    data-aos="fade-up"
+                                    data-aos-offset="200"
+                                    data-aos-delay="50"
+                                    data-aos-once="true"
+                                    class="order__type"
+                                >
                                     <h4 class="order__type-title title">оплата</h4>
                                     <ul class="order__type-fields">
                                         <li>
@@ -1090,7 +1115,13 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="order__type">
+                                <div
+                                    data-aos="fade-up"
+                                    data-aos-offset="200"
+                                    data-aos-delay="50"
+                                    data-aos-once="true"
+                                    class="order__type"
+                                >
                                     <h5 class="order__type-title title">подтвеРДИТЬ ЗАКАЗ</h5>
                                     <ul class="order__type-fields">
                                         <li>
@@ -1107,7 +1138,13 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="order__comment">
+                                <div
+                                    data-aos="fade-up"
+                                    data-aos-offset="200"
+                                    data-aos-delay="50"
+                                    data-aos-once="true"
+                                    class="order__comment"
+                                >
                                     <h5 class="order__comment-title title">коММЕНТАРИЙ</h5>
                                     <textarea
                                         data-validate
@@ -1116,7 +1153,13 @@
                                     ></textarea>
                                 </div>
                             </div>
-                            <aside class="order__checkout">
+                            <aside
+                                data-aos="zoom-in"
+                                data-aos-offset="200"
+                                data-aos-delay="100"
+                                data-aos-once="true"
+                                class="order__checkout"
+                            >
                                 <figure class="order__checkout-icon">
                                     <img src="img/order/checkout-icon.svg" alt="" />
                                 </figure>
@@ -1178,7 +1221,13 @@
                 </main>
             </div>
             <footer class="section footer">
-    <div class="footer__box">
+    <div
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-once="true"
+        class="footer__box"
+    >
         <a href="#!" class="footer__title">
             <strong class="text-strong">Teaport</strong>
             <span class="text">Эксклюзивные чаи</span>
@@ -1291,6 +1340,7 @@
     </svg>
 </div>
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
 <script type="module" src="./js/da.js"></script>
 <script type="module" src="./js/modals.js"></script>

@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="./css/style.min.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
         <link rel="icon" type="image/x-icon" href="./img/fav.png" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
         <script src="https://unpkg.com/imask"></script>
         <script
@@ -20,7 +21,13 @@
                 @@include('./template/header.html') @@include('./template/burger-menu.html')
                 <main>
                     <div class="contacts-box">
-                        <div class="contacts-box__info">
+                        <div
+                            data-aos="fade-up"
+                            data-aos-offset="200"
+                            data-aos-delay="50"
+                            data-aos-once="true"
+                            class="contacts-box__info"
+                        >
                             <p class="title">контакты</p>
                             <div class="contacts-box__info-box">
                                 <a href="tel:89459999999" class="text-strong circe"> 8 945 999 99 99 </a>
@@ -34,8 +41,23 @@
                                 <span class="text">Ежедневно</span>
                             </div>
                         </div>
-                        <div class="contacts-box__map" id="map"></div>
-                        <form action="#!" data-dev class="contacts-box__form">
+                        <div
+                            data-aos="zoom-in"
+                            data-aos-offset="200"
+                            data-aos-delay="50"
+                            data-aos-once="true"
+                            class="contacts-box__map"
+                            id="map"
+                        ></div>
+                        <form
+                            data-aos="fade-up"
+                            data-aos-offset="200"
+                            data-aos-delay="50"
+                            data-aos-once="true"
+                            action="#!"
+                            data-dev
+                            class="contacts-box__form"
+                        >
                             <div class="contacts-box__message">
                                 <span class="text-chns">独家印</span>
                                 <span class="text-chns">度红茶</span>

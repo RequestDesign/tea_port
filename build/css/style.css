@@ -4521,9 +4521,7 @@ html.lock {
   }
   .hero-slider .pag {
     top: auto;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    left: 13%;
     bottom: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -6153,7 +6151,7 @@ html.lock {
 @media (max-width: 48em) {
   .products-list {
     padding-top: 6.4rem;
-    overflow-x: hidden;
+    overflow: hidden;
   }
 }
 .products-list__items {
@@ -6433,7 +6431,7 @@ html.lock {
 }
 @media (max-width: 48em) {
   .products-list__popup-content {
-    overflow-x: hidden;
+    overflow: hidden;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }

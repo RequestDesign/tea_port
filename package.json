@@ -5,10 +5,13 @@
     "main": "index.js",
     "dependencies": {
         "air-datepicker": "^3.3.3",
+        "aos": "^2.3.4",
         "gulp": "^4.0.2",
         "ini": "^4.1.1",
+        "install": "^0.13.0",
         "jquery-zoom": "^1.7.21",
         "nouislider": "^15.7.0",
+        "npm": "^10.4.0",
         "swiper": "^11.0.5"
     },
     "devDependencies": {

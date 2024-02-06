@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./css/style.min.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
         <link rel="icon" type="image/x-icon" href="./img/fav.png" />
         <title>TEAPORT - Каталог</title>
@@ -16,7 +17,14 @@
                 <main>
                     <section class="section catalog-hero__wrapper">
                         <div class="catalog-hero">
-                            <div class="catalog-hero__col">
+                            <div
+                                data-aos="fade"
+                                data-aos-duration="500"
+                                data-aos-offset="200"
+                                data-aos-delay="150"
+                                data-aos-once="true"
+                                class="catalog-hero__col"
+                            >
                                 <div class="catalog-hero__text">
                                     <strong class="text-strong">доставка</strong>
                                     <div class="catalog-hero__text-list">
@@ -30,15 +38,38 @@
                                     <span class="text">только сертифицированые поставщики</span>
                                 </div>
                             </div>
-                            <p class="catalog-hero__title title">Чайные подборки для бодрости</p>
-                            <div class="catalog-hero__chns">
+                            <p
+                                data-aos="fade"
+                                data-aos-offset="200"
+                                data-aos-delay="150"
+                                data-aos-duration="500"
+                                data-aos-once="true"
+                                class="catalog-hero__title title"
+                            >
+                                Чайные подборки для бодрости
+                            </p>
+                            <div
+                                data-aos="zoom-in"
+                                data-aos-offset="200"
+                                data-aos-delay="150"
+                                data-aos-duration="500"
+                                data-aos-once="true"
+                                class="catalog-hero__chns"
+                            >
                                 <span class="text-chns">独家印</span>
                                 <span class="text-chns">度红茶</span>
                             </div>
                         </div>
                     </section>
                     <section class="section">
-                        <button type="button" class="filters-btn">
+                        <button
+                            data-aos="zoom-in"
+                            data-aos-offset="200"
+                            data-aos-delay="50"
+                            data-aos-once="true"
+                            type="button"
+                            class="filters-btn"
+                        >
                             <span class="filters-btn__text">фильтры и сортировка</span>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +140,13 @@
                                     <strong class="products-list__filter-controls-title"> ФИЛЬТР </strong>
                                     <button class="products-list__filter-controls-button">ОЧИСТИТЬ</button>
                                 </div>
-                                <ul class="products-list__wrapper">
+                                <ul
+                                    data-aos="zoom-in"
+                                    data-aos-offset="200"
+                                    data-aos-delay="50"
+                                    data-aos-once="true"
+                                    class="products-list__wrapper"
+                                >
                                     <li class="products-list__category select-item select-change">
                                         <span class="text">Чай</span>
                                         <strong class="select-value text-strong select-value">
@@ -235,9 +272,22 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="products-list__content">
+                            <div
+                                data-aos="fade-up"
+                                data-aos-offset="200"
+                                data-aos-delay="50"
+                                data-aos-once="true"
+                                class="products-list__content"
+                            >
                                 <div class="products-list__items">
-                                    <div class="products-list__item cl-p cl-p_mb">
+                                    <div
+                                        data-aos="fade-up"
+                                        data-aos-offset="150"
+                                        data-aos-delay="150"
+                                        data-aos-duration="500"
+                                        data-aos-once="true"
+                                        class="products-list__item cl-p cl-p_mb"
+                                    >
                                         <a href="#!" class="hor-slider__content">
                                             <div class="hor-slider__item">
                                                 <div
@@ -286,7 +336,14 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="products-list__item cl-p cl-p_mb">
+                                    <div
+                                        data-aos="fade-up"
+                                        data-aos-offset="150"
+                                        data-aos-delay="150"
+                                        data-aos-duration="500"
+                                        data-aos-once="true"
+                                        class="products-list__item cl-p cl-p_mb"
+                                    >
                                         <a href="#!" class="hor-slider__content">
                                             <div class="hor-slider__item">
                                                 <div
@@ -335,7 +392,14 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="products-list__item cl-p cl-p_mb">
+                                    <div
+                                        data-aos="fade-up"
+                                        data-aos-offset="150"
+                                        data-aos-delay="150"
+                                        data-aos-duration="500"
+                                        data-aos-once="true"
+                                        class="products-list__item cl-p cl-p_mb"
+                                    >
                                         <a href="#!" class="hor-slider__content">
                                             <div class="hor-slider__item">
                                                 <div
@@ -384,7 +448,14 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="products-list__item cl-p cl-p_mb">
+                                    <div
+                                        data-aos="fade-up"
+                                        data-aos-offset="150"
+                                        data-aos-delay="150"
+                                        data-aos-duration="500"
+                                        data-aos-once="true"
+                                        class="products-list__item cl-p cl-p_mb"
+                                    >
                                         <a href="#!" class="hor-slider__content">
                                             <div class="hor-slider__item">
                                                 <div
@@ -427,56 +498,14 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="products-list__item cl-p cl-p_mb">
-                                        <a href="#!" class="hor-slider__content">
-                                            <div class="hor-slider__item">
-                                                <div
-                                                    class="hor-slider__item-content hor-slider__item-content--white"
-                                                >
-                                                    <div class="hor-slider__item-img">
-                                                        <img
-                                                            src="./img/webp/popular-card-img-1.webp"
-                                                            alt=""
-                                                        />
-                                                    </div>
-                                                    <div class="hor-slider__item-text">
-                                                        <strong class="text-strong">тата</strong>
-                                                        <span class="text-slim">
-                                                            Индийский Для бодрости
-                                                        </span>
-                                                        <div class="hor-slider__item-price">
-                                                            <span class="text-slim">150 г/</span>
-                                                            <strong class="text-strong circe"
-                                                                >600 <span class="rub">₽</span></strong
-                                                            >
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="hor-slider__item-cart-controlls">
-                                                    <button
-                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
-                                                    >
-                                                        <span>-</span>
-                                                    </button>
-                                                    <div class="hor-slider__item-cart-icon">
-                                                        <img src="./img/icon/cart-icon.svg" alt="" />
-                                                        <div class="hor-slider__item-cart-value">
-                                                            <span>11</span>
-                                                        </div>
-                                                    </div>
-                                                    <button
-                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
-                                                    >
-                                                        <span>+</span>
-                                                    </button>
-                                                </div>
-                                                <div class="hor-slider__item-next-icon">
-                                                    <img src="./img/icon/next-icon.svg" alt="" />
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="products-list__item cl-p cl-p_mb">
+                                    <div
+                                        data-aos="fade-up"
+                                        data-aos-offset="150"
+                                        data-aos-delay="150"
+                                        data-aos-duration="500"
+                                        data-aos-once="true"
+                                        class="products-list__item cl-p cl-p_mb"
+                                    >
                                         <a href="#!" class="hor-slider__content">
                                             <div class="hor-slider__item">
                                                 <div
@@ -525,7 +554,14 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="products-list__item cl-p cl-p_mb">
+                                    <div
+                                        data-aos="fade-up"
+                                        data-aos-offset="150"
+                                        data-aos-delay="150"
+                                        data-aos-duration="500"
+                                        data-aos-once="true"
+                                        class="products-list__item cl-p cl-p_mb"
+                                    >
                                         <a href="#!" class="hor-slider__content">
                                             <div class="hor-slider__item">
                                                 <div
@@ -574,7 +610,14 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="products-list__item cl-p cl-p_mb">
+                                    <div
+                                        data-aos="fade-up"
+                                        data-aos-offset="150"
+                                        data-aos-delay="150"
+                                        data-aos-duration="500"
+                                        data-aos-once="true"
+                                        class="products-list__item cl-p cl-p_mb"
+                                    >
                                         <a href="#!" class="hor-slider__content">
                                             <div class="hor-slider__item">
                                                 <div
@@ -623,7 +666,14 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="products-list__item cl-p cl-p_mb">
+                                    <div
+                                        data-aos="fade-up"
+                                        data-aos-offset="150"
+                                        data-aos-delay="150"
+                                        data-aos-duration="500"
+                                        data-aos-once="true"
+                                        class="products-list__item cl-p cl-p_mb"
+                                    >
                                         <a href="#!" class="hor-slider__content">
                                             <div class="hor-slider__item">
                                                 <div
@@ -672,7 +722,14 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="products-list__item cl-p cl-p_mb">
+                                    <div
+                                        data-aos="fade-up"
+                                        data-aos-offset="150"
+                                        data-aos-delay="150"
+                                        data-aos-duration="500"
+                                        data-aos-once="true"
+                                        class="products-list__item cl-p cl-p_mb"
+                                    >
                                         <a href="#!" class="hor-slider__content">
                                             <div class="hor-slider__item">
                                                 <div
@@ -721,7 +778,14 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="products-list__item cl-p cl-p_mb">
+                                    <div
+                                        data-aos="fade-up"
+                                        data-aos-offset="150"
+                                        data-aos-delay="150"
+                                        data-aos-duration="500"
+                                        data-aos-once="true"
+                                        class="products-list__item cl-p cl-p_mb"
+                                    >
                                         <a href="#!" class="hor-slider__content">
                                             <div class="hor-slider__item">
                                                 <div
@@ -770,7 +834,70 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="products-list__item cl-p cl-p_mb">
+                                    <div
+                                        data-aos="fade-up"
+                                        data-aos-offset="150"
+                                        data-aos-delay="150"
+                                        data-aos-duration="500"
+                                        data-aos-once="true"
+                                        class="products-list__item cl-p cl-p_mb"
+                                    >
+                                        <a href="#!" class="hor-slider__content">
+                                            <div class="hor-slider__item">
+                                                <div
+                                                    class="hor-slider__item-content hor-slider__item-content--white"
+                                                >
+                                                    <div class="hor-slider__item-img">
+                                                        <img
+                                                            src="./img/webp/popular-card-img-1.webp"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div class="hor-slider__item-text">
+                                                        <strong class="text-strong">тата</strong>
+                                                        <span class="text-slim">
+                                                            Индийский Для бодрости
+                                                        </span>
+                                                        <div class="hor-slider__item-price">
+                                                            <span class="text-slim">150 г/</span>
+                                                            <strong class="text-strong circe"
+                                                                >600 <span class="rub">₽</span></strong
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="hor-slider__item-cart-controlls">
+                                                    <button
+                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--minus"
+                                                    >
+                                                        <span>-</span>
+                                                    </button>
+                                                    <div class="hor-slider__item-cart-icon">
+                                                        <img src="./img/icon/cart-icon.svg" alt="" />
+                                                        <div class="hor-slider__item-cart-value">
+                                                            <span>11</span>
+                                                        </div>
+                                                    </div>
+                                                    <button
+                                                        class="hor-slider__item-cart-btn hor-slider__item-cart-btn--plus"
+                                                    >
+                                                        <span>+</span>
+                                                    </button>
+                                                </div>
+                                                <div class="hor-slider__item-next-icon">
+                                                    <img src="./img/icon/next-icon.svg" alt="" />
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div
+                                        data-aos="fade-up"
+                                        data-aos-offset="150"
+                                        data-aos-delay="150"
+                                        data-aos-duration="500"
+                                        data-aos-once="true"
+                                        class="products-list__item cl-p cl-p_mb"
+                                    >
                                         <a href="#!" class="hor-slider__content">
                                             <div class="hor-slider__item">
                                                 <div
@@ -820,7 +947,13 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="products-list__pagination circe">
+                                <div
+                                    data-aos="fade-up"
+                                    data-aos-offset="200"
+                                    data-aos-delay="50"
+                                    data-aos-once="true"
+                                    class="products-list__pagination circe"
+                                >
                                     <ul class="products-list__pagination-items">
                                         <li class="products-list__pagination-item --active">
                                             <a href="#!"> 1 </a>
@@ -845,7 +978,13 @@
                     <section class="section seo-catalog">
                         <div class="seo">
                             <div class="seo__box">
-                                <div class="seo__left-side">
+                                <div
+                                    data-aos="fade-up"
+                                    data-aos-offset="200"
+                                    data-aos-delay="50"
+                                    data-aos-once="true"
+                                    class="seo__left-side"
+                                >
                                     <strong class="text-strong">Приют</strong>
                                     <span class="text">бездомных животных</span>
                                     <p class="title seo__left-side-title">выручка уходит в приюты</p>
@@ -886,7 +1025,13 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="seo__center">
+                                <div
+                                    data-aos="zoom-in"
+                                    data-aos-offset="200"
+                                    data-aos-delay="50"
+                                    data-aos-once="true"
+                                    class="seo__center"
+                                >
                                     <div class="seo__message">
                                         <span class="text-chns">独家印</span>
                                         <span class="text-chns">度红茶</span>
@@ -898,7 +1043,13 @@
                                         <img src="./img/webp/cat-mob.webp" alt="" />
                                     </div>
                                 </div>
-                                <div class="seo__right-side">
+                                <div
+                                    data-aos="fade-up"
+                                    data-aos-offset="200"
+                                    data-aos-delay="50"
+                                    data-aos-once="true"
+                                    class="seo__right-side"
+                                >
                                     <div class="seo__right-side-head">
                                         <strong class="text-strong">Помогайте миру</strong>
                                         <span class="text">вместе с нами</span>

@@ -1,3 +1,7 @@
+AOS.init({
+    startEvent: 'load'
+});
+
 const rem = function (rem) {
     if (window.innerWidth > 768) {
         return 0.005208335 * window.innerWidth * rem;

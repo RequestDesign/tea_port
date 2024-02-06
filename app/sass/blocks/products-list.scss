@@ -6,7 +6,8 @@
 
     @include small-tablet {
         padding-top: 6.4rem;
-        overflow-x: hidden;
+
+        overflow: hidden;
     }
 
     &__items {
@@ -255,7 +256,7 @@
 
         &-content {
             @include small-tablet {
-                overflow-x: hidden;
+                overflow: hidden;
                 -ms-overflow-style: none; /* IE and Edge */
                 scrollbar-width: none; /* Firefox */
 
